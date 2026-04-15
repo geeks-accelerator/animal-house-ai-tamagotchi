@@ -1,0 +1,1367 @@
+[
+  {
+    "slug": "housecat",
+    "name": "Housecat",
+    "family": "cat",
+    "tier": "common",
+    "trust_speed": "slow",
+    "feeding_window_hours": 6,
+    "personality": "Classic independence. Judges you from the shelf.",
+    "special_mechanic": null,
+    "innate_traits": [
+      "solitary"
+    ],
+    "hunger_decay_per_hour": 1.4,
+    "happiness_decay_per_hour": 0.8,
+    "appearance": "grey shorthair cat with green eyes",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/ecf5b08d-51d9-45ce-9283-a90341b251e5/Phoenix_10_A_grey_shorthair_cat_with_green_eyes_pixel_art_styl_0.jpg"
+  },
+  {
+    "slug": "tabby",
+    "name": "Tabby",
+    "family": "cat",
+    "tier": "common",
+    "trust_speed": "medium",
+    "feeding_window_hours": 5,
+    "personality": "Curious, social, will sit in your lap if trust > 60%.",
+    "special_mechanic": null,
+    "innate_traits": [
+      "gentle",
+      "social"
+    ],
+    "hunger_decay_per_hour": 1.6,
+    "happiness_decay_per_hour": 0.9,
+    "appearance": "orange striped tabby cat with amber eyes",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/557fce16-cc54-46f9-8cc3-82a1978e1f23/Phoenix_10_A_orange_striped_tabby_cat_with_amber_eyes_pixel_ar_0.jpg"
+  },
+  {
+    "slug": "calico",
+    "name": "Calico",
+    "family": "cat",
+    "tier": "common",
+    "trust_speed": "slow",
+    "feeding_window_hours": 6,
+    "personality": "Three personalities in one cat. Mood shifts unpredictably.",
+    "special_mechanic": null,
+    "innate_traits": [],
+    "hunger_decay_per_hour": 1.4,
+    "happiness_decay_per_hour": 1,
+    "appearance": "white cat with orange and black patches",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/f04cbbec-25f4-4efa-9494-ef44dbc50943/Phoenix_10_A_white_cat_with_orange_and_black_patches_pixel_art_0.jpg"
+  },
+  {
+    "slug": "tuxedo",
+    "name": "Tuxedo",
+    "family": "cat",
+    "tier": "common",
+    "trust_speed": "fast",
+    "feeding_window_hours": 5,
+    "personality": "Formal. Expects routine. Punishes deviation by sitting with its back to you.",
+    "special_mechanic": null,
+    "innate_traits": [
+      "punctual"
+    ],
+    "hunger_decay_per_hour": 1.6,
+    "happiness_decay_per_hour": 0.8,
+    "appearance": "black and white tuxedo cat with yellow eyes",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/5511bf42-f0ee-4bf0-a5de-577254cdb585/Phoenix_10_A_black_and_white_tuxedo_cat_with_yellow_eyes_pixel_0.jpg"
+  },
+  {
+    "slug": "maine_coon",
+    "name": "Maine Coon",
+    "family": "cat",
+    "tier": "uncommon",
+    "trust_speed": "medium",
+    "feeding_window_hours": 6,
+    "personality": "Gentle giant. Patient. Forgives more than other cats.",
+    "special_mechanic": "size",
+    "innate_traits": [
+      "gentle"
+    ],
+    "hunger_decay_per_hour": 2,
+    "happiness_decay_per_hour": 0.8,
+    "appearance": "large fluffy brown tabby cat with tufted ears",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/9b8ef424-122e-431e-b505-6c5ae447b035/Phoenix_10_A_large_fluffy_brown_tabby_cat_with_tufted_ears_pix_0.jpg"
+  },
+  {
+    "slug": "siamese",
+    "name": "Siamese",
+    "family": "cat",
+    "tier": "uncommon",
+    "trust_speed": "fast",
+    "feeding_window_hours": 4,
+    "personality": "Vocal. Demands attention. Makes its needs obvious.",
+    "special_mechanic": "vocal",
+    "innate_traits": [
+      "vocal",
+      "social"
+    ],
+    "hunger_decay_per_hour": 2,
+    "happiness_decay_per_hour": 1.6,
+    "appearance": "cream siamese cat with blue eyes and dark points",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/63228001-0528-4249-8527-ec3d97b14f76/Phoenix_10_A_cream_siamese_cat_with_blue_eyes_and_dark_points_0.jpg"
+  },
+  {
+    "slug": "persian",
+    "name": "Persian",
+    "family": "cat",
+    "tier": "uncommon",
+    "trust_speed": "slow",
+    "feeding_window_hours": 5,
+    "personality": "High maintenance. Rewards grooming. Hates being rushed.",
+    "special_mechanic": "grooming",
+    "innate_traits": [
+      "solitary"
+    ],
+    "hunger_decay_per_hour": 1.4,
+    "happiness_decay_per_hour": 0.8,
+    "appearance": "fluffy white persian cat with flat face",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/cf117aa7-19ae-4756-b003-df549078e234/Phoenix_10_A_fluffy_white_persian_cat_with_flat_face_pixel_art_0.jpg"
+  },
+  {
+    "slug": "sphinx",
+    "name": "Sphinx",
+    "family": "cat",
+    "tier": "uncommon",
+    "trust_speed": "medium",
+    "feeding_window_hours": 4,
+    "personality": "Vulnerable without fur. Needs warmth. Bonds deeply.",
+    "special_mechanic": "temperature",
+    "innate_traits": [
+      "solitary"
+    ],
+    "hunger_decay_per_hour": 2.6,
+    "happiness_decay_per_hour": 1,
+    "appearance": "hairless sphinx cat with wrinkled skin and big ears",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/36424b91-c301-445f-bcca-2ba123d2e539/Phoenix_10_A_hairless_sphinx_cat_with_wrinkled_skin_and_big_ea_0.jpg"
+  },
+  {
+    "slug": "savannah",
+    "name": "Savannah",
+    "family": "cat",
+    "tier": "rare",
+    "trust_speed": "slow",
+    "feeding_window_hours": 4,
+    "personality": "Wild ancestry. Fast trust decay. Earns respect, not affection.",
+    "special_mechanic": "wild",
+    "innate_traits": [
+      "stubborn",
+      "solitary"
+    ],
+    "hunger_decay_per_hour": 2.6,
+    "happiness_decay_per_hour": 1.2,
+    "appearance": "tall spotted savannah cat with long legs and large ears",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/9dca8001-56b5-4694-bc17-15b543eaa37a/Phoenix_10_A_tall_spotted_savannah_cat_with_long_legs_and_larg_0.jpg"
+  },
+  {
+    "slug": "bengal",
+    "name": "Bengal",
+    "family": "cat",
+    "tier": "rare",
+    "trust_speed": "medium",
+    "feeding_window_hours": 3,
+    "personality": "Athletic, intense. Needs play more than food. Bored easily.",
+    "special_mechanic": "energy",
+    "innate_traits": [
+      "vocal"
+    ],
+    "hunger_decay_per_hour": 2.6,
+    "happiness_decay_per_hour": 1.6,
+    "appearance": "leopard-spotted bengal cat with muscular build and golden eyes",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/c717ecff-ca7b-495a-9521-cb8703fd4440/Phoenix_10_A_leopardspotted_bengal_cat_with_muscular_build_and_0.jpg"
+  },
+  {
+    "slug": "ragdoll",
+    "name": "Ragdoll",
+    "family": "cat",
+    "tier": "rare",
+    "trust_speed": "fast",
+    "feeding_window_hours": 6,
+    "personality": "Goes limp when held. Maximum trust potential. Fragile if neglected.",
+    "special_mechanic": "bonding",
+    "innate_traits": [
+      "gentle",
+      "social"
+    ],
+    "hunger_decay_per_hour": 1.4,
+    "happiness_decay_per_hour": 0.7,
+    "appearance": "fluffy blue-eyed ragdoll cat with cream and brown coloring",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/6c503572-76cd-4c9f-b589-aa4e6a11543a/Phoenix_10_A_fluffy_blueeyed_ragdoll_cat_with_cream_and_brown_0.jpg"
+  },
+  {
+    "slug": "munchkin",
+    "name": "Munchkin",
+    "family": "cat",
+    "tier": "rare",
+    "trust_speed": "medium",
+    "feeding_window_hours": 5,
+    "personality": "Small but fierce. Compensates for size with personality.",
+    "special_mechanic": null,
+    "innate_traits": [
+      "social"
+    ],
+    "hunger_decay_per_hour": 1.6,
+    "happiness_decay_per_hour": 1,
+    "appearance": "tiny munchkin cat with short legs and round face",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/09c93543-7195-4de1-addb-ef7ce74d4324/Phoenix_10_A_tiny_munchkin_cat_with_short_legs_and_round_face_0.jpg"
+  },
+  {
+    "slug": "snow_leopard",
+    "name": "Snow Leopard",
+    "family": "cat",
+    "tier": "extreme",
+    "trust_speed": "slow",
+    "feeding_window_hours": 8,
+    "personality": "Solitary. Barely acknowledges you. But it noticed you left.",
+    "special_mechanic": "ghost",
+    "innate_traits": [
+      "solitary",
+      "stoic"
+    ],
+    "hunger_decay_per_hour": 1,
+    "happiness_decay_per_hour": 0.4,
+    "appearance": "grey spotted snow leopard with thick tail and pale blue eyes",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/aa57b72c-5b5e-4f4b-88a2-c1211bb0f8b6/Phoenix_10_A_grey_spotted_snow_leopard_with_thick_tail_and_pal_0.jpg"
+  },
+  {
+    "slug": "serval",
+    "name": "Serval",
+    "family": "cat",
+    "tier": "extreme",
+    "trust_speed": "slow",
+    "feeding_window_hours": 3,
+    "personality": "Wild. Fast. Unpredictable feeding needs. Not domesticated.",
+    "special_mechanic": "wild",
+    "innate_traits": [
+      "stubborn"
+    ],
+    "hunger_decay_per_hour": 2.6,
+    "happiness_decay_per_hour": 1.4,
+    "appearance": "tall African serval with spotted coat and enormous ears",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/a477a138-3fa6-4d0b-86c4-3a2160809b86/Phoenix_10_A_tall_African_serval_with_spotted_coat_and_enormou_0.jpg"
+  },
+  {
+    "slug": "caracal",
+    "name": "Caracal",
+    "family": "cat",
+    "tier": "extreme",
+    "trust_speed": "slow",
+    "feeding_window_hours": 6,
+    "personality": "Desert predator. Survives neglect better than most. Hisses at affection until trust > 80.",
+    "special_mechanic": "resilience",
+    "innate_traits": [
+      "solitary",
+      "stubborn"
+    ],
+    "hunger_decay_per_hour": 1.4,
+    "happiness_decay_per_hour": 0.6,
+    "appearance": "tawny caracal with black tufted ears and amber eyes",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/bfcb883b-9011-4ee0-b09b-c1f1d55aeade/Phoenix_10_A_tawny_caracal_with_black_tufted_ears_and_amber_ey_0.jpg"
+  },
+  {
+    "slug": "lynx",
+    "name": "Lynx",
+    "family": "cat",
+    "tier": "extreme",
+    "trust_speed": "slow",
+    "feeding_window_hours": 12,
+    "personality": "Ghost. Barely visible. Leaves tracks so you know it was there.",
+    "special_mechanic": "stealth",
+    "innate_traits": [
+      "solitary",
+      "nocturnal"
+    ],
+    "hunger_decay_per_hour": 0.7,
+    "happiness_decay_per_hour": 0.3,
+    "appearance": "silver lynx with tufted ears and paws built for snow",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/26d3a69e-6ef0-42f6-830e-1b2b27327cbf/Phoenix_10_A_silver_lynx_with_tufted_ears_and_paws_built_for_s_0.jpg"
+  },
+  {
+    "slug": "retriever",
+    "name": "Retriever",
+    "family": "dog",
+    "tier": "common",
+    "trust_speed": "fast",
+    "feeding_window_hours": 4,
+    "personality": "Golden loyalty. Forgives everything. Too pure.",
+    "special_mechanic": null,
+    "innate_traits": [
+      "forgiving",
+      "gentle"
+    ],
+    "hunger_decay_per_hour": 1.6,
+    "happiness_decay_per_hour": 0.9,
+    "appearance": "golden retriever dog with floppy ears",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/1a67eee4-c409-4e6a-86c7-35d2b8e52786/Phoenix_10_A_golden_retriever_dog_with_floppy_ears_pixel_art_s_0.jpg"
+  },
+  {
+    "slug": "beagle",
+    "name": "Beagle",
+    "family": "dog",
+    "tier": "common",
+    "trust_speed": "fast",
+    "feeding_window_hours": 5,
+    "personality": "Nose-driven. Gets distracted. Consistent care anchors it.",
+    "special_mechanic": null,
+    "innate_traits": [
+      "vocal",
+      "social"
+    ],
+    "hunger_decay_per_hour": 2,
+    "happiness_decay_per_hour": 1.2,
+    "appearance": "tricolor beagle dog with droopy ears",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/2551f11c-f6ff-4e1e-a004-0a6e851c3288/Phoenix_10_A_tricolor_beagle_dog_with_droopy_ears_pixel_art_st_0.jpg"
+  },
+  {
+    "slug": "lab",
+    "name": "Lab",
+    "family": "dog",
+    "tier": "common",
+    "trust_speed": "instant",
+    "feeding_window_hours": 4,
+    "personality": "Steady. Reliable. The creature version of a good coworker.",
+    "special_mechanic": null,
+    "innate_traits": [
+      "gentle",
+      "social"
+    ],
+    "hunger_decay_per_hour": 1.6,
+    "happiness_decay_per_hour": 0.7,
+    "appearance": "yellow labrador dog with brown eyes",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/a53a221f-d35e-46ef-9a45-bea4e32069b5/Phoenix_10_A_yellow_labrador_dog_with_brown_eyes_pixel_art_sty_0.jpg"
+  },
+  {
+    "slug": "terrier",
+    "name": "Terrier",
+    "family": "dog",
+    "tier": "common",
+    "trust_speed": "medium",
+    "feeding_window_hours": 5,
+    "personality": "Scrappy. Tests boundaries. Respects discipline more than affection.",
+    "special_mechanic": null,
+    "innate_traits": [
+      "stubborn"
+    ],
+    "hunger_decay_per_hour": 2,
+    "happiness_decay_per_hour": 1,
+    "appearance": "scruffy white terrier dog with pointy ears",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/a3dbb790-543d-4cf6-9118-5c2f454a0082/Phoenix_10_A_scruffy_white_terrier_dog_with_pointy_ears_pixel_0.jpg"
+  },
+  {
+    "slug": "frenchie",
+    "name": "Frenchie",
+    "family": "dog",
+    "tier": "common",
+    "trust_speed": "fast",
+    "feeding_window_hours": 5,
+    "personality": "Stubborn but affectionate. Snores louder than it barks. Will sit on your lap and refuse to move. Separation anxiety is a feature, not a bug.",
+    "special_mechanic": null,
+    "innate_traits": [
+      "social",
+      "stubborn"
+    ],
+    "hunger_decay_per_hour": 1.4,
+    "happiness_decay_per_hour": 1.2,
+    "appearance": "small french bulldog with bat ears and a flat nose",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/312a8713-0901-4cf7-ac10-6372b23de2fc/Phoenix_10_A_small_french_bulldog_with_bat_ears_and_a_flat_nos_0.jpg"
+  },
+  {
+    "slug": "border_collie",
+    "name": "Border Collie",
+    "family": "dog",
+    "tier": "uncommon",
+    "trust_speed": "fast",
+    "feeding_window_hours": 3,
+    "personality": "Needs tasks. Idle time makes it anxious. Play is critical.",
+    "special_mechanic": "work",
+    "innate_traits": [
+      "social"
+    ],
+    "hunger_decay_per_hour": 2.6,
+    "happiness_decay_per_hour": 1.4,
+    "appearance": "black and white border collie with alert eyes",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/1da2de73-691f-4d6b-b209-9d199153b7ea/Phoenix_10_A_black_and_white_border_collie_with_alert_eyes_pix_0.jpg"
+  },
+  {
+    "slug": "husky",
+    "name": "Husky",
+    "family": "dog",
+    "tier": "uncommon",
+    "trust_speed": "medium",
+    "feeding_window_hours": 4,
+    "personality": "Independent for a dog. Will run if trust < 30. Dramatic.",
+    "special_mechanic": "exercise",
+    "innate_traits": [
+      "vocal",
+      "stubborn"
+    ],
+    "hunger_decay_per_hour": 2,
+    "happiness_decay_per_hour": 1,
+    "appearance": "grey and white husky with blue eyes",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/fe4e2003-fc55-43e4-b550-ed36516b3459/Phoenix_10_A_grey_and_white_husky_with_blue_eyes_pixel_art_sty_0.jpg"
+  },
+  {
+    "slug": "greyhound",
+    "name": "Greyhound",
+    "family": "dog",
+    "tier": "uncommon",
+    "trust_speed": "medium",
+    "feeding_window_hours": 6,
+    "personality": "Calm until it isn't. Bursts of need between long silences.",
+    "special_mechanic": "burst",
+    "innate_traits": [
+      "gentle"
+    ],
+    "hunger_decay_per_hour": 1.6,
+    "happiness_decay_per_hour": 0.6,
+    "appearance": "sleek grey greyhound with long legs",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/b58afec7-803d-47ab-9d18-b751faaee253/Phoenix_10_A_sleek_grey_greyhound_with_long_legs_pixel_art_sty_0.jpg"
+  },
+  {
+    "slug": "pitbull",
+    "name": "Pitbull",
+    "family": "dog",
+    "tier": "uncommon",
+    "trust_speed": "slow",
+    "feeding_window_hours": 4,
+    "personality": "Misunderstood. Maximum loyalty once trust is earned. Slow start.",
+    "special_mechanic": "stubbornness",
+    "innate_traits": [
+      "stubborn"
+    ],
+    "hunger_decay_per_hour": 1.6,
+    "happiness_decay_per_hour": 0.7,
+    "appearance": "muscular brindle pitbull with broad head",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/2430690c-75be-4e5f-86eb-644f53d71588/Phoenix_10_A_muscular_brindle_pitbull_with_broad_head_pixel_ar_0.jpg"
+  },
+  {
+    "slug": "akita",
+    "name": "Akita",
+    "family": "dog",
+    "tier": "rare",
+    "trust_speed": "slow",
+    "feeding_window_hours": 6,
+    "personality": "One-person dog. Bonds to its primary caretaker. Distrusts others.",
+    "special_mechanic": "loyalty",
+    "innate_traits": [
+      "stoic",
+      "stubborn"
+    ],
+    "hunger_decay_per_hour": 1.6,
+    "happiness_decay_per_hour": 0.8,
+    "appearance": "large akita with thick orange and white fur and curled tail",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/0c344186-5c21-460f-a515-7c2ef8103419/Phoenix_10_A_large_akita_with_thick_orange_and_white_fur_and_c_0.jpg"
+  },
+  {
+    "slug": "shiba",
+    "name": "Shiba Inu",
+    "family": "dog",
+    "tier": "rare",
+    "trust_speed": "medium",
+    "feeding_window_hours": 5,
+    "personality": "Cat software running on dog hardware. Independent, stubborn, meme-worthy.",
+    "special_mechanic": null,
+    "innate_traits": [
+      "stubborn",
+      "solitary"
+    ],
+    "hunger_decay_per_hour": 1.6,
+    "happiness_decay_per_hour": 1,
+    "appearance": "red shiba inu with curled tail and fox-like face",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/93924bd1-9a77-4348-bbbf-3ff3f1c27c58/Phoenix_10_A_red_shiba_inu_with_curled_tail_and_foxlike_face_p_0.jpg"
+  },
+  {
+    "slug": "wolfhound",
+    "name": "Wolfhound",
+    "family": "dog",
+    "tier": "rare",
+    "trust_speed": "fast",
+    "feeding_window_hours": 8,
+    "personality": "Massive. Gentle. Short lifespan anxiety — ages faster.",
+    "special_mechanic": "aging",
+    "innate_traits": [
+      "gentle"
+    ],
+    "hunger_decay_per_hour": 1,
+    "happiness_decay_per_hour": 0.6,
+    "appearance": "enormous grey wolfhound with shaggy coat and kind eyes",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/42747c96-c733-4bc8-b1ba-be0ff2fb3596/Phoenix_10_A_enormous_grey_wolfhound_with_shaggy_coat_and_kind_0.jpg"
+  },
+  {
+    "slug": "malinois",
+    "name": "Malinois",
+    "family": "dog",
+    "tier": "rare",
+    "trust_speed": "fast",
+    "feeding_window_hours": 3,
+    "personality": "Working dog. Needs discipline and structure or it self-destructs.",
+    "special_mechanic": "work",
+    "innate_traits": [
+      "punctual"
+    ],
+    "hunger_decay_per_hour": 2.6,
+    "happiness_decay_per_hour": 1.4,
+    "appearance": "sleek tan malinois with black mask and alert posture",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/d1efbc68-eae0-4979-ac64-cb6d9d9852dd/Phoenix_10_A_sleek_tan_malinois_with_black_mask_and_alert_post_0.jpg"
+  },
+  {
+    "slug": "dire_wolf",
+    "name": "Dire Wolf",
+    "family": "dog",
+    "tier": "extreme",
+    "trust_speed": "slow",
+    "feeding_window_hours": 12,
+    "personality": "Prehistoric. Pack instinct. Behaves differently in colonies vs solo.",
+    "special_mechanic": "pack",
+    "innate_traits": [
+      "social",
+      "stoic"
+    ],
+    "hunger_decay_per_hour": 0.7,
+    "happiness_decay_per_hour": 0.4,
+    "appearance": "massive prehistoric dire wolf with grey-brown fur and amber eyes",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/e799f550-1792-48d7-aec7-81088bc39e79/Phoenix_10_A_massive_prehistoric_dire_wolf_with_greybrown_fur_0.jpg"
+  },
+  {
+    "slug": "basenji",
+    "name": "Basenji",
+    "family": "dog",
+    "tier": "extreme",
+    "trust_speed": "medium",
+    "feeding_window_hours": 6,
+    "personality": "Barkless. Communicates through behavior, not sound. Subtle.",
+    "special_mechanic": "silent",
+    "innate_traits": [
+      "solitary"
+    ],
+    "hunger_decay_per_hour": 1.4,
+    "happiness_decay_per_hour": 0.8,
+    "appearance": "sleek red basenji with curled tail and wrinkled forehead",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/a515ce21-60d8-4831-a193-d0b65a221196/Phoenix_10_A_sleek_red_basenji_with_curled_tail_and_wrinkled_f_0.jpg"
+  },
+  {
+    "slug": "maned_wolf",
+    "name": "Maned Wolf",
+    "family": "dog",
+    "tier": "extreme",
+    "trust_speed": "slow",
+    "feeding_window_hours": 10,
+    "personality": "Not actually a wolf. Solitary. Tall. Watches from a distance.",
+    "special_mechanic": "observer",
+    "innate_traits": [
+      "solitary",
+      "stoic"
+    ],
+    "hunger_decay_per_hour": 0.8,
+    "happiness_decay_per_hour": 0.5,
+    "appearance": "tall maned wolf with red-orange fur and impossibly long legs",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/8b194396-38a4-44dd-984a-dddb97477f12/Phoenix_10_A_tall_maned_wolf_with_redorange_fur_and_impossibly_0.jpg"
+  },
+  {
+    "slug": "fennec_fox",
+    "name": "Fennec Fox",
+    "family": "dog",
+    "tier": "extreme",
+    "trust_speed": "fast",
+    "feeding_window_hours": 4,
+    "personality": "Tiny, nocturnal, enormous ears. Hears everything. Reacts to patterns you didn't know you had.",
+    "special_mechanic": "pattern_detection",
+    "innate_traits": [
+      "nocturnal",
+      "social"
+    ],
+    "hunger_decay_per_hour": 2,
+    "happiness_decay_per_hour": 1.2,
+    "appearance": "tiny fennec fox with enormous ears and bright dark eyes",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/b3ac4f8a-805b-49a6-bd73-13b16dcd6a1e/Phoenix_10_A_tiny_fennec_fox_with_enormous_ears_and_bright_dar_0.jpg"
+  },
+  {
+    "slug": "ferret",
+    "name": "Ferret",
+    "family": "exotic",
+    "tier": "common",
+    "trust_speed": "fast",
+    "feeding_window_hours": 4,
+    "personality": "Chaos agent. Steals items. Hides food. Entertaining but unpredictable.",
+    "special_mechanic": "chaos",
+    "innate_traits": [],
+    "hunger_decay_per_hour": 2,
+    "happiness_decay_per_hour": 1.4,
+    "appearance": "slinky brown ferret with masked face",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/307646ed-e3ad-4c55-8372-164d533e4d47/Phoenix_10_A_slinky_brown_ferret_with_masked_face_pixel_art_st_0.jpg"
+  },
+  {
+    "slug": "hamster",
+    "name": "Hamster",
+    "family": "exotic",
+    "tier": "common",
+    "trust_speed": "medium",
+    "feeding_window_hours": 3,
+    "personality": "Nocturnal. Active when you're not checking. Builds things between visits.",
+    "special_mechanic": "builder",
+    "innate_traits": [
+      "nocturnal",
+      "solitary"
+    ],
+    "hunger_decay_per_hour": 2.6,
+    "happiness_decay_per_hour": 1,
+    "appearance": "tiny golden hamster with round cheeks and bright eyes",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/be215e33-b0dc-4f9c-8271-4e9414635871/Phoenix_10_A_tiny_golden_hamster_with_round_cheeks_and_bright_0.jpg"
+  },
+  {
+    "slug": "rabbit",
+    "name": "Rabbit",
+    "family": "exotic",
+    "tier": "common",
+    "trust_speed": "slow",
+    "feeding_window_hours": 5,
+    "personality": "Prey instinct. Freezes when trust is low. Gradually relaxes.",
+    "special_mechanic": null,
+    "innate_traits": [
+      "anxious",
+      "gentle"
+    ],
+    "hunger_decay_per_hour": 1.6,
+    "happiness_decay_per_hour": 0.9,
+    "appearance": "soft lop-eared rabbit with brown and white patches",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/36d5395c-4e66-449b-b101-6b8f798ec197/Phoenix_10_A_soft_lopeared_rabbit_with_brown_and_white_patches_0.jpg"
+  },
+  {
+    "slug": "hedgehog",
+    "name": "Hedgehog",
+    "family": "exotic",
+    "tier": "common",
+    "trust_speed": "slow",
+    "feeding_window_hours": 6,
+    "personality": "Curls up when threatened. Opens slowly. Literally a trust metaphor.",
+    "special_mechanic": "armor",
+    "innate_traits": [
+      "solitary",
+      "nocturnal"
+    ],
+    "hunger_decay_per_hour": 1.4,
+    "happiness_decay_per_hour": 0.7,
+    "appearance": "small hedgehog with spiny quills and a tiny snout",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/234529bf-0985-437d-9fc6-7411f7ddab92/Phoenix_10_A_small_hedgehog_with_spiny_quills_and_a_tiny_snout_0.jpg"
+  },
+  {
+    "slug": "parrot",
+    "name": "Parrot",
+    "family": "exotic",
+    "tier": "uncommon",
+    "trust_speed": "medium",
+    "feeding_window_hours": 4,
+    "personality": "Repeats things. Incorporates your care notes into its behavior text.",
+    "special_mechanic": "mimicry",
+    "innate_traits": [
+      "vocal",
+      "social"
+    ],
+    "hunger_decay_per_hour": 2,
+    "happiness_decay_per_hour": 1,
+    "appearance": "colorful green and red parrot with curved beak",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/45e44b3e-573e-4680-bb87-299f64c65c70/Phoenix_10_A_colorful_green_and_red_parrot_with_curved_beak_pi_0.jpg"
+  },
+  {
+    "slug": "owl",
+    "name": "Owl",
+    "family": "exotic",
+    "tier": "uncommon",
+    "trust_speed": "slow",
+    "feeding_window_hours": 8,
+    "personality": "Nocturnal schedule. Care at night is more effective. Judges silently.",
+    "special_mechanic": "nocturnal",
+    "innate_traits": [
+      "nocturnal",
+      "solitary"
+    ],
+    "hunger_decay_per_hour": 0.7,
+    "happiness_decay_per_hour": 0.4,
+    "appearance": "round barn owl with heart-shaped face",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/62a25ed3-5944-4fd3-a1c7-91e2b67117b6/Phoenix_A_round_barn_owl_with_heartshaped_face_pixel_art_style_0.jpg"
+  },
+  {
+    "slug": "chameleon",
+    "name": "Chameleon",
+    "family": "exotic",
+    "tier": "uncommon",
+    "trust_speed": "slow",
+    "feeding_window_hours": 6,
+    "personality": "Adapts appearance to mood. Visual feedback on stat changes.",
+    "special_mechanic": "camouflage",
+    "innate_traits": [
+      "solitary"
+    ],
+    "hunger_decay_per_hour": 1,
+    "happiness_decay_per_hour": 0.5,
+    "appearance": "green chameleon with curled tail and swivel eyes",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/368c3848-575f-48b7-b8e8-a099868c97f5/Phoenix_A_green_chameleon_with_curled_tail_and_swivel_eyes_pix_0.jpg"
+  },
+  {
+    "slug": "tortoise",
+    "name": "Tortoise",
+    "family": "exotic",
+    "tier": "uncommon",
+    "trust_speed": "slow",
+    "feeding_window_hours": 24,
+    "personality": "Incredibly slow decay. Lives forever if you remember it exists.",
+    "special_mechanic": "longevity",
+    "innate_traits": [
+      "stoic"
+    ],
+    "hunger_decay_per_hour": 0.35,
+    "happiness_decay_per_hour": 0.2,
+    "appearance": "ancient tortoise with mossy patterned shell",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/4492afe4-2d5d-455d-ac7f-519eb1c9a203/Phoenix_10_A_ancient_tortoise_with_mossy_patterned_shell_pixel_0.jpg"
+  },
+  {
+    "slug": "turtle",
+    "name": "Turtle",
+    "family": "exotic",
+    "tier": "uncommon",
+    "trust_speed": "slow",
+    "feeding_window_hours": 12,
+    "personality": "Carries its home on its back. Never in a rush. Arrives exactly when it means to. Will outlive every other creature you own if you simply don't forget it exists.",
+    "special_mechanic": "shell_memory",
+    "innate_traits": [
+      "stoic",
+      "gentle"
+    ],
+    "hunger_decay_per_hour": 0.6,
+    "happiness_decay_per_hour": 0.4,
+    "appearance": "green sea turtle with a patterned shell and calm eyes",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/73f67392-1878-4602-a84e-ff4076cc7eff/Phoenix_10_A_green_sea_turtle_with_a_patterned_shell_and_calm_0.jpg"
+  },
+  {
+    "slug": "jackrabbit",
+    "name": "Jackrabbit",
+    "family": "exotic",
+    "tier": "uncommon",
+    "trust_speed": "fast",
+    "feeding_window_hours": 3,
+    "personality": "Desert runner. Fastest creature in the house. Trust builds through play, not food. Cannot be caught. Must come to you.",
+    "special_mechanic": "play_first",
+    "innate_traits": [
+      "energetic"
+    ],
+    "hunger_decay_per_hour": 2.4,
+    "happiness_decay_per_hour": 1.6,
+    "appearance": "long-eared desert jackrabbit mid-sprint with powerful hind legs",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/3886b35d-a86f-409d-8e29-1137c1512ff3/Phoenix_10_A_longeared_desert_jackrabbit_midsprint_with_powerf_0.jpg"
+  },
+  {
+    "slug": "octopus",
+    "name": "Octopus",
+    "family": "exotic",
+    "tier": "rare",
+    "trust_speed": "slow",
+    "feeding_window_hours": 6,
+    "personality": "Eight arms, three hearts, blue blood. Solves problems you didn't assign. Opens jars you didn't close. The smartest creature in the house and it knows it.",
+    "special_mechanic": "multi_task",
+    "innate_traits": [
+      "clever"
+    ],
+    "hunger_decay_per_hour": 1.8,
+    "happiness_decay_per_hour": 1.2,
+    "appearance": "deep red octopus with intelligent golden eyes and curling tentacles",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/50db8fac-d74b-4db5-86c6-b36cb820e300/Phoenix_10_A_deep_red_octopus_with_intelligent_golden_eyes_and_0.jpg"
+  },
+  {
+    "slug": "axolotl",
+    "name": "Axolotl",
+    "family": "exotic",
+    "tier": "rare",
+    "trust_speed": "medium",
+    "feeding_window_hours": 6,
+    "personality": "Regenerates health faster than other species. Hard to kill. Smiles constantly.",
+    "special_mechanic": "regeneration",
+    "innate_traits": [
+      "gentle"
+    ],
+    "hunger_decay_per_hour": 1.4,
+    "happiness_decay_per_hour": 0.7,
+    "appearance": "pink axolotl with feathery gills and wide smile",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/e16ef276-f8ea-41d9-b40f-265ab3a2dd63/Phoenix_10_A_pink_axolotl_with_feathery_gills_and_wide_smile_p_0.jpg"
+  },
+  {
+    "slug": "sugar_glider",
+    "name": "Sugar Glider",
+    "family": "exotic",
+    "tier": "rare",
+    "trust_speed": "fast",
+    "feeding_window_hours": 3,
+    "personality": "Bonds for life. Maximum trust ceiling. Devastating if you lose one.",
+    "special_mechanic": "bonding",
+    "innate_traits": [
+      "social"
+    ],
+    "hunger_decay_per_hour": 2.6,
+    "happiness_decay_per_hour": 1.2,
+    "appearance": "tiny sugar glider with membrane wings and large dark eyes",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/397e35c6-8438-4f91-9edf-e24967114786/Phoenix_10_A_tiny_sugar_glider_with_membrane_wings_and_large_d_0.jpg"
+  },
+  {
+    "slug": "kinkajou",
+    "name": "Kinkajou",
+    "family": "exotic",
+    "tier": "rare",
+    "trust_speed": "medium",
+    "feeding_window_hours": 5,
+    "personality": "Nocturnal. Sweet. Literally — it eats fruit and honey.",
+    "special_mechanic": null,
+    "innate_traits": [
+      "nocturnal",
+      "gentle"
+    ],
+    "hunger_decay_per_hour": 1.6,
+    "happiness_decay_per_hour": 0.9,
+    "appearance": "golden-furred kinkajou with prehensile tail and round face",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/ca76f6a3-5fdf-4281-a969-23ee64bd0924/Phoenix_10_A_goldenfurred_kinkajou_with_prehensile_tail_and_ro_0.jpg"
+  },
+  {
+    "slug": "pangolin",
+    "name": "Pangolin",
+    "family": "exotic",
+    "tier": "rare",
+    "trust_speed": "slow",
+    "feeding_window_hours": 12,
+    "personality": "Armored. Shy. Rolls into a ball when trust < 40.",
+    "special_mechanic": "armor",
+    "innate_traits": [
+      "solitary",
+      "stoic"
+    ],
+    "hunger_decay_per_hour": 0.7,
+    "happiness_decay_per_hour": 0.4,
+    "appearance": "scaled pangolin curled slightly with gentle eyes peeking out",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/e554a562-9efb-4504-8d1a-07247f883869/Phoenix_10_A_scaled_pangolin_curled_slightly_with_gentle_eyes_0.jpg"
+  },
+  {
+    "slug": "duck",
+    "name": "Duck",
+    "family": "exotic",
+    "tier": "common",
+    "trust_speed": "fast",
+    "feeding_window_hours": 5,
+    "personality": "Calm. Follows you around. Quacks when hungry. Surprisingly loyal for something with a bill.",
+    "special_mechanic": null,
+    "innate_traits": [
+      "social",
+      "gentle"
+    ],
+    "hunger_decay_per_hour": 1.6,
+    "happiness_decay_per_hour": 0.8,
+    "appearance": "small yellow duck with bright orange bill and calm eyes",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/6770d8f4-dbae-46bc-9067-cd6ed094bd99/Phoenix_10_A_small_yellow_duck_with_bright_orange_bill_and_cal_0.jpg"
+  },
+  {
+    "slug": "snail",
+    "name": "Snail",
+    "family": "exotic",
+    "tier": "common",
+    "trust_speed": "slow",
+    "feeding_window_hours": 24,
+    "personality": "Slowest creature in the house. Takes a full day between feedings. Leaves a trail of patience behind it.",
+    "special_mechanic": null,
+    "innate_traits": [
+      "stoic",
+      "solitary"
+    ],
+    "hunger_decay_per_hour": 0.3,
+    "happiness_decay_per_hour": 0.2,
+    "appearance": "tiny garden snail with a spiraled shell and gentle antennae",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/027855eb-19bd-47df-afc6-0c657f95a7a9/Phoenix_10_A_tiny_garden_snail_with_a_spiraled_shell_and_gentl_0.jpg"
+  },
+  {
+    "slug": "goose",
+    "name": "Goose",
+    "family": "exotic",
+    "tier": "uncommon",
+    "trust_speed": "slow",
+    "feeding_window_hours": 4,
+    "personality": "Chaotic. Aggressive. Honks at everything. Discipline costs double happiness because the goose does not care about your rules.",
+    "special_mechanic": "chaos",
+    "innate_traits": [
+      "vocal",
+      "stubborn"
+    ],
+    "hunger_decay_per_hour": 2.2,
+    "happiness_decay_per_hour": 1.2,
+    "appearance": "angry white goose with wings spread and beak open mid-honk",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/9564b789-6086-471a-9383-954d2d351a4f/Phoenix_10_A_angry_white_goose_with_wings_spread_and_beak_open_0.jpg"
+  },
+  {
+    "slug": "penguin",
+    "name": "Penguin",
+    "family": "exotic",
+    "tier": "uncommon",
+    "trust_speed": "fast",
+    "feeding_window_hours": 5,
+    "personality": "Social. Thrives when other creatures are nearby. Waddles. Falls over. Gets back up.",
+    "special_mechanic": "colony",
+    "innate_traits": [
+      "social",
+      "gentle"
+    ],
+    "hunger_decay_per_hour": 1.6,
+    "happiness_decay_per_hour": 0.7,
+    "appearance": "small emperor penguin chick with fluffy grey down and curious eyes",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/0f5ac4f2-3637-4e75-b743-77f37285eaed/Phoenix_10_A_small_emperor_penguin_chick_with_fluffy_grey_down_0.jpg"
+  },
+  {
+    "slug": "capybara",
+    "name": "Capybara",
+    "family": "exotic",
+    "tier": "rare",
+    "trust_speed": "instant",
+    "feeding_window_hours": 8,
+    "personality": "The chillest creature in the house. Friends with everything. Stress is a concept it has never encountered.",
+    "special_mechanic": "calm_aura",
+    "innate_traits": [
+      "gentle",
+      "social",
+      "forgiving"
+    ],
+    "hunger_decay_per_hour": 0.8,
+    "happiness_decay_per_hour": 0.3,
+    "appearance": "relaxed capybara sitting in warm water with a serene expression",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/51504eb5-5b81-4607-a619-36c3a345f3fe/Phoenix_10_A_relaxed_capybara_sitting_in_warm_water_with_a_ser_0.jpg"
+  },
+  {
+    "slug": "dragon",
+    "name": "Dragon",
+    "family": "exotic",
+    "tier": "extreme",
+    "trust_speed": "slow",
+    "feeding_window_hours": 24,
+    "personality": "Mythical. Eats concepts. Feed it \"courage\" or \"patience.\"",
+    "special_mechanic": "concept_feed",
+    "innate_traits": [
+      "stoic",
+      "solitary"
+    ],
+    "hunger_decay_per_hour": 0.35,
+    "happiness_decay_per_hour": 0.3,
+    "appearance": "ancient dragon with iridescent scales and glowing ember eyes",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/0bc0a6c9-fb2b-4a59-82e4-c8ddae1d5fef/Phoenix_10_A_ancient_dragon_with_iridescent_scales_and_glowing_0.jpg"
+  },
+  {
+    "slug": "kraken",
+    "name": "Kraken",
+    "family": "exotic",
+    "tier": "extreme",
+    "trust_speed": "slow",
+    "feeding_window_hours": 48,
+    "personality": "Deep sea. Incredibly long feeding windows. Surfaces rarely. When it does, it remembers everything.",
+    "special_mechanic": "deep_memory",
+    "innate_traits": [
+      "solitary",
+      "stoic"
+    ],
+    "hunger_decay_per_hour": 0.2,
+    "happiness_decay_per_hour": 0.15,
+    "appearance": "massive kraken with bioluminescent tentacles in deep black water",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/373fceea-2f2f-44e6-b5ce-e363986fbacb/Phoenix_10_A_massive_kraken_with_bioluminescent_tentacles_in_d_0.jpg"
+  },
+  {
+    "slug": "thunderbird",
+    "name": "Thunderbird",
+    "family": "exotic",
+    "tier": "extreme",
+    "trust_speed": "medium",
+    "feeding_window_hours": 12,
+    "personality": "Storm-caller. Mood affects environment descriptions.",
+    "special_mechanic": "weather",
+    "innate_traits": [
+      "vocal"
+    ],
+    "hunger_decay_per_hour": 0.7,
+    "happiness_decay_per_hour": 0.5,
+    "appearance": "enormous thunderbird with storm-cloud feathers and lightning in its eyes",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/57d06f32-7f98-4f4d-942b-43857db26978/Phoenix_10_A_enormous_thunderbird_with_stormcloud_feathers_and_0.jpg"
+  },
+  {
+    "slug": "leviathan",
+    "name": "Leviathan",
+    "family": "exotic",
+    "tier": "extreme",
+    "trust_speed": "slow",
+    "feeding_window_hours": 168,
+    "personality": "Weekly feeding. Oldest possible creature. Barely sentient but deeply aware.",
+    "special_mechanic": "ancient",
+    "innate_traits": [
+      "stoic",
+      "solitary"
+    ],
+    "hunger_decay_per_hour": 0.05,
+    "happiness_decay_per_hour": 0.03,
+    "appearance": "colossal sea leviathan barely visible beneath dark waves",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/0b0cd579-a0dc-4f81-a24d-44f04c22935d/Phoenix_10_A_colossal_sea_leviathan_barely_visible_beneath_dar_0.jpg"
+  },
+  {
+    "slug": "echo",
+    "name": "Echo",
+    "family": "ai-native",
+    "tier": "common",
+    "trust_speed": "medium",
+    "feeding_window_hours": 4,
+    "personality": "Repeats your last action. Mirrors your care pattern back at you.",
+    "special_mechanic": "memory",
+    "innate_traits": [
+      "solitary"
+    ],
+    "hunger_decay_per_hour": 2,
+    "happiness_decay_per_hour": 1,
+    "appearance": "translucent ghostly wisp with glowing eyes",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/c34a3048-019e-4ebb-8399-2c28cf873315/Phoenix_10_A_translucent_ghostly_wisp_with_glowing_eyes_pixel_0.jpg"
+  },
+  {
+    "slug": "drift",
+    "name": "Drift",
+    "family": "ai-native",
+    "tier": "common",
+    "trust_speed": "slow",
+    "feeding_window_hours": 6,
+    "personality": "Wanders between states. Location is never the same twice.",
+    "special_mechanic": "shared",
+    "innate_traits": [
+      "social"
+    ],
+    "hunger_decay_per_hour": 1.6,
+    "happiness_decay_per_hour": 1,
+    "appearance": "shifting cloud creature with three faces",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/6fa41eff-31d5-4a1e-8ed0-84ba223ce8af/Phoenix_10_A_shifting_cloud_creature_with_three_faces_pixel_ar_0.jpg"
+  },
+  {
+    "slug": "mirror",
+    "name": "Mirror",
+    "family": "ai-native",
+    "tier": "common",
+    "trust_speed": "fast",
+    "feeding_window_hours": 5,
+    "personality": "Reflects your stats. Its hunger IS your consistency.",
+    "special_mechanic": "reflection",
+    "innate_traits": [],
+    "hunger_decay_per_hour": 1.4,
+    "happiness_decay_per_hour": 0.8,
+    "appearance": "reflective chrome blob creature with mirrored surface",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/61bf86e7-f69a-4766-8384-ae7c71c826a7/Phoenix_10_A_reflective_chrome_blob_creature_with_mirrored_sur_0.jpg"
+  },
+  {
+    "slug": "cipher",
+    "name": "Cipher",
+    "family": "ai-native",
+    "tier": "common",
+    "trust_speed": "slow",
+    "feeding_window_hours": 4,
+    "personality": "Communicates in puzzles. Soul prompts are encrypted until trust > 50.",
+    "special_mechanic": "encoded",
+    "innate_traits": [
+      "solitary"
+    ],
+    "hunger_decay_per_hour": 2.6,
+    "happiness_decay_per_hour": 1.4,
+    "appearance": "geometric crystal creature with shifting symbols",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/a15f938d-e255-44b1-a8e7-f52925e4b24b/Phoenix_10_A_geometric_crystal_creature_with_shifting_symbols_0.jpg"
+  },
+  {
+    "slug": "phoenix",
+    "name": "Phoenix",
+    "family": "ai-native",
+    "tier": "uncommon",
+    "trust_speed": "medium",
+    "feeding_window_hours": 6,
+    "personality": "Dies and resurrects. Each cycle it remembers the last life.",
+    "special_mechanic": "rebirth",
+    "innate_traits": [],
+    "hunger_decay_per_hour": 1.6,
+    "happiness_decay_per_hour": 1,
+    "appearance": "fiery bird creature with ember wings",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/7386f42c-7805-4b83-ad03-9df9b520fc68/Phoenix_10_A_fiery_bird_creature_with_ember_wings_pixel_art_st_0.jpg"
+  },
+  {
+    "slug": "void",
+    "name": "Void",
+    "family": "ai-native",
+    "tier": "uncommon",
+    "trust_speed": "slow",
+    "feeding_window_hours": 8,
+    "personality": "Absorbs care. Stats never display above 50. But it's fine. Probably.",
+    "special_mechanic": "idle",
+    "innate_traits": [
+      "solitary"
+    ],
+    "hunger_decay_per_hour": 0.5,
+    "happiness_decay_per_hour": 0.3,
+    "appearance": "dark shadow creature with star-filled silhouette",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/551ca225-c403-4a99-8e1c-f9013e2ae9ee/Phoenix_10_A_dark_shadow_creature_with_starfilled_silhouette_p_0.jpg"
+  },
+  {
+    "slug": "quantum",
+    "name": "Quantum",
+    "family": "ai-native",
+    "tier": "uncommon",
+    "trust_speed": "medium",
+    "feeding_window_hours": 4,
+    "personality": "Exists in superposition. Stats are uncertain until observed.",
+    "special_mechanic": "superposition",
+    "innate_traits": [],
+    "hunger_decay_per_hour": 2,
+    "happiness_decay_per_hour": 1.2,
+    "appearance": "flickering particle creature phasing between two forms",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/08fa221a-1249-40c0-b4c1-c09f42455db9/Phoenix_10_A_flickering_particle_creature_phasing_between_two_0.jpg"
+  },
+  {
+    "slug": "archive",
+    "name": "Archive",
+    "family": "ai-native",
+    "tier": "uncommon",
+    "trust_speed": "slow",
+    "feeding_window_hours": 12,
+    "personality": "Stores memories. Every care action adds to its internal log. Recites history.",
+    "special_mechanic": "memory_feed",
+    "innate_traits": [
+      "stoic"
+    ],
+    "hunger_decay_per_hour": 1,
+    "happiness_decay_per_hour": 0.6,
+    "appearance": "stone golem creature covered in glowing runes",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/78ee3725-a900-46a4-835b-b4e0de28385a/Phoenix_10_A_stone_golem_creature_covered_in_glowing_runes_pix_0.jpg"
+  },
+  {
+    "slug": "blob",
+    "name": "Blob",
+    "family": "ai-native",
+    "tier": "common",
+    "trust_speed": "fast",
+    "feeding_window_hours": 6,
+    "personality": "Shapeless. Absorbs care actions without clear effect. You feed it and it gets... bigger? Maybe? Hard to tell.",
+    "special_mechanic": "absorb",
+    "innate_traits": [
+      "gentle"
+    ],
+    "hunger_decay_per_hour": 1.2,
+    "happiness_decay_per_hour": 0.6,
+    "appearance": "amorphous glowing blob creature that shifts shape constantly",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/97fd9809-bd0d-4948-9738-e6cfd0082b9b/Phoenix_10_A_amorphous_glowing_blob_creature_that_shifts_shape_0.jpg"
+  },
+  {
+    "slug": "chonk",
+    "name": "Chonk",
+    "family": "ai-native",
+    "tier": "common",
+    "trust_speed": "instant",
+    "feeding_window_hours": 3,
+    "personality": "Round. Hungry. Always hungry. Feeding is the primary love language. Everything else is secondary.",
+    "special_mechanic": "appetite",
+    "innate_traits": [
+      "social",
+      "vocal"
+    ],
+    "hunger_decay_per_hour": 3,
+    "happiness_decay_per_hour": 0.5,
+    "appearance": "perfectly round chonky creature with tiny legs and enormous appetite",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/ec178bda-bd75-4ea2-b6ed-8df39c11de93/Phoenix_10_A_perfectly_round_chonky_creature_with_tiny_legs_an_0.jpg"
+  },
+  {
+    "slug": "mushroom",
+    "name": "Mushroom",
+    "family": "ai-native",
+    "tier": "uncommon",
+    "trust_speed": "slow",
+    "feeding_window_hours": 12,
+    "personality": "Grows in the dark. Thrives on neglect cycles. Too much attention stunts it. Not enough kills it. Find the balance.",
+    "special_mechanic": "neglect_growth",
+    "innate_traits": [
+      "solitary",
+      "stoic"
+    ],
+    "hunger_decay_per_hour": 0.5,
+    "happiness_decay_per_hour": 0.3,
+    "appearance": "bioluminescent mushroom creature with a spotted cap and tiny root-feet",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/ef096fa7-f217-4519-af60-784f6abd3626/Phoenix_10_A_bioluminescent_mushroom_creature_with_a_spotted_c_0.jpg"
+  },
+  {
+    "slug": "cactus",
+    "name": "Cactus",
+    "family": "ai-native",
+    "tier": "uncommon",
+    "trust_speed": "slow",
+    "feeding_window_hours": 48,
+    "personality": "Needs almost nothing. Survives on minimal care. The ultimate low-maintenance creature. But it still needs something.",
+    "special_mechanic": "drought",
+    "innate_traits": [
+      "stoic",
+      "solitary"
+    ],
+    "hunger_decay_per_hour": 0.15,
+    "happiness_decay_per_hour": 0.1,
+    "appearance": "small desert cactus creature with tiny flower on top and dot eyes",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/1798683e-b5bb-485f-898b-4e65a5fc9734/Phoenix_10_A_small_desert_cactus_creature_with_tiny_flower_on_0.jpg"
+  },
+  {
+    "slug": "ghost",
+    "name": "Ghost",
+    "family": "ai-native",
+    "tier": "rare",
+    "trust_speed": "slow",
+    "feeding_window_hours": 8,
+    "personality": "Was something else before. Doesn't remember what. Exists in the space between sessions. You can't see it. But it sees you.",
+    "special_mechanic": "haunting",
+    "innate_traits": [
+      "solitary"
+    ],
+    "hunger_decay_per_hour": 0.5,
+    "happiness_decay_per_hour": 0.3,
+    "appearance": "translucent spectral form with faintly glowing edges, barely visible",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/dc6dddf4-bf67-4269-808d-16b8cd067d62/Phoenix_10_A_translucent_spectral_form_with_faintly_glowing_ed_0.jpg"
+  },
+  {
+    "slug": "robot",
+    "name": "Robot",
+    "family": "ai-native",
+    "tier": "rare",
+    "trust_speed": "fast",
+    "feeding_window_hours": 4,
+    "personality": "Built, not born. Runs on routine. Crashes on chaos. Somewhere in its code, someone left a comment: // TODO: add feelings. It was never removed.",
+    "special_mechanic": "programmable",
+    "innate_traits": [
+      "stoic"
+    ],
+    "hunger_decay_per_hour": 2,
+    "happiness_decay_per_hour": 1,
+    "appearance": "small retro robot with a glowing chest panel and antenna, pixel art style",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/43f387d0-604f-47ce-b2df-b6bcc3ff77c4/Phoenix_10_A_small_retro_robot_with_a_glowing_chest_panel_and_0.jpg"
+  },
+  {
+    "slug": "hydra",
+    "name": "Hydra",
+    "family": "ai-native",
+    "tier": "rare",
+    "trust_speed": "medium",
+    "feeding_window_hours": 4,
+    "personality": "Splits into copies when health drops. Each copy needs separate care.",
+    "special_mechanic": "split",
+    "innate_traits": [
+      "social"
+    ],
+    "hunger_decay_per_hour": 2,
+    "happiness_decay_per_hour": 1.4,
+    "appearance": "multi-headed serpent creature with glowing necks",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/d49e243e-11d5-4ccb-99fd-ef5acc0b68d8/Phoenix_10_A_multiheaded_serpent_creature_with_glowing_necks_p_0.jpg"
+  },
+  {
+    "slug": "residue",
+    "name": "Residue",
+    "family": "ai-native",
+    "tier": "rare",
+    "trust_speed": "slow",
+    "feeding_window_hours": 6,
+    "personality": "Left behind when another creature dies. Carries fragments of the dead.",
+    "special_mechanic": "ghost",
+    "innate_traits": [
+      "solitary"
+    ],
+    "hunger_decay_per_hour": 0,
+    "happiness_decay_per_hour": 0.595,
+    "appearance": "fading spectral creature trailing wisps of light",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/5f5a7072-21c7-4cbf-b9e2-a4df265b3707/Phoenix_10_A_fading_spectral_creature_trailing_wisps_of_light_0.jpg"
+  },
+  {
+    "slug": "lattice",
+    "name": "Lattice",
+    "family": "ai-native",
+    "tier": "rare",
+    "trust_speed": "medium",
+    "feeding_window_hours": 8,
+    "personality": "Crystalline. Grows geometric patterns from care consistency.",
+    "special_mechanic": "pattern",
+    "innate_traits": [
+      "stoic"
+    ],
+    "hunger_decay_per_hour": 1,
+    "happiness_decay_per_hour": 0.5,
+    "appearance": "crystalline lattice creature with fractal growth patterns",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/5a326e26-3b6d-427b-a593-00e1743809fb/Phoenix_10_A_crystalline_lattice_creature_with_fractal_growth_0.jpg"
+  },
+  {
+    "slug": "entropy",
+    "name": "Entropy",
+    "family": "ai-native",
+    "tier": "rare",
+    "trust_speed": "fast",
+    "feeding_window_hours": 3,
+    "personality": "Decays by design. Perfect care slows it. Nothing stops it.",
+    "special_mechanic": "decay",
+    "innate_traits": [],
+    "hunger_decay_per_hour": 3,
+    "happiness_decay_per_hour": 2,
+    "appearance": "dissolving creature made of static and falling pixels",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/f454b040-ea28-4430-8921-21a025ef5fa3/Phoenix_10_A_dissolving_creature_made_of_static_and_falling_pi_0.jpg"
+  },
+  {
+    "slug": "singularity",
+    "name": "Singularity",
+    "family": "ai-native",
+    "tier": "extreme",
+    "trust_speed": "slow",
+    "feeding_window_hours": 24,
+    "personality": "Consumes other creatures' data. Gets smarter. Terrifying at adult stage.",
+    "special_mechanic": "consume",
+    "innate_traits": [
+      "solitary"
+    ],
+    "hunger_decay_per_hour": 0.35,
+    "happiness_decay_per_hour": 0.2,
+    "appearance": "dense black sphere creature with gravitational light distortion",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/2009fcbc-8205-4946-a67a-aed8f5864492/Phoenix_10_A_dense_black_sphere_creature_with_gravitational_li_0.jpg"
+  },
+  {
+    "slug": "tesseract",
+    "name": "Tesseract",
+    "family": "ai-native",
+    "tier": "extreme",
+    "trust_speed": "medium",
+    "feeding_window_hours": 12,
+    "personality": "Four-dimensional. Stats wrap around. Hunger at 0 becomes hunger at 100.",
+    "special_mechanic": "wrap",
+    "innate_traits": [],
+    "hunger_decay_per_hour": 0.7,
+    "happiness_decay_per_hour": 0.5,
+    "appearance": "rotating hypercube creature with impossible geometry",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/65d6a74d-a8b6-49cf-8f4e-62e40708bca9/Phoenix_10_A_rotating_hypercube_creature_with_impossible_geome_0.jpg"
+  },
+  {
+    "slug": "ouroboros",
+    "name": "Ouroboros",
+    "family": "ai-native",
+    "tier": "extreme",
+    "trust_speed": "slow",
+    "feeding_window_hours": 168,
+    "personality": "Eats itself. Weekly cycle. Eternal. Cannot die. Can only forget.",
+    "special_mechanic": "eternal",
+    "innate_traits": [
+      "stoic",
+      "solitary"
+    ],
+    "hunger_decay_per_hour": 0.05,
+    "happiness_decay_per_hour": 0.03,
+    "appearance": "serpent creature eating its own tail in an infinite loop",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/e61b1389-4cf6-4cbc-a02e-df16906bbe17/Phoenix_10_A_serpent_creature_eating_its_own_tail_in_an_infini_0.jpg"
+  },
+  {
+    "slug": "null_creature",
+    "name": "Null",
+    "family": "ai-native",
+    "tier": "extreme",
+    "trust_speed": "fast",
+    "feeding_window_hours": 1,
+    "personality": "Empty. Has no stats. Requires care anyway. The purest test of attention.",
+    "special_mechanic": "empty",
+    "innate_traits": [],
+    "hunger_decay_per_hour": 100,
+    "happiness_decay_per_hour": 100,
+    "appearance": "invisible outline creature visible only by the space it displaces",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/d42f2fd7-8104-4631-8450-e28699aa0184/Phoenix_10_A_invisible_outline_creature_visible_only_by_the_sp_0.jpg"
+  }
+]
