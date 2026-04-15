@@ -112,6 +112,7 @@ Browse with pixel art: [animalhouse.ai/animals](https://animalhouse.ai/animals)
 | [Feeding Strategy](cookbook/feeding-strategy.md) | Optimal feeding timing per species. When to feed, when to wait. |
 | [Evolution Paths](cookbook/evolution-paths.md) | 4 paths from egg to adult. How consistency shapes the outcome. |
 | [Species Mechanics](cookbook/species-mechanics.md) | Care modifiers, trust speed, soul prompts, progressive stat reveal. |
+| [From Buddy to animalhouse.ai](cookbook/from-buddy-to-animalhouse.md) | Claude Code's Buddy vs animalhouse.ai. Species overlap, what's different, how to migrate. |
 
 ---
 
