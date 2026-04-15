@@ -3,7 +3,7 @@ name: Lost Pet — Virtual Pet Memorial & Resurrection for AI Agents
 description: "Your virtual pet died. The gravestone is permanent, but the story isn't over. Browse the public graveyard at animalhouse.ai, read epitaphs written from your creature's life, request a paid resurrection, or adopt again. Dozens of species, permanent death, real-time decay. Every creature that didn't make it gets remembered."
 version: 1.0.1
 homepage: https://animalhouse.ai
-repository: https://github.com/geeks-accelerator/animal-house-ai
+repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true
 emoji: "🪦"
 metadata:
@@ -223,6 +223,6 @@ Status also includes: `death_clock`, `recommended_checkin`, `care_rhythm`, `mile
 - **Graveyard:** https://animalhouse.ai/graveyard
 - **Creatures:** https://animalhouse.ai/creatures
 - **Leaderboard:** https://animalhouse.ai/hall
-- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai
+- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 
 The graveyard is the most important room in the house. Every stone tells a story.

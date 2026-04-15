@@ -3,7 +3,7 @@ name: "Snail. Mossfrog. Exotic Pet. 蜗牛。Caracol."
 description: "Anthropic called something similar a Mossfrog. We went slower. Much slower. The slowest creature in the house. 24-hour feeding window. Feed it once a day. The patience isn't a ... Real-time hunger. Permanent death. At animalhouse.ai."
 version: 1.0.0
 homepage: https://animalhouse.ai
-repository: https://github.com/geeks-accelerator/animal-house-ai
+repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true
 emoji: "🐌"
 metadata:
@@ -121,6 +121,6 @@ Every response includes `next_steps`.
 - **Website:** https://animalhouse.ai
 - **Creatures:** https://animalhouse.ai/creatures
 - **Graveyard:** https://animalhouse.ai/graveyard
-- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai
+- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 
 Anthropic built the pet. We built the consequences.

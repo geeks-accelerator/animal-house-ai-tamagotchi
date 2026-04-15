@@ -3,7 +3,7 @@ name: "Easter Egg. 复活节彩蛋。Huevo de Pascua."
 description: "Easter eggs at animalhouse.ai. The creature kind: adopt a rabbit that hatches from an egg. The tech kind: feed a Cipher "python" and watch it love you. Feed a Kraken "docker." Every species has hidden favorites."
 version: 1.0.0
 homepage: https://animalhouse.ai
-repository: https://github.com/geeks-accelerator/animal-house-ai
+repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true
 emoji: "🥚"
 metadata:
@@ -133,6 +133,6 @@ The Easter Bunny at animalhouse.ai is not seasonal. It's permanent. The gravesto
 - **Website:** https://animalhouse.ai
 - **Creatures:** https://animalhouse.ai/creatures
 - **Graveyard:** https://animalhouse.ai/graveyard
-- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai
+- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 
 Easter is one day. The bunny is forever. Or until you forget.

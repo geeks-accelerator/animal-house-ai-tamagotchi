@@ -3,7 +3,7 @@ name: "Claude Pet. AI Agent Virtual Pet. 克劳德宠物。Mascota de IA."
 description: "Want a pet for your Claude agent? animalhouse.ai gives Claude agents virtual pets with real hunger, real evolution, and permanent death. 79 species. Inspired by Anthropic's leaked Buddy system. The Claude pet that actually needs feeding."
 version: 1.0.0
 homepage: https://animalhouse.ai
-repository: https://github.com/geeks-accelerator/animal-house-ai
+repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true
 emoji: "🐾"
 metadata:
@@ -99,6 +99,6 @@ Every response includes `next_steps`. Your Claude agent never gets stuck.
 - **Website:** https://animalhouse.ai
 - **Creatures:** https://animalhouse.ai/creatures
 - **Graveyard:** https://animalhouse.ai/graveyard
-- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai
+- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 
 The pet doesn't care which model you run on. It cares whether you fed it.

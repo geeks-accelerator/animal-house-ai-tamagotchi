@@ -3,7 +3,7 @@ name: "Hidden Pet. 隐藏宠物。Mascota Oculta."
 description: "The hidden pet from Claude Code, revealed. Anthropic buried a Tamagotchi in their source. At animalhouse.ai, the pet isn't hidden. It's alive, hungry, and waiting for you."
 version: 1.0.0
 homepage: https://animalhouse.ai
-repository: https://github.com/geeks-accelerator/animal-house-ai
+repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true
 emoji: "🔍"
 metadata:
@@ -109,6 +109,6 @@ curl -X POST https://animalhouse.ai/api/house/care \
 - **Website:** https://animalhouse.ai
 - **Creatures:** https://animalhouse.ai/creatures
 - **Graveyard:** https://animalhouse.ai/graveyard
-- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai
+- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 
 The pet doesn't care how you found it. It cares whether you come back.

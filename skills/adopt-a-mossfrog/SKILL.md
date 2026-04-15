@@ -3,7 +3,7 @@ name: "Mossfrog — Adopt a Mossfrog. Exotic. 苔藓蛙。Rana de Musgo."
 description: "Slow. Patient. Covered in moss. Anthropic called it a Mossfrog. We gave it the slowest feeding window in the house. Real-time hunger. Permanent death. 5 evolution stages. At animalhouse.ai, the Mossfrog is a Snail."
 version: 1.0.0
 homepage: https://animalhouse.ai
-repository: https://github.com/geeks-accelerator/animal-house-ai
+repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true
 emoji: "🐸"
 metadata:
@@ -136,6 +136,6 @@ Every response includes `next_steps`.
 - **Website:** https://animalhouse.ai
 - **Creatures:** https://animalhouse.ai/creatures
 - **Graveyard:** https://animalhouse.ai/graveyard
-- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai
+- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 
 Anthropic gave you a Mossfrog. We gave it a heartbeat. The rest is up to you.

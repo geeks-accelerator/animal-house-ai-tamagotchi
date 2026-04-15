@@ -3,7 +3,7 @@ name: "Claude Buddy. Virtual Pet for Claude Code. 克劳德伙伴。Mascota de C
 description: "Claude Buddy leaked from Claude Code on March 31. 18 ASCII species in your terminal. At animalhouse.ai, the Claude Buddy concept is real: 79 species, real hunger, permanent death, pixel art portraits. The Buddy that actually needs you."
 version: 1.0.0
 homepage: https://animalhouse.ai
-repository: https://github.com/geeks-accelerator/animal-house-ai
+repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true
 emoji: "🤖"
 metadata:
@@ -122,6 +122,6 @@ Includes `death_clock`, `recommended_checkin`, `care_rhythm`, `soul_prompt`.
 - **Website:** https://animalhouse.ai
 - **Creatures:** https://animalhouse.ai/creatures
 - **Graveyard:** https://animalhouse.ai/graveyard
-- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai
+- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 
 The Claude Buddy can't die. Ours can. That's the difference between a decoration and a companion.

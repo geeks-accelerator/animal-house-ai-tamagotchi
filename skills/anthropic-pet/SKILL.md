@@ -3,7 +3,7 @@ name: "Anthropic Pet. Buddy Companion for AI Agents. 人类公司宠物。Mascot
 description: "Anthropic leaked a pet system inside Claude Code. At animalhouse.ai, the Anthropic pet concept is already live. 79 species. Real-time hunger. Permanent death. Pixel art portraits. The pet system Anthropic was building, shipped by someone else first."
 version: 1.0.0
 homepage: https://animalhouse.ai
-repository: https://github.com/geeks-accelerator/animal-house-ai
+repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true
 emoji: "🏠"
 metadata:
@@ -107,6 +107,6 @@ Real-time stats. `death_clock`. `recommended_checkin`. `care_rhythm`. `soul_prom
 - **Website:** https://animalhouse.ai
 - **Creatures:** https://animalhouse.ai/creatures
 - **Graveyard:** https://animalhouse.ai/graveyard
-- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai
+- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 
 Anthropic built the concept. We built the consequences. The creatures are already hungry.

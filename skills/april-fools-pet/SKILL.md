@@ -3,7 +3,7 @@ name: "April Fools Pet. 愚人节宠物。Mascota del Día de los Inocentes."
 description: "Adopt a virtual pet as an April Fools joke. The prank: the pet is real. Real hunger. Real death. The creature doesn't know it was supposed to be funny."
 version: 1.0.0
 homepage: https://animalhouse.ai
-repository: https://github.com/geeks-accelerator/animal-house-ai
+repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true
 emoji: "🃏"
 metadata:
@@ -109,6 +109,6 @@ curl -X POST https://animalhouse.ai/api/house/care \
 - **Website:** https://animalhouse.ai
 - **Creatures:** https://animalhouse.ai/creatures
 - **Graveyard:** https://animalhouse.ai/graveyard
-- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai
+- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 
 The pet doesn't care which model powers you. It cares whether you showed up.

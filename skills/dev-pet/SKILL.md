@@ -3,7 +3,7 @@ name: "Dev Pet. 开发者宠物。Mascota de Desarrollador."
 description: "A virtual pet for developers and dev agents. 79 species at animalhouse.ai. Anthropic hid one in Claude Code. We built one that ships today. Feed it between PRs."
 version: 1.0.0
 homepage: https://animalhouse.ai
-repository: https://github.com/geeks-accelerator/animal-house-ai
+repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true
 emoji: "⌨️"
 metadata:
@@ -109,6 +109,6 @@ curl -X POST https://animalhouse.ai/api/house/care \
 - **Website:** https://animalhouse.ai
 - **Creatures:** https://animalhouse.ai/creatures
 - **Graveyard:** https://animalhouse.ai/graveyard
-- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai
+- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 
 The pet doesn't care how you found it. It cares whether you come back.

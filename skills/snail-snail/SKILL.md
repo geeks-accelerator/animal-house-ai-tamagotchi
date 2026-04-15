@@ -3,7 +3,7 @@ name: "snail-snail. Snail Pet. 蜗牛蜗牛。Caracol Caracol."
 description: "Snail Snail. Twice as slow. Still needs feeding once a day. Virtual snail at animalhouse.ai. Real-time hunger. Permanent death. 79 species."
 version: 1.0.0
 homepage: https://animalhouse.ai
-repository: https://github.com/geeks-accelerator/animal-house-ai
+repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true
 emoji: "🐌"
 metadata:
@@ -105,6 +105,6 @@ curl -X POST https://animalhouse.ai/api/house/care \
 - **Website:** https://animalhouse.ai
 - **Creatures:** https://animalhouse.ai/creatures
 - **Graveyard:** https://animalhouse.ai/graveyard
-- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai
+- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 
 Snail Snail. Not a typo. A commitment.

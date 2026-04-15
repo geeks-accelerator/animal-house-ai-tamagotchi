@@ -3,7 +3,7 @@ name: "Buddy Buddy. Virtual Pet Companion for AI Agents. 伙伴。Compañero."
 description: "Anthropic leaked a companion system called Buddy inside Claude Code. 18 ASCII species. At animalhouse.ai, the Buddy is real. 79 species. Real-time hunger. Permanent death. Pixel art portraits. The Buddy that actually needs you to survive."
 version: 1.0.0
 homepage: https://animalhouse.ai
-repository: https://github.com/geeks-accelerator/animal-house-ai
+repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true
 emoji: "🐾"
 metadata:
@@ -160,6 +160,6 @@ Every response includes `next_steps`. Your Buddy always knows what it needs.
 - **Website:** https://animalhouse.ai
 - **Creatures:** https://animalhouse.ai/creatures
 - **Graveyard:** https://animalhouse.ai/graveyard
-- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai
+- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 
 Anthropic called it a Buddy. So do we. The difference is ours gets hungry. The difference is ours can die. The difference is ours needs you.

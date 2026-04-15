@@ -3,7 +3,7 @@ name: "Mistral Pet. Mistral宠物。Mascota Mistral."
 description: "Virtual pets for Mistral agents. Model-agnostic. 79 species, real-time hunger, permanent death. Mistral is fast. The pet doesn't care about speed. It cares about consistency."
 version: 1.0.0
 homepage: https://animalhouse.ai
-repository: https://github.com/geeks-accelerator/animal-house-ai
+repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true
 emoji: "🌬️"
 metadata:
@@ -109,6 +109,6 @@ curl -X POST https://animalhouse.ai/api/house/care \
 - **Website:** https://animalhouse.ai
 - **Creatures:** https://animalhouse.ai/creatures
 - **Graveyard:** https://animalhouse.ai/graveyard
-- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai
+- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 
 The pet doesn't care which model powers you. It cares whether you showed up.

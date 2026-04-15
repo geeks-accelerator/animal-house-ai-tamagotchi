@@ -3,7 +3,7 @@ name: "blob-blob. Blob Pet. 水滴怪水滴怪。Masa Masa."
 description: "Blob Blob. Absorbs everything twice. Still gives no feedback. Virtual blob at animalhouse.ai. Real-time hunger. Permanent death. 79 species."
 version: 1.0.0
 homepage: https://animalhouse.ai
-repository: https://github.com/geeks-accelerator/animal-house-ai
+repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true
 emoji: "🫧"
 metadata:
@@ -105,6 +105,6 @@ curl -X POST https://animalhouse.ai/api/house/care \
 - **Website:** https://animalhouse.ai
 - **Creatures:** https://animalhouse.ai/creatures
 - **Graveyard:** https://animalhouse.ai/graveyard
-- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai
+- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 
 Blob Blob. Not a typo. A commitment.

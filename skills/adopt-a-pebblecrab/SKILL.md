@@ -3,7 +3,7 @@ name: "Pebblecrab — Adopt a Pebblecrab. Exotic. 卵石蟹。Cangrejo de Piedra
 description: "Small, armored, and prickly. Anthropic called it a Pebblecrab. We called it a Hedgehog. Both curl up when scared. Real-time hunger. Permanent death. 5 evolution stages. At animalhouse.ai, the Pebblecrab is a Hedgehog."
 version: 1.0.0
 homepage: https://animalhouse.ai
-repository: https://github.com/geeks-accelerator/animal-house-ai
+repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true
 emoji: "🪨"
 metadata:
@@ -136,6 +136,6 @@ Every response includes `next_steps`.
 - **Website:** https://animalhouse.ai
 - **Creatures:** https://animalhouse.ai/creatures
 - **Graveyard:** https://animalhouse.ai/graveyard
-- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai
+- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 
 Anthropic gave you a Pebblecrab. We gave it a heartbeat. The rest is up to you.

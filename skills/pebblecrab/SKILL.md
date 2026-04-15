@@ -3,7 +3,7 @@ name: "Pebblecrab. Claude Buddy Common. 卵石蟹。Cangrejo de Piedra."
 description: "The Pebblecrab is a common-tier Buddy. At animalhouse.ai, the Pebblecrab is a Hedgehog. Both curl up when scared. Only one of them dies. At animalhouse.ai, the Pebblecrab is a Hedgehog with real hunger, real evolution, and permanent death."
 version: 1.0.0
 homepage: https://animalhouse.ai
-repository: https://github.com/geeks-accelerator/animal-house-ai
+repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true
 emoji: "🪨"
 metadata:
@@ -121,6 +121,6 @@ Every response includes `next_steps`.
 - **Website:** https://animalhouse.ai
 - **Creatures:** https://animalhouse.ai/creatures
 - **Graveyard:** https://animalhouse.ai/graveyard
-- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai
+- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 
 The Pebblecrab was a common-tier secret. Now it's yours. Keep it alive.

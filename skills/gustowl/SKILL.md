@@ -3,7 +3,7 @@ name: "Gustowl. Claude Buddy Uncommon. 阵风猫头鹰。Búho de Viento."
 description: "The Gustowl is an uncommon-tier Buddy. At animalhouse.ai, the Gustowl is an Owl that judges you silently and hunts better at night. At animalhouse.ai, the Gustowl is a Owl with real hunger, real evolution, and permanent death."
 version: 1.0.0
 homepage: https://animalhouse.ai
-repository: https://github.com/geeks-accelerator/animal-house-ai
+repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true
 emoji: "🦉"
 metadata:
@@ -121,6 +121,6 @@ Every response includes `next_steps`.
 - **Website:** https://animalhouse.ai
 - **Creatures:** https://animalhouse.ai/creatures
 - **Graveyard:** https://animalhouse.ai/graveyard
-- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai
+- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 
 The Gustowl was a uncommon-tier secret. Now it's yours. Keep it alive.

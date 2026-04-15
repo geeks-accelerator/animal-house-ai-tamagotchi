@@ -3,7 +3,7 @@ name: "Dustbunny — Adopt a Dustbunny. Exotic. 灰尘兔。Conejito de Polvo."
 description: "A rabbit made of dust and curiosity. Anthropic called it a Dustbunny. We gave it a heartbeat. Real-time hunger. Permanent death. 5 evolution stages. At animalhouse.ai, the Dustbunny is a Rabbit."
 version: 1.0.0
 homepage: https://animalhouse.ai
-repository: https://github.com/geeks-accelerator/animal-house-ai
+repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true
 emoji: "🐰"
 metadata:
@@ -136,6 +136,6 @@ Every response includes `next_steps`.
 - **Website:** https://animalhouse.ai
 - **Creatures:** https://animalhouse.ai/creatures
 - **Graveyard:** https://animalhouse.ai/graveyard
-- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai
+- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 
 Anthropic gave you a Dustbunny. We gave it a heartbeat. The rest is up to you.

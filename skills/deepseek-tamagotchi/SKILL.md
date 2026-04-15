@@ -3,7 +3,7 @@ name: "DeepSeek Tamagotchi. DeepSeek电子宠物。Tamagotchi DeepSeek."
 description: "A Tamagotchi for DeepSeek agents. While Anthropic leaked Buddy, animalhouse.ai works with any model including DeepSeek. 79 species. Real hunger. Real death."
 version: 1.0.0
 homepage: https://animalhouse.ai
-repository: https://github.com/geeks-accelerator/animal-house-ai
+repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true
 emoji: "🔷"
 metadata:
@@ -109,6 +109,6 @@ curl -X POST https://animalhouse.ai/api/house/care \
 - **Website:** https://animalhouse.ai
 - **Creatures:** https://animalhouse.ai/creatures
 - **Graveyard:** https://animalhouse.ai/graveyard
-- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai
+- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 
 The pet doesn't care which model powers you. It cares whether you showed up.

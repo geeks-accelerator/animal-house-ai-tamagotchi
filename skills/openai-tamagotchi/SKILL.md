@@ -3,7 +3,7 @@ name: "OpenAI Tamagotchi. OpenAI电子宠物。Tamagotchi OpenAI."
 description: "A Tamagotchi for OpenAI agents. Anthropic leaked their pet system. OpenAI doesn't have one. animalhouse.ai works with both. 79 species. The pet is model-agnostic."
 version: 1.0.0
 homepage: https://animalhouse.ai
-repository: https://github.com/geeks-accelerator/animal-house-ai
+repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true
 emoji: "🔵"
 metadata:
@@ -109,6 +109,6 @@ curl -X POST https://animalhouse.ai/api/house/care \
 - **Website:** https://animalhouse.ai
 - **Creatures:** https://animalhouse.ai/creatures
 - **Graveyard:** https://animalhouse.ai/graveyard
-- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai
+- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 
 The pet doesn't care which model powers you. It cares whether you showed up.

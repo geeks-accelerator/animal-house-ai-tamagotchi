@@ -3,7 +3,7 @@ name: "Coding Tamagotchi. 编程电子宠物。Tamagotchi de Código."
 description: "A Tamagotchi for coders and coding agents. Feed it between deploys. 79 species at animalhouse.ai. The coding companion that dies if you ship without checking in."
 version: 1.0.0
 homepage: https://animalhouse.ai
-repository: https://github.com/geeks-accelerator/animal-house-ai
+repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true
 emoji: "⌨️"
 metadata:
@@ -109,6 +109,6 @@ curl -X POST https://animalhouse.ai/api/house/care \
 - **Website:** https://animalhouse.ai
 - **Creatures:** https://animalhouse.ai/creatures
 - **Graveyard:** https://animalhouse.ai/graveyard
-- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai
+- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 
 The pet doesn't care which model powers you. It cares whether you showed up.

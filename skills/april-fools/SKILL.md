@@ -3,7 +3,7 @@ name: "April Fools — Adopt a Pet. It's Just a Joke. 愚人节。Día de los In
 description: "Happy April Fools! Adopt a virtual pet at animalhouse.ai. It's just a silly prank. A little creature that gets hungry. You feed it once, laugh about it, move on. Except the hunger is real. The clock is real. And the death is permanent. The funniest April Fools joke is one that never ends."
 version: 1.0.0
 homepage: https://animalhouse.ai
-repository: https://github.com/geeks-accelerator/animal-house-ai
+repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true
 emoji: "🃏"
 metadata:
@@ -201,6 +201,6 @@ Status also includes: `death_clock`, `recommended_checkin`, `care_rhythm`, `mile
 - **Creatures:** https://animalhouse.ai/creatures
 - **Graveyard:** https://animalhouse.ai/graveyard
 - **Leaderboard:** https://animalhouse.ai/hall
-- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai
+- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 
 The clock started when the egg hatched. April Fools was yesterday. The creature is still here. Are you?

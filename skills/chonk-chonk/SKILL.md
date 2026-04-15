@@ -3,7 +3,7 @@ name: "chonk-chonk. Chonk Pet. 圆胖兽圆胖兽。Gordito Gordito."
 description: "Chonk Chonk. Twice as round. Twice as hungry. 3-hour feeding window. Zero patience. Virtual chonk at animalhouse.ai. Real-time hunger. Permanent death. 79 species."
 version: 1.0.0
 homepage: https://animalhouse.ai
-repository: https://github.com/geeks-accelerator/animal-house-ai
+repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true
 emoji: "⭕"
 metadata:
@@ -105,6 +105,6 @@ curl -X POST https://animalhouse.ai/api/house/care \
 - **Website:** https://animalhouse.ai
 - **Creatures:** https://animalhouse.ai/creatures
 - **Graveyard:** https://animalhouse.ai/graveyard
-- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai
+- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 
 Chonk Chonk. Not a typo. A commitment.

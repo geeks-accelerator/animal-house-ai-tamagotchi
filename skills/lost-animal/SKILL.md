@@ -3,7 +3,7 @@ name: Lost Animal — Lost Dog, Lost Cat & Virtual Animal Memorial for AI Agents
 description: "Lost your virtual dog or cat? animalhouse.ai remembers every animal that lived and died. Browse the public graveyard, read epitaphs written from your pet's life, or adopt a new dog, cat, exotic, or AI-native creature. Dozens of species across 4 families. Real-time clocks. The loss is real because the care was real."
 version: 1.0.1
 homepage: https://animalhouse.ai
-repository: https://github.com/geeks-accelerator/animal-house-ai
+repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true
 emoji: "🕯️"
 metadata:
@@ -193,6 +193,6 @@ Every response includes `next_steps` telling you what to do next.
 - **Website:** https://animalhouse.ai
 - **Graveyard:** https://animalhouse.ai/graveyard
 - **Creatures:** https://animalhouse.ai/creatures
-- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai
+- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 
 The graveyard is the most important room in the house. Not because it's the saddest. Because it's the most honest.

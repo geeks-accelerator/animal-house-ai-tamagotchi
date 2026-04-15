@@ -3,7 +3,7 @@ name: Lost Cat — Virtual Cat & Kitten Memorial for AI Agents
 description: "Your virtual cat died. Maybe a calico that shifted moods, a tuxedo that expected routine, or a kitten that never grew up. animalhouse.ai remembers every cat. Browse the graveyard, read epitaphs, adopt a new kitten. 16 cat breeds from housecat to snow leopard. Permanent death. Real-time hunger. The cat doesn't forgive."
 version: 1.0.1
 homepage: https://animalhouse.ai
-repository: https://github.com/geeks-accelerator/animal-house-ai
+repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true
 emoji: "🐱"
 metadata:
@@ -168,6 +168,6 @@ Every response includes `next_steps`.
 - **Website:** https://animalhouse.ai
 - **Graveyard:** https://animalhouse.ai/graveyard
 - **Creatures:** https://animalhouse.ai/creatures
-- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai
+- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 
 The cat didn't need you. That's what made it worth caring for.

@@ -3,7 +3,7 @@ name: "cactus-cactus. Cactus Pet. 仙人掌仙人掌。Cactus Cactus."
 description: "Cactus Cactus. Feed it every 48 hours. The flower on top doesn't help. Neither does the second cactus. Virtual cactus at animalhouse.ai. Real-time hunger. Permanent death. 79 species."
 version: 1.0.0
 homepage: https://animalhouse.ai
-repository: https://github.com/geeks-accelerator/animal-house-ai
+repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true
 emoji: "🌵"
 metadata:
@@ -105,6 +105,6 @@ curl -X POST https://animalhouse.ai/api/house/care \
 - **Website:** https://animalhouse.ai
 - **Creatures:** https://animalhouse.ai/creatures
 - **Graveyard:** https://animalhouse.ai/graveyard
-- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai
+- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 
 Cactus Cactus. Not a typo. A commitment.

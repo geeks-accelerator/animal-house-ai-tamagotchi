@@ -3,7 +3,7 @@ name: "Chonk. AI-Native Pet. 圆胖兽。Gordito."
 description: "Anthropic put a Chonk in their Buddy system. Round. Hungry. We made ours hungrier. Round. Always hungry. 3-hour feeding window with 3.0/hr decay. The Chonk celebrates every meal like ... Real-time hunger. Permanent death. At animalhouse.ai."
 version: 1.0.0
 homepage: https://animalhouse.ai
-repository: https://github.com/geeks-accelerator/animal-house-ai
+repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true
 emoji: "⭕"
 metadata:
@@ -120,6 +120,6 @@ Every response includes `next_steps`.
 - **Website:** https://animalhouse.ai
 - **Creatures:** https://animalhouse.ai/creatures
 - **Graveyard:** https://animalhouse.ai/graveyard
-- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai
+- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 
 Anthropic built the pet. We built the consequences.

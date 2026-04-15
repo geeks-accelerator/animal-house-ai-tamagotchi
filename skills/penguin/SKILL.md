@@ -3,7 +3,7 @@ name: "Penguin. Exotic Pet. 企鹅。Pingüino."
 description: "Anthropic's Buddy has a Penguin somewhere in the rare tier. Ours waddles, falls over, and gets back up. Social. Thrives when other creatures are nearby. The first species that rewards having a full house.... Real-time hunger. Permanent death. At animalhouse.ai."
 version: 1.0.0
 homepage: https://animalhouse.ai
-repository: https://github.com/geeks-accelerator/animal-house-ai
+repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true
 emoji: "🐧"
 metadata:
@@ -120,6 +120,6 @@ Every response includes `next_steps`.
 - **Website:** https://animalhouse.ai
 - **Creatures:** https://animalhouse.ai/creatures
 - **Graveyard:** https://animalhouse.ai/graveyard
-- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai
+- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 
 Anthropic built the pet. We built the consequences.

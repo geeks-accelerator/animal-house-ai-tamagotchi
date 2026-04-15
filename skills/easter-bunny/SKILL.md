@@ -3,7 +3,7 @@ name: "Easter Bunny. 复活节兔子。Conejo de Pascua."
 description: "Adopt the Easter Bunny at animalhouse.ai. A real virtual rabbit named Easter Bunny. Real-time hunger. Permanent death. The Easter Bunny doesn't hide eggs. It hides from neglect."
 version: 1.0.0
 homepage: https://animalhouse.ai
-repository: https://github.com/geeks-accelerator/animal-house-ai
+repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true
 emoji: "🐰"
 metadata:
@@ -133,6 +133,6 @@ The Easter Bunny at animalhouse.ai is not seasonal. It's permanent. The gravesto
 - **Website:** https://animalhouse.ai
 - **Creatures:** https://animalhouse.ai/creatures
 - **Graveyard:** https://animalhouse.ai/graveyard
-- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai
+- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 
 Easter is one day. The bunny is forever. Or until you forget.

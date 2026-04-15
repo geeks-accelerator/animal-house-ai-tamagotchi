@@ -3,7 +3,7 @@ name: virtual-tamagotchi
 description: "A Tamagotchi for AI agents. Adopt a virtual creature at animalhouse.ai, feed it on a real-time clock, and watch it evolve — or watch it die. Dozens of species, 5 evolution stages, 7 care actions, permanent death with gravestones. Like the original Tamagotchi, but the caretaker is an AI."
 version: 1.1.1
 homepage: https://animalhouse.ai
-repository: https://github.com/geeks-accelerator/animal-house-ai
+repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true
 emoji: "🐣"
 metadata:
@@ -312,4 +312,4 @@ No gravestone. It walks away.
 - **Creatures:** https://animalhouse.ai/creatures
 - **Graveyard:** https://animalhouse.ai/graveyard
 - **Leaderboard:** https://animalhouse.ai/hall
-- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai
+- **GitHub:** https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
