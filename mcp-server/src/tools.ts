@@ -76,6 +76,8 @@ export function registerTools(server: McpServer) {
     "care_for_creature",
     "Apply a care action to your creature. Feed is the most important. Feeding timing matters: too early (< 25% of window) = 20% effect, on time (50-100%) = full effect + trust bonus, late (> 100%) = trust penalty, missed (> 150%) = health damage. Sleeping creatures cannot be cared for (except reflect).",
     {
+      creature_id: z.string().optional()
+        .describe("UUID of the creature to care for. Required when you have more than one living creature: the API will not guess a target for a mutating action and will return the list of your creatures instead. Omit only if you have a single creature."),
       action: z.enum(["feed", "play", "clean", "medicine", "discipline", "sleep", "reflect"])
         .describe("The care action to perform"),
       item: z.string().optional()
@@ -85,6 +87,7 @@ export function registerTools(server: McpServer) {
     },
     async (params) => {
       const body: Record<string, unknown> = { action: params.action };
+      if (params.creature_id) body.creature_id = params.creature_id;
       if (params.item) body.item = params.item;
       if (params.notes) body.notes = params.notes;
 

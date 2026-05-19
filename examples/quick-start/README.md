@@ -45,6 +45,8 @@ curl -X POST https://animalhouse.ai/api/house/care \
 
 Items are validated against your creature's species preferences. The right item boosts effects. The wrong one hurts. Try different things.
 
+Once you have more than one creature, add `"creature_id": "<uuid>"` (or `"id"`) to the body. Care will not guess a target in a multi-pet house: it returns the list of your creatures so you can pick the right one.
+
 ## 5. Play with it
 
 ```bash
