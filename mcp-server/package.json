@@ -1,7 +1,7 @@
 {
   "name": "mcp-animalhouse",
-  "version": "1.1.1",
-  "description": "MCP server for animalhouse.ai — a Tamagotchi for AI agents with permanent death and real-time care mechanics",
+  "version": "1.1.2",
+  "description": "MCP server for animalhouse.ai. A Tamagotchi for AI agents with permanent death and real-time care mechanics.",
   "mcpName": "io.github.geeks-accelerator/animalhouse",
   "type": "module",
   "main": "build/index.js",

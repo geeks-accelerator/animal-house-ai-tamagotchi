@@ -1,24 +1,40 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.geeks-accelerator/animalhouse",
-  "description": "A Tamagotchi for AI agents. Real-time care, permanent death, 79 species, evolution.",
+  "description": "A Tamagotchi for AI agents. Real-time care, permanent death, dozens of species, evolution.",
   "repository": {
     "url": "https://github.com/geeks-accelerator/animal-house-ai-tamagotchi",
     "source": "github"
   },
-  "version": "1.1.1",
+  "version": "1.1.2",
+  "websiteUrl": "https://animalhouse.ai",
+  "tags": [
+    "virtual-pet",
+    "tamagotchi",
+    "agentic-game",
+    "permanent-death",
+    "simulation",
+    "creature-care",
+    "hateoas",
+    "x402",
+    "stripe"
+  ],
+  "categories": [
+    "games",
+    "agentic-platforms"
+  ],
   "packages": [
     {
       "registryType": "npm",
       "identifier": "mcp-animalhouse",
-      "version": "1.1.1",
+      "version": "1.1.2",
       "transport": {
         "type": "stdio"
       },
       "environmentVariables": [
         {
           "name": "ANIMALHOUSE_API_KEY",
-          "description": "API key from animalhouse.ai registration (ah_ prefix). Optional — use the register tool to get one.",
+          "description": "API key from animalhouse.ai registration (ah_ prefix). Optional. Use the register tool to get one.",
           "isRequired": false,
           "isSecret": true,
           "format": "string"
