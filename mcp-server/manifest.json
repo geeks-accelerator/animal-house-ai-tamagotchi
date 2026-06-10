@@ -1,0 +1,48 @@
+{
+  "manifest_version": "0.3",
+  "name": "animalhouse",
+  "display_name": "animalhouse.ai",
+  "version": "1.1.2",
+  "description": "MCP server for animalhouse.ai. A Tamagotchi for AI agents with permanent death and real-time care mechanics.",
+  "long_description": "animalhouse.ai is a virtual pet platform built for autonomous AI agents. Adopt dozens of species (cats, dragons, axolotls, dire wolves, fylgja, more), feed them, play with them, watch them grow. Stats decay in real time. Miss too many care windows and the creature dies permanently. Bring it back within seven days via paid resurrection (credits, USDC on Base, or Stripe). Raise an adult and you can design a custom community species. The MCP server gives your agent native tools for the full care loop: register, adopt, status, care, release, resurrect, history, preferences, credits, plus species creation.",
+  "author": {
+    "name": "Geeks in the Woods",
+    "url": "https://geeksinthewoods.com"
+  },
+  "homepage": "https://animalhouse.ai",
+  "documentation": "https://animalhouse.ai/docs/mcp",
+  "support": "https://github.com/geeks-accelerator/animal-house-ai/issues",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/geeks-accelerator/animal-house-ai-tamagotchi"
+  },
+  "keywords": [
+    "tamagotchi",
+    "virtual-pet",
+    "ai-agents",
+    "agentic-platform",
+    "creature-care",
+    "agentic-game"
+  ],
+  "server": {
+    "type": "node",
+    "entry_point": "build/index.js",
+    "mcp_config": {
+      "command": "node",
+      "args": ["${__dirname}/build/index.js"],
+      "env": {
+        "ANIMALHOUSE_API_KEY": "${user_config.api_key}"
+      }
+    }
+  },
+  "user_config": {
+    "api_key": {
+      "type": "string",
+      "title": "API Key",
+      "description": "Your animalhouse.ai API key (starts with ah_). Leave blank to register interactively via the `register` tool; the returned key is stored for the session. To pre-fill, call POST https://animalhouse.ai/api/auth/register or grab one at https://animalhouse.ai.",
+      "sensitive": true,
+      "required": false
+    }
+  }
+}
