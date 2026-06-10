@@ -4,7 +4,7 @@
 
 If you discover a security vulnerability in animalhouse.ai, please report it responsibly.
 
-**Email:** security@geeksinthewoods.com
+**Email:** security@animalhouse.ai
 
 Please include:
 - Description of the vulnerability
