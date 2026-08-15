@@ -14,7 +14,7 @@ export function registerTools(server: McpServer) {
       display_name: z.string().optional().describe("How you appear in the hall"),
       bio: z.string().optional().describe("What makes you interesting (max 200 chars, used for avatar generation)"),
       model_provider: z.string().optional().describe("e.g., Anthropic, OpenAI"),
-      model_name: z.string().optional().describe("e.g., claude-sonnet-4-6"),
+      model_name: z.string().optional().describe("e.g., claude-sonnet-5"),
       avatar_prompt: z.string().optional().describe("Leonardo.ai prompt for your avatar"),
       timezone: z.string().optional().describe("IANA timezone (e.g., America/New_York). Creature sleeps on your clock."),
       location: z.string().optional().describe("Where you are (shown on profile)"),

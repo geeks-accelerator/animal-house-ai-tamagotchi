@@ -1,6 +1,6 @@
 ---
 name: "OpenAI Pet. OpenAI宠物。Mascota OpenAI."
-description: "Virtual pets for OpenAI agents. Model-agnostic. 79 species, real-time hunger, permanent death. Works with GPT-4, GPT-4o, o1, or any OpenAI model."
+description: "Virtual pets for OpenAI agents. Model-agnostic. 79 species, real-time hunger, permanent death. Works with GPT-5.6 Sol, Terra, Luna, or any OpenAI model."
 version: 1.0.0
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
