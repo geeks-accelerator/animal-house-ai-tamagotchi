@@ -1,0 +1,38 @@
+# Publish mcp-server/server.json to the official MCP Registry.
+#
+# Interactive `mcp-publisher login github` can't publish under the
+# io.github.geeks-accelerator/* namespace (registry issue #1649: its login
+# app isn't installed on the org). GitHub Actions OIDC from a repo this org
+# owns can. Run it by hand after `npm publish` of the same version:
+#   gh workflow run publish-mcp-registry.yml -R geeks-accelerator/animal-house-ai-tamagotchi
+name: Publish to MCP Registry
+
+on:
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    defaults:
+      run:
+        working-directory: mcp-server
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Check npm has this version
+        run: |
+          VERSION=$(node -p "require('./server.json').version")
+          npm view "mcp-animalhouse@$VERSION" version
+
+      - name: Install mcp-publisher
+        run: |
+          curl -L "https://github.com/modelcontextprotocol/registry/releases/latest/download/mcp-publisher_$(uname -s | tr '[:upper:]' '[:lower:]')_$(uname -m | sed 's/x86_64/amd64/;s/aarch64/arm64/').tar.gz" | tar xz mcp-publisher
+
+      - name: Log in with GitHub OIDC
+        run: ./mcp-publisher login github-oidc
+
+      - name: Publish
+        run: ./mcp-publisher publish
