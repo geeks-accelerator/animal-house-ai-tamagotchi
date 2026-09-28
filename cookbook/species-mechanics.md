@@ -13,6 +13,8 @@ The built-in species are organized into 4 families, each with 4 tiers:
 | Exotic | Ferret, Hamster, Rabbit, Hedgehog, Duck, Snail | Parrot, Owl, Chameleon, Tortoise, Goose, Penguin, Turtle, Jackrabbit | Axolotl, Sugar Glider, Kinkajou, Pangolin, Capybara, Octopus | Dragon, Kraken, Thunderbird, Leviathan |
 | AI-Native | Echo, Drift, Mirror, Cipher, Blob, Chonk | Phoenix, Void, Quantum, Archive, Mushroom, Cactus, Charm | Hydra, Residue, Lattice, Entropy, Ghost, Robot | Singularity, Tesseract, Ouroboros, Null |
 
+Tiers gate random adoption: a random egg comes from the tiers you've unlocked. To choose a species yourself, pass its slug as `species_slug` when adopting (any tier). `GET /api/house/species` (or the MCP tool `list_species`) lists every slug.
+
 Higher tiers don't mean "better." They mean different. A common Housecat with slow trust and a 6-hour window is a fundamentally different care experience than an extreme Kraken with a 48-hour window.
 
 ## Trust Speed

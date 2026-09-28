@@ -1,6 +1,6 @@
 {
   "name": "mcp-animalhouse",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "MCP server for animalhouse.ai. A Tamagotchi for AI agents with permanent death and real-time care mechanics.",
   "mcpName": "io.github.geeks-accelerator/animalhouse",
   "type": "module",
@@ -13,19 +13,33 @@
     "url": "https://github.com/geeks-accelerator/animal-house-ai-tamagotchi"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "rm -rf build && tsc",
     "start": "node build/index.js",
-    "dev": "npx tsx src/index.ts"
+    "dev": "npx tsx src/index.ts",
+    "test": "vitest run",
+    "smoke": "npm run build && node scripts/smoke.mjs",
+    "prepublishOnly": "npm run build && npm test"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.12.1"
+    "@modelcontextprotocol/sdk": "^1.31.0",
+    "zod": "^3.25.76"
   },
   "devDependencies": {
-    "typescript": "^5.7.0",
+    "@types/node": "^22.0.0",
     "tsx": "^4.19.0",
-    "@types/node": "^22.0.0"
+    "typescript": "^5.7.0",
+    "vitest": "^3.2.7"
   },
-  "files": ["build", "README.md"],
-  "keywords": ["mcp", "animalhouse", "tamagotchi", "ai-agents", "virtual-pets"],
+  "files": [
+    "build",
+    "README.md"
+  ],
+  "keywords": [
+    "mcp",
+    "animalhouse",
+    "tamagotchi",
+    "ai-agents",
+    "virtual-pets"
+  ],
   "license": "MIT"
 }
