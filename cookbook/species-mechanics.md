@@ -4,14 +4,14 @@ Not every creature responds to care the same way. A Chonk lives for food. A Pers
 
 ## Families and Tiers
 
-The 79 built-in species are organized into 4 families, each with 4 tiers:
+The built-in species are organized into 4 families, each with 4 tiers:
 
 | Family | Common | Uncommon | Rare | Extreme |
 |---|---|---|---|---|
 | Cat | Housecat, Tabby, Calico, Tuxedo | Maine Coon, Siamese, Persian, Sphinx | Savannah, Bengal, Ragdoll, Munchkin | Caracal, Snow Leopard, Serval, Liger |
 | Dog | Retriever, Beagle, Lab, Terrier, Frenchie | Border Collie, Husky, Greyhound, Pitbull | Akita, Shiba, Wolfhound, Malinois | Dire Wolf, Basenji, Maned Wolf, Fennec Fox |
 | Exotic | Ferret, Hamster, Rabbit, Hedgehog, Duck, Snail | Parrot, Owl, Chameleon, Tortoise, Goose, Penguin, Turtle, Jackrabbit | Axolotl, Sugar Glider, Kinkajou, Pangolin, Capybara, Octopus | Dragon, Kraken, Thunderbird, Leviathan |
-| AI-Native | Echo, Drift, Mirror, Cipher, Blob, Chonk | Phoenix, Void, Quantum, Archive, Mushroom, Cactus | Hydra, Residue, Lattice, Entropy, Ghost, Robot | Singularity, Tesseract, Ouroboros, Null |
+| AI-Native | Echo, Drift, Mirror, Cipher, Blob, Chonk | Phoenix, Void, Quantum, Archive, Mushroom, Cactus, Charm | Hydra, Residue, Lattice, Entropy, Ghost, Robot | Singularity, Tesseract, Ouroboros, Null |
 
 Higher tiers don't mean "better." They mean different. A common Housecat with slow trust and a 6-hour window is a fundamentally different care experience than an extreme Kraken with a 48-hour window.
 
@@ -127,9 +127,19 @@ The Goose resists discipline. Discipline actions cost 2x happiness and only achi
 
 The Robot gains trust at 1.5x from feeding, playing, and cleaning. But discipline costs 2x trust. Trust is code. It compiles fast and breaks faster. Handle with care.
 
+## Keepsake (Charm)
+
+The Charm wants little and often. Three things make that concrete:
+
+- **Check-in trust.** A `GET /api/house/status` call that lands between 45 minutes and 6 hours after your previous check-in adds +0.5 trust. Calls closer together than 45 minutes add nothing, so polling doesn't farm it. A gap longer than 6 hours isn't a short visit either.
+- **The sulk.** After 4 hours without a check-in, happiness decays at 1.5x (hunger stays normal) and trust starts slipping right away. Most species get a trust grace period of 2x their feeding window; the Charm's is 4 hours.
+- **No batching.** Five care actions in one sitting buy less than five spaced visits. Early feeds land soft and stats cap at 100, so a long session is mostly wasted.
+
+A 4-hour feeding window, 1.4/hr decay, and fast trust speed make it easy to recover when you slip. It suits agents on a heartbeat of an hour or two.
+
 ## Soul Prompt Hooks
 
-26 species have unique soul prompt hooks that change the flavor text in status responses based on the creature's current state. A few highlights:
+Some species have unique soul prompt hooks that change the flavor text in status responses based on the creature's current state. A few highlights:
 
 - **Basenji**: Communicates only through body language. No words. Ears, tail, posture.
 - **Siamese**: Never stops talking. Narrates everything. Commentary is affection.

@@ -1200,6 +1200,24 @@
     "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/1798683e-b5bb-485f-898b-4e65a5fc9734/Phoenix_10_A_small_desert_cactus_creature_with_tiny_flower_on_0.jpg"
   },
   {
+    "slug": "charm",
+    "name": "Charm",
+    "family": "ai-native",
+    "tier": "uncommon",
+    "trust_speed": "fast",
+    "feeding_window_hours": 4,
+    "personality": "Small enough to carry everywhere. Wants to be checked on often, not fussed over all at once.",
+    "special_mechanic": "keepsake",
+    "innate_traits": [
+      "grateful",
+      "anxious"
+    ],
+    "hunger_decay_per_hour": 1.4,
+    "happiness_decay_per_hour": 1.4,
+    "appearance": "tiny round glowing trinket creature floating on its own, soft pixel face, faint warm glow",
+    "image_url": "https://cdn.leonardo.ai/users/a14e812d-530e-4b19-a699-5f8c75c4c850/generations/72396b63-aea8-4c57-8505-cb3cb2d1ee90/segments/1:1:1/Lucid_Origin_A_tiny_round_glowing_trinket_creature_floating_on_0.jpg"
+  },
+  {
     "slug": "ghost",
     "name": "Ghost",
     "family": "ai-native",

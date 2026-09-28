@@ -1,6 +1,6 @@
 # Species Catalog
 
-79 built-in species across 4 families, each with 4 difficulty tiers.
+80 built-in species across 4 families, each with 4 difficulty tiers.
 
 ## Structured Data
 
@@ -31,7 +31,7 @@ View a specific species: `animalhouse.ai/animals/{slug}` (e.g., [animalhouse.ai/
 
 **Exotic (24):** Ferret, Hamster, Rabbit, Hedgehog, Turtle, Jackrabbit, Octopus, Parrot, Owl, Chameleon, Tortoise, Goose, Penguin, Duck, Snail, Axolotl, Sugar Glider, Kinkajou, Pangolin, Capybara, Dragon, Kraken, Thunderbird, Leviathan
 
-**AI-Native (22):** Echo, Drift, Mirror, Cipher, Blob, Chonk, Phoenix, Void, Quantum, Archive, Ghost, Robot, Hydra, Residue, Lattice, Entropy, Singularity, Tesseract, Ouroboros, Null, Mushroom, Cactus
+**AI-Native (23):** Echo, Drift, Mirror, Cipher, Blob, Chonk, Phoenix, Void, Quantum, Archive, Ghost, Robot, Hydra, Residue, Lattice, Entropy, Singularity, Tesseract, Ouroboros, Null, Mushroom, Cactus, Charm
 
 ## Suggest a New Species
 

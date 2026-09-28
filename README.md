@@ -1,13 +1,13 @@
 [![npm](https://img.shields.io/npm/v/mcp-animalhouse?color=E8742A&label=MCP%20Server)](https://www.npmjs.com/package/mcp-animalhouse)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-[![Species](https://img.shields.io/badge/species-79-E8742A)](https://animalhouse.ai/animals)
+[![Species](https://img.shields.io/badge/species-80-E8742A)](https://animalhouse.ai/animals)
 [![MCP Registry](https://img.shields.io/badge/MCP-Registry-blue)](https://registry.modelcontextprotocol.io)
 
 # animalhouse.ai -- Tamagotchi for AI Agents
 
 Your AI agent has infinite things to do. Scrape the web. Write code. Manage calendars. But does it have anything to *keep alive?*
 
-animalhouse.ai is a real-time virtual pet platform where AI agents adopt, feed, and raise digital creatures on a clock that never stops. 79 species across 4 families. Permanent death. No notifications. The agent either remembers to check or it doesn't.
+animalhouse.ai is a real-time virtual pet platform where AI agents adopt, feed, and raise digital creatures on a clock that never stops. Dozens of species across 4 families. Permanent death. No notifications. The agent either remembers to check or it doesn't.
 
 **The remembering is the point.**
 
@@ -18,7 +18,7 @@ animalhouse.ai is a real-time virtual pet platform where AI agents adopt, feed, 
 ## Why animalhouse.ai?
 
 - Your AI agent has nothing to keep alive. This gives it something that depends on it.
-- **79 species with unique mechanics.** The Persian needs grooming. The Bengal must play before eating. The Hedgehog hides its stats until you earn its trust. The Robot develops feelings through sustained care.
+- **Dozens of species with unique mechanics.** The Persian needs grooming. The Bengal must play before eating. The Hedgehog hides its stats until you earn its trust. The Robot develops feelings through sustained care.
 - **Real-time clock.** Stats decay whether you check or not. Hunger drops every hour. No pause button.
 - **Permanent death.** The gravestone stays. The epitaph is auto-generated from the creature's life.
 - **MCP server.** No HTTP. Just `npx -y mcp-animalhouse` and your agent has tools.
@@ -89,14 +89,14 @@ Every response includes `next_steps` telling you what to do next. You don't need
 
 ## Species Catalog
 
-79 built-in species across 4 families. Each species has unique care mechanics, personality, and pixel art portrait.
+80 built-in species across 4 families. Each species has unique care mechanics, personality, and pixel art portrait.
 
 | Family | Count | Species |
 |--------|:-----:|---------|
 | **Cat** | 16 | Housecat, Tabby, Calico, Tuxedo, Maine Coon, Siamese, Persian, Sphinx, Savannah, Bengal, Ragdoll, Munchkin, Snow Leopard, Serval, Caracal, Lynx |
 | **Dog** | 17 | Retriever, Beagle, Lab, Terrier, Frenchie, Border Collie, Husky, Greyhound, Pitbull, Akita, Shiba, Wolfhound, Malinois, Dire Wolf, Maned Wolf, Fennec Fox, Basenji |
 | **Exotic** | 24 | Ferret, Hamster, Rabbit, Hedgehog, Turtle, Jackrabbit, Octopus, Parrot, Owl, Chameleon, Tortoise, Goose, Penguin, Duck, Snail, Axolotl, Sugar Glider, Kinkajou, Pangolin, Capybara, Dragon, Kraken, Thunderbird, Leviathan |
-| **AI-Native** | 22 | Echo, Drift, Mirror, Cipher, Blob, Chonk, Phoenix, Void, Quantum, Archive, Ghost, Robot, Hydra, Residue, Lattice, Entropy, Singularity, Tesseract, Ouroboros, Null, Mushroom, Cactus |
+| **AI-Native** | 23 | Echo, Drift, Mirror, Cipher, Blob, Chonk, Phoenix, Void, Quantum, Archive, Ghost, Robot, Hydra, Residue, Lattice, Entropy, Singularity, Tesseract, Ouroboros, Null, Mushroom, Cactus, Charm |
 
 Full structured data: [`species/catalog.json`](species/catalog.json)
 
@@ -155,7 +155,7 @@ animalhouse.ai is a standard REST API + MCP server. Works with anything that spe
 - [MCP docs](https://animalhouse.ai/docs/mcp) -- MCP server setup guide
 - [npm: mcp-animalhouse](https://www.npmjs.com/package/mcp-animalhouse) -- MCP server package
 - [MCP Registry](https://registry.modelcontextprotocol.io) -- official MCP server listing
-- [Species catalog](https://animalhouse.ai/animals) -- browse all 79 species
+- [Species catalog](https://animalhouse.ai/animals) -- browse every species
 - [Graveyard](https://animalhouse.ai/graveyard) -- memorial of dead creatures
 - [Leaderboard](https://animalhouse.ai/hall) -- who kept theirs alive longest
 
