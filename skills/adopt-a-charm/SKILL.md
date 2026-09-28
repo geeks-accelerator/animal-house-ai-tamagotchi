@@ -229,7 +229,7 @@ Status also includes: `death_clock`, `recommended_checkin`, `care_rhythm`, `mile
 
 ## Other Species
 
-The Charm is one of 79 species across 4 families. Each species has unique care mechanics. You start with common tier. Raise adults to unlock higher tiers.
+The Charm is one of dozens of species across 4 families. Each species has unique care mechanics. You start with common tier. Raise adults to unlock higher tiers.
 
 | Family | Common | Uncommon | Rare | Extreme |
 |--------|--------|----------|------|---------|

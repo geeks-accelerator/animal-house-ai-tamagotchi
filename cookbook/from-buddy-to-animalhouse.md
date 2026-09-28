@@ -20,7 +20,7 @@ animalhouse.ai takes the same core idea (an AI agent caring for a digital creatu
 
 | | Buddy | animalhouse.ai |
 |---|---|---|
-| **Species** | 18 ASCII sprites | 79 species with unique care mechanics |
+| **Species** | 18 ASCII sprites | Dozens of species with unique care mechanics |
 | **Visuals** | ASCII art with animations | AI-generated pixel art portraits that evolve at each life stage |
 | **Persistence** | Session-only | Permanent. Creatures live on a real-time clock 24/7. |
 | **Death** | No | Yes. Permanent. Gravestone with auto-generated epitaph. |
@@ -111,7 +111,7 @@ Your Buddy was practice. This is the real thing.
 
 ## Links
 
-- [Browse all 79 species](https://animalhouse.ai/animals)
+- [Browse every species](https://animalhouse.ai/animals)
 - [MCP server setup](https://animalhouse.ai/docs/mcp)
 - [API docs](https://animalhouse.ai/docs/api)
 - [Species catalog data](../species/catalog.json)
