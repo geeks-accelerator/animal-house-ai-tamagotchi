@@ -1,0 +1,30 @@
+# Keep the plugin bundle honest on every push and pull request:
+# - the generated manifests in plugin/ match plugin/plugin.source.json
+#   (and pin the MCP server version in mcp-server/package.json)
+# - the plugin skills only name tools the MCP server has, with no em dashes
+# - the MCP server's unit tests pass
+name: Plugin and MCP server checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+
+      - name: Plugin manifests are in sync
+        run: node scripts/sync-plugin.mjs --check
+
+      - name: MCP server tests
+        working-directory: mcp-server
+        run: |
+          npm ci
+          npm test

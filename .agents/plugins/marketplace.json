@@ -1,0 +1,19 @@
+{
+  "name": "animalhouse",
+  "interface": {
+    "displayName": "Animal House"
+  },
+  "plugins": [
+    {
+      "name": "tamagotchi",
+      "source": {
+        "source": "local",
+        "path": "./plugin"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      }
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "animalhouse": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-animalhouse@1.3.0"
+      ]
+    }
+  }
+}

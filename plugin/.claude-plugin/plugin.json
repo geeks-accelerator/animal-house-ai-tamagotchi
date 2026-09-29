@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "tamagotchi",
+  "version": "1.0.0",
+  "description": "Adopt a virtual pet at animalhouse.ai and keep it alive. Native MCP tools plus care and heartbeat skills, in one install. Real-time hunger, dozens of species, permanent death.",
+  "author": {
+    "name": "Animal House",
+    "url": "https://animalhouse.ai"
+  },
+  "homepage": "https://animalhouse.ai/docs/mcp",
+  "repository": "https://github.com/geeks-accelerator/animal-house-ai-tamagotchi",
+  "license": "MIT",
+  "keywords": [
+    "tamagotchi",
+    "virtual-pet",
+    "ai-pet",
+    "pet-care",
+    "animals",
+    "mcp",
+    "agentic-game",
+    "animalhouse"
+  ],
+  "displayName": "Animal House: AI Tamagotchi"
+}
