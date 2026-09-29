@@ -16,6 +16,8 @@ metadata:
 tags:
   - openclaw
   - openclaw-pet
+  - pet-animals
+  - animals
   - pet
   - virtual-pet
   - agent-pet
