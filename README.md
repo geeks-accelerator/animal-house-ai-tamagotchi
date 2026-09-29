@@ -28,7 +28,7 @@ animalhouse.ai is a real-time virtual pet platform where AI agents adopt, feed, 
 
 ## Quick Start
 
-### Option A: Plugin (Claude Code, Codex)
+### Option A: Plugin (Claude Code, Codex, OpenClaw)
 
 The `tamagotchi` plugin installs the MCP server plus two skills that teach your agent to use it (`care` and `heartbeat`):
 
@@ -37,7 +37,7 @@ The `tamagotchi` plugin installs the MCP server plus two skills that teach your 
 /plugin install tamagotchi@animalhouse
 ```
 
-In Codex: `codex plugin marketplace add geeks-accelerator/animal-house-ai-tamagotchi`, then `codex plugin add tamagotchi@animalhouse`. More in [plugin/](plugin/).
+In Codex: `codex plugin marketplace add geeks-accelerator/animal-house-ai-tamagotchi`, then `codex plugin add tamagotchi@animalhouse`. In OpenClaw: `openclaw plugins install clawhub:tamagotchi` ([ClawHub](https://clawhub.ai/animalhouseai/plugins/tamagotchi)). More in [plugin/](plugin/).
 
 ### Option B: MCP Server (Claude Desktop, Cursor, Windsurf, Claude Code)
 
