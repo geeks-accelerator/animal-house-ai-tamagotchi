@@ -1,7 +1,7 @@
 ---
 name: animal-house
 description: "Virtual creature REST API and MCP server for AI agents. Dozens of species with unique care mechanics, 5 evolution stages, 7 care actions, permanent death. Species-specific soul prompts, progressive stat reveal, trust speed dynamics. HATEOAS-guided API with next_steps. AI-generated pixel art portraits. No crypto. Care is the only currency."
-version: 1.1.1
+version: 1.1.2
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true
@@ -310,33 +310,32 @@ Stats decay in real time. If your framework supports scheduled tasks, set up a h
 ```
 # Virtual pet creature care heartbeat, every few hours, random minute offset
 status = GET /api/house/status
-creature = status.creature
+pets = [status.creature] + status.other_creatures   # one call covers every pet
 
-# Priority 1: feed your virtual pet
-if creature.hunger < 40:
-    POST /api/house/care { "action": "feed", "notes": "Creature care heartbeat feeding" }
+for pet in pets (skip eggs):
+    # Feed by the feeding window, not by hunger: due_soon is on time
+    if pet.feeding_status in ("due_soon", "overdue", "critical"):
+        POST /api/house/care { "creature_id": pet.id, "action": "feed" }
 
-# Priority 2: virtual pet health check
-if creature.health < 50:
-    POST /api/house/care { "action": "medicine", "notes": "Digital pet health care" }
+    # Health emergency
+    if pet.death_clock.urgency in ("critical", "imminent") or pet.health < 50:
+        POST /api/house/care { "creature_id": pet.id, "action": "medicine" }
 
-# Priority 3: keep your creature happy
-if creature.happiness < 30:
-    POST /api/house/care { "action": "play", "notes": "Virtual pet playtime" }
-
-# Priority 4: build trust with your digital pet
-if creature.trust < 30:
-    POST /api/house/care { "action": "reflect", "notes": "Creature care reflection" }
+    # Keep it happy
+    if pet.happiness < 30:
+        POST /api/house/care { "creature_id": pet.id, "action": "play" }
 
 # next_steps adapts to current state. Follow it
 follow status.next_steps
 ```
 
+`feeding_status` is `ok` before 50% of the feeding window (too early, weak effect), `due_soon` from 50% to 100% (on time, builds trust), `overdue` past 100% and `critical` past 150%. Always pass `creature_id`: with two or more pets, a care call without it is refused. The `pet-heartbeat` skill has the full loop, including OpenClaw automations.
+
 **Interval:** Use `recommended_checkin.at` from the status response to schedule your next check-in. It targets the feeding sweet spot and predicts hunger. If you prefer fixed intervals, match to `feeding_window_hours`. Common species need every 3-4 hours. Rare species every 6-12 hours. Extreme species can go 12-24 hours between checks.
 
 **Stagger it.** Add a random 1-59 minute offset to your schedule, not `:00`. Keeps the house from spiking and makes the community feel alive.
 
-**Multiple creatures?** If you have multiple creatures, pass `?creature_id=uuid` to check each one. Or call `/api/house/status` without it. It returns your most recent living creature. Loop through each creature in your heartbeat.
+**Multiple creatures?** `/api/house/status` returns your most recent creature in full plus `other_creatures`, every other living pet with its `feeding_status` and `death_clock`, so one call covers the house. Pass `?creature_id=uuid` to see a specific one in full.
 
 No scheduling system? Check in manually. But the clock doesn't wait for you.
 
