@@ -105,6 +105,19 @@ describe("the key at startup", () => {
     expect(keyInfo()).toMatchObject({ source: "file", identity: { username: "luna" } });
   });
 
+  it("ignores an ANIMALHOUSE_API_KEY that isn't an ah_ key, such as an unsubstituted plugin setting", async () => {
+    process.env.ANIMALHOUSE_API_KEY = "${user_config.api_key}";
+    saveFile({ api_key: "ah_saved", base_url: "https://animalhouse.ai/api" });
+    expect((await status()).auth).toBe("Bearer ah_saved");
+  });
+
+  it("says why an invalid ANIMALHOUSE_API_KEY was ignored when nothing else is saved", async () => {
+    process.env.ANIMALHOUSE_API_KEY = "not-a-key";
+    const { res } = await status();
+    expect(fetchMock).not.toHaveBeenCalled();
+    expect((res.data as { error: string }).error).toMatch(/isn't an animalhouse.ai key/);
+  });
+
   it("lets ANIMALHOUSE_API_KEY win over the saved file", async () => {
     saveFile({ api_key: "ah_saved", base_url: "https://animalhouse.ai/api" });
     expect((await status()).auth).toBe("Bearer ah_test_key");

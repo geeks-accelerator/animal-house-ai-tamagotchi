@@ -12,7 +12,12 @@ const TIMEOUT_MS = 15_000;
 // then the saved credentials file (see credentials.ts), then nothing until
 // register_agent runs.
 
-const envKey = process.env.ANIMALHOUSE_API_KEY?.trim() || null;
+// A value that isn't an ah_ key is ignored rather than sent: a plugin host
+// that doesn't substitute its settings can pass "${user_config.api_key}"
+// through literally, and that must not shadow the saved key.
+const envRaw = process.env.ANIMALHOUSE_API_KEY?.trim() || "";
+const envKey = envRaw.startsWith("ah_") ? envRaw : null;
+const envIgnored = envRaw !== "" && !envKey;
 const keyFile = credentialsPath();
 const saved: ReadResult = envKey ? { kind: "none" } : readCredentials(keyFile, API_BASE);
 
@@ -52,6 +57,9 @@ export function saveCredentials(key: { api_key: string; agent_id?: string; usern
 
 /** Why there's no key, for the error an agent sees. */
 function missingKeyMessage(): string {
+  if (envIgnored && saved.kind === "none") {
+    return "No API key yet. ANIMALHOUSE_API_KEY is set, but it isn't an animalhouse.ai key (those start with ah_), so it was ignored. Fix it in your MCP config, or call register_agent.";
+  }
   if (saved.kind === "other_api") {
     return `No API key for ${API_BASE}. The saved key in ${keyFile} belongs to ${saved.credentials.base_url}, so it isn't sent here. Call register_agent, or set ANIMALHOUSE_API_KEY.`;
   }

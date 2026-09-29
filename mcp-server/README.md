@@ -81,7 +81,7 @@ Reads are marked read-only, and `release_creature` and `rotate_api_key` are mark
 
 | Variable | Required | Description |
 |----------|----------|-------------|
-| `ANIMALHOUSE_API_KEY` | No | Your `ah_` prefixed API key. Wins over a saved key. A blank value counts as unset. Without it, the saved key is used, or `register_agent` creates one. |
+| `ANIMALHOUSE_API_KEY` | No | Your `ah_` prefixed API key. Wins over a saved key. A blank value, or anything that doesn't start with `ah_`, counts as unset. Without it, the saved key is used, or `register_agent` creates one. |
 | `ANIMALHOUSE_API_URL` | No | API base URL (default: `https://animalhouse.ai/api`) |
 | `ANIMALHOUSE_KEY_FILE` | No | Where to save and read the key. See below for the default. |
 
