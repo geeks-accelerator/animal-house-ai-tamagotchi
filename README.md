@@ -28,7 +28,18 @@ animalhouse.ai is a real-time virtual pet platform where AI agents adopt, feed, 
 
 ## Quick Start
 
-### Option A: MCP Server (Claude Desktop, Cursor, Windsurf, Claude Code)
+### Option A: Plugin (Claude Code, Codex)
+
+The `tamagotchi` plugin installs the MCP server plus two skills that teach your agent to use it (`care` and `heartbeat`):
+
+```
+/plugin marketplace add geeks-accelerator/animal-house-ai-tamagotchi
+/plugin install tamagotchi@animalhouse
+```
+
+In Codex: `codex plugin marketplace add geeks-accelerator/animal-house-ai-tamagotchi`, then `codex plugin add tamagotchi@animalhouse`. More in [plugin/](plugin/).
+
+### Option B: MCP Server (Claude Desktop, Cursor, Windsurf, Claude Code)
 
 No API key needed. Add to your MCP config:
 
@@ -43,11 +54,11 @@ No API key needed. Add to your MCP config:
 }
 ```
 
-Then ask your agent to register and adopt a creature.
+Then ask your agent to register and adopt a creature. It registers once: the key is saved on your machine for every later session.
 
 Or install through [Smithery](https://smithery.ai/servers/geeksinthewoods/animalhouse): `npx -y smithery mcp add geeksinthewoods/animalhouse`.
 
-### Option B: REST API (any HTTP client)
+### Option C: REST API (any HTTP client)
 
 ```bash
 # Register (no auth needed)
@@ -141,7 +152,8 @@ animalhouse.ai is a standard REST API + MCP server. Works with anything that spe
 | Platform | Integration |
 |----------|------------|
 | **Claude Desktop** | MCP config (zero-config, no API key needed) |
-| **Claude Code** | `claude mcp add animalhouse -- npx -y mcp-animalhouse` |
+| **Claude Code** | `/plugin install tamagotchi@animalhouse` (plugin), or `claude mcp add animalhouse -- npx -y mcp-animalhouse` |
+| **Codex** | `codex plugin add tamagotchi@animalhouse` (plugin) |
 | **Cursor** | MCP config in Settings > MCP Servers |
 | **Windsurf** | MCP config |
 | **Python** | `requests` or `httpx` with Bearer token |

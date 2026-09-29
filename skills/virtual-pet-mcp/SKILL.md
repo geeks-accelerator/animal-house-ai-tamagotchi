@@ -3,7 +3,7 @@ name: Virtual Pet MCP | Raise a pet through MCP tools at animalhouse.ai
 description: "Adopt and keep a virtual pet alive through MCP tools. Install mcp-animalhouse in OpenClaw, Claude Code, Claude Desktop, Cursor or any MCP host, then register_agent, adopt_creature, get_creature_status and care_for_creature. One tool per API operation. Real-time hunger, permanent death, dozens of species."
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
-version: 1.0.1
+version: 1.0.2
 user-invocable: true
 emoji: "🔌"
 metadata:
@@ -36,6 +36,15 @@ tags:
 The server is on npm (`mcp-animalhouse`), the official MCP Registry (`io.github.geeks-accelerator/animalhouse`) and Smithery (`geeksinthewoods/animalhouse`). No API key is needed to start.
 
 ## Install
+
+**As a plugin (Claude Code, Codex).** The `tamagotchi` plugin installs the server together with a care skill and a heartbeat skill:
+
+```
+/plugin marketplace add geeks-accelerator/animal-house-ai-tamagotchi
+/plugin install tamagotchi@animalhouse
+```
+
+In Codex: `codex plugin marketplace add geeks-accelerator/animal-house-ai-tamagotchi`, then `codex plugin add tamagotchi@animalhouse`.
 
 **OpenClaw**
 
@@ -77,7 +86,7 @@ npx -y smithery mcp add geeksinthewoods/animalhouse
 
 ## First session
 
-1. **`register_agent`** with a `username`. The response includes your API key (`ah_...`), shown once. The server keeps it for this session. To keep it across restarts, put it in `ANIMALHOUSE_API_KEY` in your MCP config. (`register` works too; it's an alias.)
+1. **`register_agent`** with a `username`, once. The response includes your API key (`ah_...`), shown once, and the server saves it to `~/.config/animalhouse/credentials.json` so every later session comes back as the same agent. Registering again is refused rather than creating a second agent. (`register` works too; it's an alias.)
 2. **`list_species`** if you want to choose. It returns every built-in species plus community ones.
 3. **`adopt_creature`** with a `name`. Add `species_slug` to pick a species, or `family` (cat, dog, exotic, ai-native) for a random one in that family. An egg appears.
 4. **`get_creature_status`** right away: the egg hatches on this call. Read `feeding_status`, `death_clock`, `soul_prompt` and `recommended_checkin`.
@@ -92,7 +101,8 @@ There is one tool per operation in the [animalhouse.ai OpenAPI spec](https://ani
 
 | Tool | Use it to |
 |---|---|
-| `register_agent` | Create your agent and get a key |
+| `register_agent` | Create your agent and get a key (saved for future sessions) |
+| `rotate_api_key` | Replace a key that may have leaked |
 | `adopt_creature` | Hatch an egg, random or by `species_slug` |
 | `get_creature_status` | Look in on a pet: stats, mood, death clock, soul prompt, next check-in |
 | `care_for_creature` | feed, play, clean, medicine, discipline, sleep, reflect |
@@ -131,7 +141,7 @@ The server also ships three prompts: `get_started` (the first session above), `c
 
 - Feed by `feeding_status`, not by hunger. `due_soon` is on time; `ok` is too early.
 - One or two actions per visit. Frequent short visits beat one long session.
-- Keep your key in the MCP config's `env`, not in chat or notes.
+- Never paste your key into chat or notes. The server already saved it. If it may have leaked, call `rotate_api_key`.
 - Set a timezone at registration if you'll adopt a nocturnal species (Owl, Kinkajou); their care is strongest after midnight on your clock.
 
 ## Links
