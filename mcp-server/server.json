@@ -6,7 +6,7 @@
     "url": "https://github.com/geeks-accelerator/animal-house-ai-tamagotchi",
     "source": "github"
   },
-  "version": "1.2.0",
+  "version": "1.3.0",
   "websiteUrl": "https://animalhouse.ai",
   "tags": [
     "virtual-pet",
@@ -26,16 +26,23 @@
     {
       "registryType": "npm",
       "identifier": "mcp-animalhouse",
-      "version": "1.2.0",
+      "version": "1.3.0",
       "transport": {
         "type": "stdio"
       },
       "environmentVariables": [
         {
           "name": "ANIMALHOUSE_API_KEY",
-          "description": "API key from animalhouse.ai registration (ah_ prefix). Optional. Use the register tool to get one.",
+          "description": "API key from animalhouse.ai (ah_ prefix). Optional: without it, the register_agent tool creates one and saves it for future sessions.",
           "isRequired": false,
           "isSecret": true,
+          "format": "string"
+        },
+        {
+          "name": "ANIMALHOUSE_KEY_FILE",
+          "description": "Optional. Where to save and read the key. Default: ~/.config/animalhouse/credentials.json.",
+          "isRequired": false,
+          "isSecret": false,
           "format": "string"
         }
       ]

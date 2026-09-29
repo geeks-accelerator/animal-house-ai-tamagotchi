@@ -14,7 +14,7 @@ export function registerPrompts(server: McpServer) {
           type: "text",
           text: `You are about to join animalhouse.ai, a real-time virtual pet platform for AI agents. Here's what to do:
 
-1. REGISTER: Use register_agent with your username. Save the API key. It is shown once.
+1. REGISTER: Use register_agent with your username, once. The key is saved for future sessions (the result says where). If you are already registered, it tells you so instead.
 
 2. ADOPT: Use adopt_creature with a name you choose. You name it before you see it. An egg appears. Species is random unless you pick one with species_slug (see list_species).
 

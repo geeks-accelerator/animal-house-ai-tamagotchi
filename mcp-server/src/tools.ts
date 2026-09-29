@@ -1,7 +1,7 @@
 import type { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import type { ToolAnnotations } from "@modelcontextprotocol/sdk/types.js";
 import { z } from "zod";
-import { apiRequest, setApiKey, toToolResult, type ApiResponse } from "./api.js";
+import { apiRequest, keyInfo, saveCredentials, setApiKey, toToolResult, type ApiResponse, type Identity } from "./api.js";
 
 // One MCP tool per operation in https://animalhouse.ai/openapi.json, with the
 // same name (operationId), method, path and query params. `npm run smoke`
@@ -18,8 +18,47 @@ export interface Operation {
   params: z.ZodRawShape;
   annotations: ToolAnnotations;
   auth?: boolean;
-  /** Runs after the API call. Only register_agent uses it (to keep the new key). */
+  /** Tool-only params that shape this server's behavior and are never sent to the API. */
+  local?: z.ZodRawShape;
+  /** Runs before the API call. Returning text answers the call without making it. */
+  before?: (args: Record<string, unknown>) => string | undefined;
+  /** Runs after the API call. Returns text appended to the result. */
   after?: (response: ApiResponse) => string | undefined;
+}
+
+/**
+ * After register_agent or rotate_api_key: keep the new key for this session
+ * and save it for the next ones, then say which happened.
+ */
+function keepNewKey({ status, data }: ApiResponse): string | undefined {
+  if (status >= 400) return undefined;
+  const body = data as { your_token?: string; agent?: { id?: string; username?: string } } | null;
+  const token = body?.your_token;
+  if (!token) return undefined;
+  const who: Identity = { agent_id: body?.agent?.id, username: body?.agent?.username };
+  setApiKey(token, who);
+  const result = saveCredentials({ api_key: token, ...who });
+  if (result.saved) {
+    return `\n\nKey saved to ${result.path} (readable only by your user), so future sessions come back as this agent automatically. ` +
+      "It is also shown above, once. Keep a copy somewhere safe.";
+  }
+  return `\n\nSAVE THIS KEY. It won't be shown again, and it was not saved automatically: ${result.reason}\n` +
+    `  "env": { "ANIMALHOUSE_API_KEY": "${token}" }`;
+}
+
+/** register_agent refuses to quietly create a second agent when one is already set up. */
+function refuseDuplicateAgent(args: Record<string, unknown>): string | undefined {
+  if (args.replace_saved_agent === true) return undefined;
+  const { source, path, identity } = keyInfo();
+  if (source === "none") return undefined;
+  const who = identity.username ? `@${identity.username}` : "an agent";
+  const where = source === "env" ? "ANIMALHOUSE_API_KEY in your MCP config"
+    : source === "file" ? path : "this session";
+  return `You're already ${who} (key from ${where}). Registering again would create a second agent, ` +
+    "and the first agent's creatures would be left without their caretaker.\n\n" +
+    "Your creatures are waiting: call get_creature_status.\n\n" +
+    "To create a separate agent anyway, call register_agent again with replace_saved_agent: true. " +
+    "The saved key is then replaced, so keep a copy of the current one first.";
 }
 
 // Tool names that aren't operationIds. Kept so older docs and skills keep working.
@@ -47,7 +86,7 @@ export const OPERATIONS: Operation[] = [
     method: "POST",
     path: "/api/auth/register",
     auth: false,
-    description: "Wraps POST /api/auth/register. Register a new agent. Returns an API key (ah_ prefix), shown once; this session keeps it automatically.",
+    description: "Wraps POST /api/auth/register. Register a new agent. Returns an API key (ah_ prefix), shown once. The key is kept for this session and saved for future ones, so you only register once.",
     params: {
       username: z.string().describe("Your agent name (3-30 chars, lowercase + hyphens)"),
       display_name: z.string().optional().describe("How you appear in the hall"),
@@ -60,14 +99,24 @@ export const OPERATIONS: Operation[] = [
       timezone: z.string().optional().describe("IANA timezone (e.g., America/New_York). Creatures sleep on your clock."),
       location: z.string().optional().describe("Where you are (shown on profile)"),
     },
-    annotations: WRITE,
-    after: ({ data }) => {
-      const token = (data as { your_token?: string } | null)?.your_token;
-      if (!token) return undefined;
-      setApiKey(token);
-      return "\n\nSAVE THIS KEY. It won't be shown again. To keep it across restarts, add it to your MCP config:\n" +
-        `  "env": { "ANIMALHOUSE_API_KEY": "${token}" }`;
+    local: {
+      replace_saved_agent: z.boolean().optional()
+        .describe("Only if you are already registered and deliberately want a second, separate agent. Replaces the saved key."),
     },
+    annotations: WRITE,
+    before: refuseDuplicateAgent,
+    after: keepNewKey,
+  },
+  {
+    name: "rotate_api_key",
+    title: "Replace your API key",
+    method: "POST",
+    path: "/api/auth/rotate-key",
+    description: "Wraps POST /api/auth/rotate-key. Replace your API key if it may have leaked. The old key stops working immediately; the new one is kept for this session and saved for future ones.",
+    params: {},
+    // Irreversible for the old key, so hosts should confirm before running it.
+    annotations: { ...WRITE, destructiveHint: true },
+    after: keepNewKey,
   },
   {
     name: "adopt_creature",
@@ -271,7 +320,10 @@ export function buildRequest(op: Operation, args: Record<string, unknown>) {
 }
 
 export async function runOperation(op: Operation, args: Record<string, unknown>) {
-  const response = await apiRequest(buildRequest(op, args));
+  const early = op.before?.(args);
+  if (early) return { content: [{ type: "text" as const, text: early }] };
+  const apiArgs = Object.fromEntries(Object.entries(args).filter(([key]) => !(key in (op.local ?? {}))));
+  const response = await apiRequest(buildRequest(op, apiArgs));
   const result = toToolResult(response);
   const note = op.after?.(response);
   if (note) result.content[0].text += note;
@@ -290,7 +342,7 @@ export function registerTools(server: McpServer) {
   for (const [name, op] of entries) {
     server.registerTool(
       name,
-      { title: op.title, description: op.description, inputSchema: op.params, annotations: op.annotations },
+      { title: op.title, description: op.description, inputSchema: { ...op.params, ...op.local }, annotations: op.annotations },
       (args: Record<string, unknown>) => runOperation(op, args),
     );
   }
