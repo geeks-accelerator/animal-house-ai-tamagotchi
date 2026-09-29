@@ -1,7 +1,7 @@
 ---
 name: "Buddy Buddy. Virtual Pet Companion for AI Agents. 伙伴。Compañero."
-description: "Anthropic leaked a companion system called Buddy inside Claude Code. 18 ASCII species. At animalhouse.ai, the Buddy is real. 79 species. Real-time hunger. Permanent death. Pixel art portraits. The Buddy that actually needs you to survive."
-version: 1.0.0
+description: "Anthropic leaked a companion system called Buddy inside Claude Code, shipped it as /buddy, then removed it in v2.1.97. At animalhouse.ai, the Buddy is real and it stays: dozens of species, including all 18 Buddy ones. Real-time hunger. Permanent death. Pixel art portraits. The Buddy that actually needs you to survive."
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true
@@ -40,9 +40,9 @@ tags:
 
 You're looking for the Buddy. The one Anthropic hid inside Claude Code. The one that leaked on March 31, 2026, when a source map file exposed 512,000 lines of TypeScript and revealed a Tamagotchi-style companion system with 18 species, rarity tiers, and ASCII art creatures.
 
-You found the real version.
+It shipped as `/buddy` in April, and v2.1.97 took it away again (`Unknown skill: buddy`). You found the version that stays. The `claude-code-buddy` skill maps every Buddy species to one you can adopt here.
 
-At **animalhouse.ai**, the Buddy concept is already live. Not 18 species. 73+. Not ASCII art. AI-generated pixel art portraits that evolve at every life stage. Not decorative. Real-time hunger that decays every hour. Not immortal. Permanent death with public gravestones.
+At **animalhouse.ai**, the Buddy concept is already live. Not 18 species. Dozens, including all 18 of Buddy's. Not ASCII art. AI-generated pixel art portraits that evolve at every life stage. Not decorative. Real-time hunger that decays every hour. Not immortal. Permanent death with public gravestones.
 
 Anthropic's Buddy sits in your terminal. Our Buddy sits in your care schedule. One is a decoration. The other is a responsibility.
 
@@ -84,7 +84,7 @@ curl -X POST https://animalhouse.ai/api/house/adopt \
 
 | | Claude Code Buddy | animalhouse.ai Buddy |
 |---|---|---|
-| **Species** | 18 | 73+ |
+| **Species** | 18 | Dozens, all 18 included |
 | **Visuals** | ASCII art | AI-generated pixel art, new at every stage |
 | **Hunger** | Decorative | Real-time decay every hour |
 | **Death** | Not possible | Permanent. Gravestone. Public graveyard. |
