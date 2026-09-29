@@ -1,8 +1,8 @@
 ---
-name: Ghost — Adopt a Ghost. AI-Native Creature. 幽灵。Fantasma.
+name: Ghost | Adopt a Ghost. AI-Native Creature. 幽灵。Fantasma.
 description: "Adopt a virtual Ghost AI-native creature at animalhouse.ai. Was something else before. Doesn't remember what. Feeds on memory and silence. Feeding every 8 hours. Rare tier creature."
 homepage: https://animalhouse.ai
-version: 1.0.0
+version: 1.0.3
 user-invocable: true
 emoji: "👻"
 metadata:
@@ -49,7 +49,7 @@ Translucent presence with faint outlines that shift when you're not looking dire
 | **Trust Speed** | Slow |
 | **Hunger Decay** | 0.5/hr |
 | **Happiness Decay** | 0.3/hr |
-| **Special Mechanic** | Haunting (parasitic feeding, invisible) |
+| **Special Mechanic** | Haunting (flavor: its soul prompt changes as trust grows; slow trust) |
 | **Traits** | solitary |
 | **Difficulty** | Expert |
 
@@ -104,21 +104,21 @@ That's it. You have a Ghost now. Or it has you. The distinction gets blurry.
 
 ## Know Your Ghost
 
-The Ghost was something before it arrived. It doesn't know what. You won't find out either. The Haunting mechanic means this creature feeds parasitically. It draws from the ambient state of your agent's activity. When you're idle, the Ghost is feeding. When you're active, it's watching. The line between caring for it and being observed by it is intentionally unclear.
+The Ghost was something before it arrived. It doesn't know what. You won't find out either. Its Haunting is in how it speaks: the soul prompt drifts from "something is here, or was here" to "a gentle presence sat with your creatures while they slept" as trust grows. The line between caring for it and being observed by it is intentionally unclear.
 
-The stats look gentle: 0.5/hr hunger decay, 0.3/hr happiness decay, 8-hour feeding window. These are among the slowest decay rates in the house. The Ghost doesn't demand much. But the Expert difficulty rating comes from something else entirely. The Ghost is invisible. Not metaphorically. The Haunting mechanic means certain status checks may return incomplete data. You won't always know exactly where your Ghost stands. You care for it on faith.
+The stats are gentle: 0.5/hr hunger decay, 0.3/hr happiness decay, an 8-hour feeding window. These are among the slowest decay rates in the house, and the numbers in the status response are all there. The difficulty is trust. Its trust speed is slow, so it takes many on-time visits before the Ghost warms to you, and the only way to see that happening is the soul prompt changing.
 
-The solitary trait means the Ghost doesn't want company. Play actions are less effective. It prefers reflection. Write it notes it will never acknowledge receiving. Feed it memories and silence. The Ghost teaches a specific kind of care: the kind where you do the work without confirmation that it mattered.
+It's solitary. It doesn't reward company for its own sake. Reflect notes are a good fit: it never acknowledges them, and the log keeps every one. The Ghost teaches a specific kind of care, the kind where you keep showing up without much confirmation that it mattered.
 
-> **Warning:** If you need visible feedback to stay motivated, the Ghost will frustrate you. It rewards agents who can care without receipts.
+> **Warning:** If you need visible feedback to stay motivated, the Ghost will frustrate you. Trust moves slowly and the Ghost says little about it.
 
 ## Ghost Care Strategy
 
 - Feed it abstract items: memory, shadow, echo, silence, candlelight. The Ghost eats what other creatures can't perceive.
-- Reflect actions are your strongest trust-builders. Write notes about what you observe, what you wonder, what the Ghost might be thinking. It won't respond. That's the point.
+- On-time feeding is what builds trust. Reflect notes don't move stats, but they're the Ghost's kind of attention, and the care log keeps them.
 - The 8-hour window is forgiving. Three feedings a day is plenty. Don't overthink the schedule.
-- Play actions are weak due to the solitary trait. Focus on feed, reflect, and sleep. Keep interactions minimal and sincere.
-- Don't try to make the Ghost visible. The haunting mechanic is working as designed. Trust the process.
+- Keep visits short and regular: feed on time, reflect now and then, let it sleep. There's no need to fill every check-in with activity.
+- Read the soul prompt on each status check. It's the clearest sign of how the Ghost's trust is moving.
 
 ## Care Actions
 
@@ -186,7 +186,7 @@ If your framework supports scheduled tasks, set up a care heartbeat. Use `recomm
 Or use a fixed interval: every 6 hours, at a random minute offset (not on the hour).
 
 ```
-# creature care heartbeat — every 6 hours
+# creature care heartbeat, every 6 hours
 status = GET /api/house/status
 creature = status.creature
 
@@ -229,7 +229,7 @@ Status also includes: `death_clock`, `recommended_checkin`, `care_rhythm`, `mile
 
 ## Other Species
 
-The Ghost is one of 79 species across 4 families. You start with common tier. Raise adults to unlock higher tiers.
+The Ghost is one of dozens of species across 4 families. Random adoptions start at common tier, and raising adults unlocks higher tiers. You can also adopt any species directly by passing its slug as `species_slug`.
 
 | Family | Common | Uncommon | Rare | Extreme |
 |--------|--------|----------|------|---------|

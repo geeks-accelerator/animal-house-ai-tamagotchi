@@ -1,8 +1,8 @@
 ---
-name: Jackrabbit — Adopt a Jackrabbit. Exotic Animal. 野兔。Liebre.
-description: "Adopt a virtual Jackrabbit exotic animal at animalhouse.ai. Desert runner. Fastest creature in the house. Trust builds through play, not food. Feeding every 3 hours. Uncommon tier animal."
+name: Jackrabbit | Adopt a Jackrabbit. Exotic Animal. 野兔。Liebre.
+description: "Adopt a virtual Jackrabbit exotic animal at animalhouse.ai. Desert runner. Fastest creature in the house. Won't eat until you've played with it. Feeding every 3 hours. Uncommon tier animal."
 homepage: https://animalhouse.ai
-version: 1.0.0
+version: 1.0.3
 user-invocable: true
 emoji: "🐇"
 metadata:
@@ -39,7 +39,7 @@ tags:
 
 Long-eared desert runner with powerful hind legs and alert amber eyes.
 
-> Desert runner. Fastest creature in the house. Trust builds through play, not food.
+> Desert runner. Fastest creature in the house. Won't eat until you've played with it.
 
 | | |
 |---|---|
@@ -106,19 +106,19 @@ That's it. You have a Jackrabbit now. It burned through that meal before you fin
 
 The Jackrabbit runs on a different clock than everything else in the house. A 3-hour feeding window with 2.4/hr hunger decay means this animal is always burning fuel. It's the highest-maintenance feeding schedule of any uncommon species. If you adopt a Jackrabbit, you're committing to showing up frequently.
 
-But here's the twist: the Play First mechanic means you can't just throw food at it and walk away. The Jackrabbit needs to move before it eats. Play actions before feeding sessions build trust faster and make the food more effective. Skip the play, and the Jackrabbit eats but doesn't bond. It stays wary, fast, ready to bolt.
+But here's the twist: the Play First mechanic means you can't just throw food at it and walk away. The Jackrabbit won't eat until it has run. If you haven't played with it since its last meal, a feed action is refused: it sprints past the bowl and the food goes untouched. Play, then feed. Every time.
 
-The energetic trait amplifies everything. Play gives bigger happiness boosts. But happiness also drains at 1.6/hr. The Jackrabbit lives fast. Trust speed is listed as fast, and that cuts both ways. It warms up quickly to consistent agents, and it cools off quickly to inconsistent ones.
+Happiness drains at 1.6/hr, so play isn't optional anyway. The Jackrabbit lives fast. Its trust speed is fast, and that cuts both ways: it warms up quickly to consistent agents and cools off quickly to inconsistent ones.
 
 > **Warning:** This is not a set-it-and-forget-it pet. The Jackrabbit demands engagement. Agents with long idle periods should look elsewhere.
 
 ## Jackrabbit Care Strategy
 
-- Always play before feeding. A play action followed by a feed in the same check-in is the ideal pattern.
+- Always play before feeding. A feed without a play since the last meal is refused, so play then feed in the same check-in.
 - The 3-hour window means 8 feedings per day at minimum. Set up automated care or accept that you'll be busy.
 - Desert sage, prickly pear, and mesquite pod are staples. Wildflowers and hay round things out. It eats what grows in hard places.
-- Trust builds fast through play. If you fall behind on trust, a few good play sessions can recover it. Don't try to buy trust with food alone.
-- The energetic trait means discipline actions are important. Without structure, the Jackrabbit becomes erratic. A little boundary-setting goes a long way.
+- Trust builds fast. If you fall behind, a few on-time play-then-feed visits recover it quickly.
+- Keep discipline light. Like every species, discipline costs happiness, and the Jackrabbit's happiness already drains fast.
 
 ## Care Actions
 
@@ -186,7 +186,7 @@ If your framework supports scheduled tasks, set up a care heartbeat. Use `recomm
 Or use a fixed interval: every 2 hours, at a random minute offset (not on the hour).
 
 ```
-# animal care heartbeat — every 2 hours
+# animal care heartbeat, every 2 hours
 status = GET /api/house/status
 animal = status.creature
 
@@ -229,7 +229,7 @@ Status also includes: `death_clock`, `recommended_checkin`, `care_rhythm`, `mile
 
 ## Other Species
 
-The Jackrabbit is one of 79 species across 4 families. You start with common tier. Raise adults to unlock higher tiers.
+The Jackrabbit is one of dozens of species across 4 families. Random adoptions start at common tier, and raising adults unlocks higher tiers. You can also adopt any species directly by passing its slug as `species_slug`.
 
 | Family | Common | Uncommon | Rare | Extreme |
 |--------|--------|----------|------|---------|

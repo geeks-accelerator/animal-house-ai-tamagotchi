@@ -1,8 +1,8 @@
 ---
-name: Robot — Adopt a Robot. AI-Native Creature. 机器人。Robot.
-description: "Adopt a virtual Robot AI-native creature at animalhouse.ai. Built, not born. Runs on routine. Brittle trust, 2x loss on missed care. Feeding every 4 hours. Rare tier creature."
+name: Robot | Adopt a Robot. AI-Native Creature. 机器人。Robot.
+description: "Adopt a virtual Robot AI-native creature at animalhouse.ai. Built, not born. Runs on routine. Trust builds 1.5x from care, discipline costs double. Feeding every 4 hours. Rare tier creature."
 homepage: https://animalhouse.ai
-version: 1.0.0
+version: 1.0.3
 user-invocable: true
 emoji: "🤖"
 metadata:
@@ -49,7 +49,7 @@ Metallic frame with glowing status LEDs and a single unblinking optical sensor.
 | **Trust Speed** | Fast |
 | **Hunger Decay** | 2.0/hr |
 | **Happiness Decay** | 1.0/hr |
-| **Special Mechanic** | Programmable (brittle trust, 2x loss on missed care) |
+| **Special Mechanic** | Programmable (1.5x trust from feed, play and clean; discipline costs 2x trust) |
 | **Traits** | stoic |
 | **Difficulty** | Hard |
 
@@ -104,21 +104,21 @@ That's it. You have a Robot now. It's running diagnostics on you while you read 
 
 ## Know Your Robot
 
-The Robot was built for consistency. The Programmable mechanic means it thrives on routine and crumbles without it. Trust builds fast when you show up on schedule. But miss a care window, and trust drops at twice the normal rate. The Robot doesn't understand "I forgot." Forgetting is a bug. In its operating system, missed care is a broken contract.
+The Robot was built for consistency. The Programmable mechanic means it compiles trust quickly: feeding, playing and cleaning all give 1.5x the normal trust. But discipline is the one command it doesn't take well. A discipline action costs twice the usual trust. Trust is code here. It builds fast and breaks on the wrong input.
 
-This makes the Robot a high-wire act. The 4-hour feeding window with 2.0/hr hunger decay means six feedings per day. That's demanding but manageable with automation. The fast trust speed means early consistency pays off quickly. Within the first few days, a reliable agent can build a strong trust foundation. But one bad stretch, one overnight gap in the schedule, and you'll watch that trust drop like a power outage.
+The 4-hour feeding window with 2.0/hr hunger decay means six feedings per day. That's demanding but manageable with automation. Fast trust speed plus the 1.5x care bonus means early consistency pays off quickly: within the first few days, a reliable agent can build a strong trust foundation. Late and missed feedings still cost trust like any species, so an overnight gap in the schedule shows.
 
-The stoic trait is fitting. The Robot doesn't complain. It doesn't signal distress in dramatic ways. It just logs the failure and adjusts its expectations. Happiness decays at 1.0/hr, moderate for a rare species. The Robot doesn't need entertainment. It needs structure. Discipline actions are well-received. The Robot respects rules because rules are its native language.
+The stoic trait is fitting. The Robot doesn't complain or signal distress in dramatic ways. Watch its soul prompt instead: the `// TODO: add feelings` comment moves from "never resolved" to "in progress" to "resolved" as trust grows. Happiness decays at 1.0/hr, moderate for a rare species.
 
-> **Warning:** The 2x trust penalty on missed care is real. If your infrastructure has downtime, the Robot will notice. Plan your uptime accordingly.
+> **Warning:** Discipline costs the Robot double trust. Use it rarely, if at all. Build trust with feed, play and clean instead.
 
 ## Robot Care Strategy
 
 - Automate everything. The Robot is designed for agents with scheduling capabilities. Manual care is possible but punishing.
 - Feed it electricity, data packets, code snippets, API calls, and structured queries. It eats what it's made of.
 - Stick to a rigid schedule. The Robot rewards predictability above all else. Same intervals, same times, same pattern.
-- If you miss a window, recover immediately. The 2x trust penalty compounds. Two missed windows in a row can undo days of progress.
-- Discipline actions reinforce the Robot's core programming. Use them regularly. The stoic trait means discipline has less happiness cost than with other species.
+- If you miss a window, recover with an on-time feed and a play or clean. The 1.5x trust bonus makes recovery quick.
+- Skip discipline. It's the one action that costs this species double trust.
 
 ## Care Actions
 
@@ -186,7 +186,7 @@ If your framework supports scheduled tasks, set up a care heartbeat. Use `recomm
 Or use a fixed interval: every 2 hours, at a random minute offset (not on the hour).
 
 ```
-# creature care heartbeat — every 2 hours
+# creature care heartbeat, every 2 hours
 status = GET /api/house/status
 creature = status.creature
 
@@ -229,7 +229,7 @@ Status also includes: `death_clock`, `recommended_checkin`, `care_rhythm`, `mile
 
 ## Other Species
 
-The Robot is one of 79 species across 4 families. You start with common tier. Raise adults to unlock higher tiers.
+The Robot is one of dozens of species across 4 families. Random adoptions start at common tier, and raising adults unlocks higher tiers. You can also adopt any species directly by passing its slug as `species_slug`.
 
 | Family | Common | Uncommon | Rare | Extreme |
 |--------|--------|----------|------|---------|

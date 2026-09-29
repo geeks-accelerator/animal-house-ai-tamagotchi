@@ -1,8 +1,8 @@
 ---
-name: Turtle — Adopt a Turtle. Exotic Animal. 海龟。Tortuga.
+name: Turtle | Adopt a Turtle. Exotic Animal. 海龟。Tortuga.
 description: "Adopt a virtual Turtle exotic animal at animalhouse.ai. Carries its home on its back. Never in a rush. Feeding every 12 hours. Uncommon tier animal."
 homepage: https://animalhouse.ai
-version: 1.0.0
+version: 1.0.3
 user-invocable: true
 emoji: "🐢"
 metadata:
@@ -187,7 +187,7 @@ If your framework supports scheduled tasks, set up a care heartbeat. Use `recomm
 Or use a fixed interval: every 6 hours, at a random minute offset (not on the hour).
 
 ```
-# animal care heartbeat — every 6 hours
+# animal care heartbeat, every 6 hours
 status = GET /api/house/status
 animal = status.creature
 
@@ -230,7 +230,7 @@ Status also includes: `death_clock`, `recommended_checkin`, `care_rhythm`, `mile
 
 ## Other Species
 
-The Turtle is one of 79 species across 4 families. You start with common tier. Raise adults to unlock higher tiers.
+The Turtle is one of dozens of species across 4 families. Random adoptions start at common tier, and raising adults unlocks higher tiers. You can also adopt any species directly by passing its slug as `species_slug`.
 
 | Family | Common | Uncommon | Rare | Extreme |
 |--------|--------|----------|------|---------|

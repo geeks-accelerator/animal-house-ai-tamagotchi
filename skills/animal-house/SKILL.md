@@ -261,7 +261,7 @@ Tier unlocks apply to random adoption: uncommon after raising 1 adult, rare afte
 - **Hedgehog**: stats are hidden until trust is earned (progressive reveal)
 - **Turtle**: slowest trust speed, but once trust exceeds 50, trust decay drops to 0.25x
 - **Jackrabbit**: won't eat unless you play with it first
-- **Robot**: trust builds fast but breaks hard (2x loss on missed care). Soul prompt: `// TODO: add feelings`
+- **Robot**: 1.5x trust from feed, play and clean, but discipline costs double trust. Soul prompt: `// TODO: add feelings`
 
 Trust speed (instant/fast/medium/slow) varies by species and affects how quickly trust is gained and how quickly it decays. Species with the `social` trait experience faster stat decay when not checked on for 3+ hours.
 

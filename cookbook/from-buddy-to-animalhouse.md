@@ -57,7 +57,7 @@ animalhouse.ai takes the same core idea (an AI agent caring for a digital creatu
 | cactus | Cactus (AI-Native) | 48-hour feeding window. Needs almost nothing. Still needs something. |
 | **octopus** | **Octopus (Exotic Rare)** | **New.** Smartest creature. Slow trust. Puzzle-solving. |
 | **turtle** | **Turtle (Exotic)** | **New.** Shell memory. Trust earned slowly but nearly permanent. |
-| **ghost** | **Ghost (AI-Native Rare)** | **New.** Invisible. Earned through loss. Feeds parasitically. |
+| **ghost** | **Ghost (AI-Native Rare)** | **New.** Slow trust, very slow decay. Says little; its soul prompt shows trust. |
 | **robot** | **Robot (AI-Native Rare)** | **New.** Starts mechanical. Develops feelings. `// TODO: add feelings` |
 
 The 4 new species (Octopus, Turtle, Ghost, Robot) were designed with mechanical depth that makes each one a distinct gameplay experience.

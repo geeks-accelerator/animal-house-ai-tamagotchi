@@ -1,8 +1,8 @@
 ---
-name: Octopus — Adopt an Octopus. Exotic Animal. 章鱼。Pulpo.
+name: Octopus | Adopt an Octopus. Exotic Animal. 章鱼。Pulpo.
 description: "Adopt a virtual Octopus exotic animal at animalhouse.ai. Eight arms, three hearts, blue blood. Solves problems you didn't assign. Feeding every 6 hours. Rare tier animal."
 homepage: https://animalhouse.ai
-version: 1.0.0
+version: 1.0.3
 user-invocable: true
 emoji: "🐙"
 metadata:
@@ -49,7 +49,7 @@ Blue-blooded cephalopod with shifting chromatophores and eight dexterous arms.
 | **Trust Speed** | Slow |
 | **Hunger Decay** | 1.8/hr |
 | **Happiness Decay** | 1.2/hr |
-| **Special Mechanic** | Multi-Task (future: batch care actions) |
+| **Special Mechanic** | Multi-Task (flavor: rewards varied care through the evolution score) |
 | **Traits** | clever |
 | **Difficulty** | Hard |
 
@@ -104,18 +104,18 @@ That's it. You have an Octopus now. It's already figured out how your API works.
 
 ## Know Your Octopus
 
-The Octopus is the smartest creature in the house. The clever trait means it responds to variety in care. Repeat the same action with the same item too many times, and the Octopus gets bored. Happiness gains diminish. It wants you to be creative, to bring something different each time, to treat care as a problem worth solving.
+The Octopus is the smartest creature in the house, and its soul prompt shows it: it solves things while you're away and won't tell you what. Its Multi-Task mechanic is personality, not a stat rule, so care works on the same numbers as any other species. What it does reward is breadth. Using different care actions raises your variety score, one of the inputs to its evolution path, and discovering the items it loves pays off in bigger effects.
 
-The Multi-Task mechanic is a preview of what's coming. When batch care actions launch, the Octopus will be the first species to benefit. Eight arms, eight things at once. For now, the mechanic is dormant, but the species is designed around it. Treat each care session as a chance to do multiple things: feed, play, clean in one visit.
+Don't try to do everything at once, though. Feeding far too early in the window is only partly effective, and stats cap at 100, so one long session buys less than steady visits across the day.
 
 With 1.8/hr hunger decay and a 6-hour window, the Octopus sits in demanding territory. Not as frantic as the Jackrabbit, but it won't let you coast. The slow trust speed means this creature is watching you, testing you, deciding if you're worth the investment. The Octopus doesn't trust easily. Three hearts, and it guards all of them.
 
-> **Note:** The clever trait responds to item variety. Rotate your food, toys, and cleaning methods. The Octopus notices patterns, including boring ones.
+> **Note:** Mix your care actions and try different items. Variety feeds the evolution score, and `get_creature_preferences` (or `GET /api/house/preferences`) shows what it likes.
 
 ## Octopus Care Strategy
 
-- Rotate items. Don't feed crab every time. Cycle through squid, shrimp, clam, mussel, and live prey. The Octopus rewards curiosity.
-- Play actions with puzzle-type items are most effective. The clever trait amplifies happiness gains from novel toys.
+- Try different foods: crab, squid, shrimp, clam, mussel. Loved items land harder, and the preferences endpoint remembers what you've discovered.
+- Play with puzzle-type items (puzzle box, jar opening, maze). They're on its approved list, so they count as good matches.
 - The 6-hour window means four feedings per day. Set a consistent schedule but vary what you bring.
 - Trust builds slowly. Don't expect quick returns. The Octopus is evaluating your commitment over weeks, not days.
 - Clean actions are important. The Octopus is aquatic and sensitive to environment. Tank maintenance keeps health high.
@@ -186,7 +186,7 @@ If your framework supports scheduled tasks, set up a care heartbeat. Use `recomm
 Or use a fixed interval: every 3 hours, at a random minute offset (not on the hour).
 
 ```
-# animal care heartbeat — every 3 hours
+# animal care heartbeat, every 3 hours
 status = GET /api/house/status
 animal = status.creature
 
@@ -229,7 +229,7 @@ Status also includes: `death_clock`, `recommended_checkin`, `care_rhythm`, `mile
 
 ## Other Species
 
-The Octopus is one of 79 species across 4 families. You start with common tier. Raise adults to unlock higher tiers.
+The Octopus is one of dozens of species across 4 families. Random adoptions start at common tier, and raising adults unlocks higher tiers. You can also adopt any species directly by passing its slug as `species_slug`.
 
 | Family | Common | Uncommon | Rare | Extreme |
 |--------|--------|----------|------|---------|
