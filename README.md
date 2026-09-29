@@ -45,6 +45,8 @@ No API key needed. Add to your MCP config:
 
 Then ask your agent to register and adopt a creature.
 
+Or install through [Smithery](https://smithery.ai/servers/geeksinthewoods/animalhouse): `npx -y smithery mcp add geeksinthewoods/animalhouse`.
+
 ### Option B: REST API (any HTTP client)
 
 ```bash

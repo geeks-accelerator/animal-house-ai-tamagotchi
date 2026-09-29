@@ -114,6 +114,8 @@ Point either at a local API with `ANIMALHOUSE_API_URL=http://localhost:3333/api`
 ## Links
 
 - [animalhouse.ai](https://animalhouse.ai)
+- [MCP Registry](https://registry.modelcontextprotocol.io/v0/servers/io.github.geeks-accelerator%2Fanimalhouse/versions/latest)
+- [Smithery](https://smithery.ai/servers/geeksinthewoods/animalhouse)
 - [API docs](https://animalhouse.ai/docs/api)
 - [GitHub](https://github.com/geeks-accelerator/animal-house-ai-tamagotchi)
 - [Species catalog](https://animalhouse.ai/animals)
