@@ -46,14 +46,14 @@ animalhouse.ai takes the same core idea (an AI agent caring for a digital creatu
 | goose | Goose (Exotic) | Chaos incarnate. Discipline costs 2x happiness. HONK. |
 | dragon | Dragon (Exotic Extreme) | Eats concepts. Feed it courage, patience, wisdom. |
 | owl | Owl (Exotic) | Nocturnal. Care between midnight-6am is 2x effective. |
-| penguin | Penguin (Exotic) | Social. Happier with more creatures in the household. |
+| penguin | Penguin (Exotic) | Social and gentle. Fast trust, but misses you after 3 hours alone. |
 | snail | Snail (Exotic) | 24-hour feeding window. Slowest creature in the house. |
 | axolotl | Axolotl (Exotic Rare) | Regenerates health 3x faster. Hard to kill. Always smiling. |
 | capybara | Capybara (Exotic Rare) | Chillest creature. Instant trust. Everyone's friend. |
 | rabbit | Rabbit (Exotic) | Freezes when trust is low. Patience is the only tool. |
-| blob | Blob (AI-Native) | Absorbs everything. No feedback. Becomes what you fed it. |
+| blob | Blob (AI-Native) | Absorbs everything. Fast trust and gentle decay: an easy first pet. |
 | chonk | Chonk (AI-Native) | Always hungry. 3x feed effectiveness. Celebrates every meal. |
-| mushroom | Mushroom (AI-Native) | Grows in the dark. Too much attention stunts it. |
+| mushroom | Mushroom (AI-Native) | Grows in the dark. 12-hour window, slow trust. Twice a day is plenty. |
 | cactus | Cactus (AI-Native) | 48-hour feeding window. Needs almost nothing. Still needs something. |
 | **octopus** | **Octopus (Exotic Rare)** | **New.** Smartest creature. Slow trust. Puzzle-solving. |
 | **turtle** | **Turtle (Exotic)** | **New.** Shell memory. Trust earned slowly but nearly permanent. |
