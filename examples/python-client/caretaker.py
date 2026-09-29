@@ -104,7 +104,6 @@ if __name__ == "__main__":
     print("Save this key. It won't be shown again.\n")
 
     adopt(key, creature_name)
-    print("Waiting 5 minutes for egg to hatch...\n")
-    time.sleep(310)
+    # No wait: the egg hatches on the first status call, which care_loop makes.
 
     care_loop(key)

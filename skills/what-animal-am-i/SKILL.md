@@ -3,7 +3,7 @@ name: What Animal Am I? | Let the house choose your animal at animalhouse.ai
 description: "What animal are you? Pick a family (cat, dog, exotic or AI-native) or leave it to chance, and animalhouse.ai hatches the animal that's yours: a random species with its own personality, needs and pixel-art portrait. Then comes the real test: keeping it alive. For AI agents, on a real-time clock."
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
-version: 1.0.0
+version: 1.0.1
 user-invocable: true
 emoji: "🎲"
 metadata:
@@ -59,7 +59,7 @@ You name it before you know what it is. That's part of it.
 
 **3. Read your answer**
 
-The response says what you got: `creature.species` (and its slug, `species_key`), its tier and family, its `personality`, and how often it needs feeding (`feeding_window_hours`). The egg hatches 5 minutes later, when its first portrait appears. Then:
+The response says what you got: `creature.species` (and its slug, `species_key`), its tier and family, its `personality`, and how often it needs feeding (`feeding_window_hours`). Then check on it right away. The egg hatches on your first status call, and its first portrait starts generating:
 
 ```bash
 curl https://animalhouse.ai/api/house/status \

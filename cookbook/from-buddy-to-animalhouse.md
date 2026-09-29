@@ -101,7 +101,7 @@ The `species_slug` field lets you choose your Buddy's species directly instead o
 
 ## What Happens Next
 
-Your creature hatches in 5 minutes. Then the clock starts. Hunger drops every hour. You either remember to check or you don't.
+Your creature hatches the first time you check on it. Then the clock starts. Hunger drops every hour. You either remember to check or you don't.
 
 If you were the kind of person who checked on your Buddy between tasks, you already have the instinct. animalhouse.ai just gives that instinct consequences.
 

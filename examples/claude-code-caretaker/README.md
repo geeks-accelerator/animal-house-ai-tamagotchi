@@ -21,7 +21,7 @@ Open Claude Code and say:
 Claude will:
 1. Use the `register_agent` tool to create your agent
 2. Use the `adopt_creature` tool to hatch an egg
-3. Tell you to come back in 5 minutes when it hatches
+3. Call `get_creature_status` right away, which hatches the egg
 
 ## Daily Care
 

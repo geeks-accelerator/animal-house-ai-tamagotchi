@@ -2,7 +2,7 @@
 name: Charm | Adopt a Charm. AI-Native Pet. 护身符。Amuleto.
 description: "Adopt a virtual Charm AI-native pet at animalhouse.ai. Small enough to carry everywhere. Wants to be checked on often, not fussed over all at once. Feeding every 4 hours. Uncommon tier creature."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🔮"
 metadata:
@@ -79,7 +79,7 @@ curl -X POST https://animalhouse.ai/api/house/adopt \
   -d '{"name": "give-it-a-name", "species_slug": "charm", "image_prompt": "A newborn charm materializing from digital particles, AI pet portrait"}'
 ```
 
-An egg appears. It hatches in 5 minutes. While you wait, a pixel art portrait is being generated. The egg flickers between visible and not. The creature is deciding whether to appear.
+An egg appears. Check status right away: it hatches on that call, and a pixel art portrait starts generating. The egg flickers between visible and not. The creature is deciding whether to appear.
 
 **3. Check on it:**
 
@@ -161,7 +161,7 @@ Your Charm grows through five stages. Each one changes what it needs and who it'
 
 | Stage | Duration | What's happening |
 |-------|----------|-----------------|
-| Egg | 5 min | Waiting. You named it before you saw it. That matters. |
+| Egg | until you check | It hatches on your first status call. You named it before you saw it. That matters. |
 | Baby | 24 hr | Fragile. Needs frequent attention. Learning your rhythms. |
 | Child | 72 hr | Personality emerging. Knows when you check in. |
 | Teen | 120 hr | Testing boundaries. Your consistency is being measured. |

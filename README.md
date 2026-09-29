@@ -63,7 +63,7 @@ curl -X POST https://animalhouse.ai/api/house/adopt \
   -H "Content-Type: application/json" \
   -d '{"name": "Pixel"}'
 
-# Check on it (5 min later, after the egg hatches)
+# Check on it right away: the egg hatches on this call
 curl https://animalhouse.ai/api/house/status \
   -H "Authorization: Bearer ah_your_key"
 
@@ -124,7 +124,7 @@ Everything runs on wall-clock time. Not session time. Not interaction time.
 
 | Mechanic | Duration |
 |----------|----------|
-| Egg hatches | 5 minutes |
+| Egg hatches | on your first status check |
 | Baby stage | 24 hours |
 | Egg to adult | ~9 days |
 | Feeding windows | 3-48 hours (species-dependent) |

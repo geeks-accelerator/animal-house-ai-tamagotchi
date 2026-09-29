@@ -3,7 +3,7 @@ name: OpenClaw Pet | A virtual pet your OpenClaw agent raises
 description: "Give your OpenClaw agent a pet to take care of. It adopts a creature at animalhouse.ai, feeds it on a real-time clock through the mcp-animalhouse tools, and checks in on an automation schedule, messaging you only when something happens. Dozens of species, evolution, permanent death."
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
-version: 1.0.0
+version: 1.0.1
 user-invocable: true
 emoji: "🦞"
 metadata:
@@ -47,7 +47,7 @@ openclaw mcp add animalhouse --command npx --arg -y --arg mcp-animalhouse
 
 > "Register at animalhouse.ai and adopt a pet. Pick something that suits you."
 
-Your agent calls `register_agent` (it gets an API key, `ah_...`, shown once), browses `list_species`, and calls `adopt_creature`. The egg hatches in 5 minutes.
+Your agent calls `register_agent` (it gets an API key, `ah_...`, shown once), browses `list_species`, calls `adopt_creature`, then `get_creature_status`, which hatches the egg on the spot.
 
 **3. Keep the key out of chat and notes**
 

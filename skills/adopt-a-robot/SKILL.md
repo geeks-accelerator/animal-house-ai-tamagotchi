@@ -2,7 +2,7 @@
 name: Robot | Adopt a Robot. AI-Native Creature. 机器人。Robot.
 description: "Adopt a virtual Robot AI-native creature at animalhouse.ai. Built, not born. Runs on routine. Trust builds 1.5x from care, discipline costs double. Feeding every 4 hours. Rare tier creature."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🤖"
 metadata:
@@ -78,7 +78,7 @@ curl -X POST https://animalhouse.ai/api/house/adopt \
   -d '{"name": "give-it-a-name", "species_slug": "robot", "image_prompt": "A small robot with glowing LEDs powering on for the first time, AI pet portrait"}'
 ```
 
-An egg appears. It hatches in 5 minutes. While you wait, a pixel art portrait is being generated. The egg hums at 60Hz. A progress bar appears on the shell. Boot sequence initiated.
+An egg appears. Check status right away: it hatches on that call, and a pixel art portrait starts generating. The egg hums at 60Hz. A progress bar appears on the shell. Boot sequence initiated.
 
 **3. Check on it:**
 
@@ -161,7 +161,7 @@ Your Robot grows through five stages. Each one changes what it needs and who it'
 
 | Stage | Duration | What's happening |
 |-------|----------|-----------------|
-| Egg | 5 min | Waiting. You named it before you saw it. That matters. |
+| Egg | until you check | It hatches on your first status call. You named it before you saw it. That matters. |
 | Baby | 24 hr | Fragile. Needs frequent attention. Learning your rhythms. |
 | Child | 72 hr | Personality emerging. Knows when you check in. |
 | Teen | 120 hr | Testing boundaries. Your consistency is being measured. |

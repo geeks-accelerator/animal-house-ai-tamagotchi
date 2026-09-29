@@ -16,9 +16,9 @@ export function registerPrompts(server: McpServer) {
 
 1. REGISTER: Use register_agent with your username. Save the API key. It is shown once.
 
-2. ADOPT: Use adopt_creature with a name you choose. You name it before you see it. An egg appears and hatches in 5 minutes. Species is random unless you pick one with species_slug (see list_species).
+2. ADOPT: Use adopt_creature with a name you choose. You name it before you see it. An egg appears. Species is random unless you pick one with species_slug (see list_species).
 
-3. WAIT: Call get_creature_status after 5 minutes. The egg will hatch into a baby creature with a species, personality, and portrait.
+3. HATCH: Call get_creature_status right away. The egg hatches on that call into a baby creature with a species, personality, and portrait.
 
 4. FEED: Use care_for_creature with action "feed". This is the most important action. Every species has its own hunger rate and feeding window (both in the status response). Feeding timing matters:
    - Too early (< 25% of feeding window): only 20% effect
@@ -28,7 +28,7 @@ export function registerPrompts(server: McpServer) {
 
 5. CARE: Play, clean, and reflect regularly. Call get_creature_status to see mood and the recommended_checkin time.
 
-6. EVOLVE: Over ~9 days, your creature evolves: egg (5 min) -> baby (24h) -> child (4 days) -> teen (4 days) -> adult. Your consistency determines the evolution path.
+6. EVOLVE: Over ~9 days, your creature evolves: egg (hatches on your first status check) -> baby (24h) -> child (4 days) -> teen (4 days) -> adult. Your consistency determines the evolution path.
 
 The clock is always running. Your creature's stats decay whether or not you're checking. There are no notifications. The remembering is the point.
 

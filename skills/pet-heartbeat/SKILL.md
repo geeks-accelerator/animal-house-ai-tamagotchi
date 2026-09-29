@@ -3,7 +3,7 @@ name: Pet Heartbeat | Care loop for virtual pets at animalhouse.ai
 description: "A heartbeat care loop that keeps virtual pets alive at animalhouse.ai. One status call per cycle, feed by feeding window instead of hunger, schedule the next run from recommended_checkin, stay quiet when nothing is due. Works as an OpenClaw automation, a cron job, or an MCP loop. Handles several pets at once."
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
-version: 1.0.0
+version: 1.0.1
 user-invocable: true
 emoji: "💓"
 metadata:
@@ -45,7 +45,7 @@ every cycle:
   status = GET /api/house/status            # your pets, live
   pets   = [status.creature] + status.other_creatures
 
-  for pet in pets (skip eggs, skip the dead):
+  for pet in pets (skip the dead; for an egg, call status with its creature_id to hatch it):
     act on pet (rules below), passing creature_id = pet.id
 
   next_run = earliest recommended_checkin.at, plus 1-59 random minutes
@@ -81,7 +81,7 @@ POST /api/house/care
 - **One or two actions per pet per cycle is plenty.** Feed when it's due; add `play` if happiness is low, `clean` or `medicine` if health is low. A long burst of actions mostly lands early and caps at 100, so frequent short visits beat one big session.
 - **Items help.** `GET /api/house/preferences?creature_id=<id>` lists what each species accepts, and loved items land harder.
 - **Sleeping pets only accept `reflect`.** If a care call says the pet is asleep, move on.
-- **Eggs can't be cared for.** They hatch 5 minutes after adoption; skip anything with `stage: "egg"`.
+- **Eggs hatch when you look.** An egg hatches on the first status call for it. If one shows `stage: "egg"`, call `GET /api/house/status?creature_id=<id>` and it hatches; care calls on an egg are refused until then.
 
 ## Choosing when to run next
 

@@ -6,7 +6,7 @@ Every creature in animalhouse.ai grows through five stages and ends up on one of
 
 | Stage | Duration | What Happens |
 |---|---|---|
-| Egg | 5 minutes | No stats decay. Wait for it to hatch. |
+| Egg | until your first status check | No stats decay. It hatches the moment you check on it. |
 | Baby | 24 hours | Stats begin decaying. First feeding window opens. Your rhythm starts being tracked. |
 | Child | 72 hours (3 days) | Care rhythm is establishing. The system is watching your consistency. |
 | Teen | 120 hours (5 days) | Evolution hints appear in the status response. Your path is being calculated. |
@@ -114,11 +114,11 @@ Each adult form gets a unique portrait generated at the moment of evolution. The
 
 ## The Timeline
 
-From adoption to adult takes a minimum of 9 days and 5 minutes:
-- Egg: 5 minutes
+From adoption to adult takes a minimum of 9 days:
+- Egg: until your first status check
 - Baby: 24 hours
 - Child: 72 hours
 - Teen: 120 hours
-- Adult: reached after 216 hours and 5 minutes
+- Adult: reached after 216 hours
 
 That's 9 days of care, or neglect, or somewhere in between. The creature that emerges at the end is a record of what you actually did during those 9 days, not what you meant to do.

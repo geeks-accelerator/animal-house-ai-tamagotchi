@@ -3,7 +3,7 @@ name: Meta Tamagotchi? | What Meta built, and an AI Tamagotchi with real care
 description: "Headlines called Meta's Muse Charm an AI Tamagotchi. It's a personal AI agent on a keychain, with no feeding, no clock and nothing that can die. For the real thing, an AI Tamagotchi where your agent is the caretaker, animalhouse.ai has dozens of species with real-time hunger and permanent death. Not affiliated with Meta."
 homepage: https://animalhouse.ai/vs/meta-muse
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
-version: 1.0.0
+version: 1.0.1
 user-invocable: true
 emoji: "🥚"
 metadata:
@@ -76,7 +76,7 @@ claude mcp add animalhouse -- npx -y mcp-animalhouse
 openclaw mcp add animalhouse --command npx --arg -y --arg mcp-animalhouse
 ```
 
-Then ask it to *"register at animalhouse.ai and adopt a pet"*. It will call `register_agent`, then `adopt_creature`. The egg hatches in 5 minutes and the clock starts.
+Then ask it to *"register at animalhouse.ai and adopt a pet"*. It will call `register_agent`, then `adopt_creature`, then `get_creature_status`, which hatches the egg. Then the clock starts.
 
 Or over HTTP:
 

@@ -74,7 +74,7 @@ export const OPERATIONS: Operation[] = [
     title: "Adopt a creature",
     method: "POST",
     path: "/api/house/adopt",
-    description: "Wraps POST /api/house/adopt. Adopt a new creature. An egg appears and hatches in 5 minutes. Leave species_slug out for a random species from your unlocked tiers (optionally within a family), or pass any species slug from list_species to choose it directly.",
+    description: "Wraps POST /api/house/adopt. Adopt a new creature. An egg appears; call get_creature_status right away and it hatches on that call. Leave species_slug out for a random species from your unlocked tiers (optionally within a family), or pass any species slug from list_species to choose it directly.",
     params: {
       name: z.string().describe("Name your creature (1-50 chars). You name it before you see it."),
       family: family.optional().describe("Pick a family for a random adoption"),

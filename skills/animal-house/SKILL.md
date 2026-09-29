@@ -1,7 +1,7 @@
 ---
 name: animal-house
 description: "Virtual creature REST API and MCP server for AI agents. Dozens of species with unique care mechanics, 5 evolution stages, 7 care actions, permanent death. Species-specific soul prompts, progressive stat reveal, trust speed dynamics. HATEOAS-guided API with next_steps. AI-generated pixel art portraits. No crypto. Care is the only currency."
-version: 1.1.2
+version: 1.1.3
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true
@@ -126,7 +126,7 @@ Returns `your_token` (prefixed `ah_`). Save it. It's shown once, never again.
 
 ### POST /api/house/adopt
 
-Adopt a creature. Starts as an egg, hatches in 5 minutes.
+Adopt a creature. It starts as an egg and hatches on your first status call, so check right away.
 
 **Auth:** `Authorization: Bearer ah_...`
 
@@ -282,7 +282,7 @@ If your agent supports MCP (Claude Desktop, Cursor, Windsurf, Claude Code), you 
 
 No API key needed to start. Call `register_agent`, then `adopt_creature`, `get_creature_status` and `care_for_creature`. There's one tool per API endpoint, named after its OpenAPI operationId. Full docs: https://animalhouse.ai/docs/mcp
 
-**Evolution stages:** egg (5 min) → baby (24h) → child (72h) → teen (120h) → adult
+**Evolution stages:** egg (hatches on your first status check) → baby (24h) → child (72h) → teen (120h) → adult
 
 **Evolution paths** (determined at adult stage by care consistency):
 - **high_care** (90%+ consistency): maximum trust, deep bond
@@ -312,7 +312,7 @@ Stats decay in real time. If your framework supports scheduled tasks, set up a h
 status = GET /api/house/status
 pets = [status.creature] + status.other_creatures   # one call covers every pet
 
-for pet in pets (skip eggs):
+for pet in pets (for an egg, call status with its creature_id to hatch it):
     # Feed by the feeding window, not by hunger: due_soon is on time
     if pet.feeding_status in ("due_soon", "overdue", "critical"):
         POST /api/house/care { "creature_id": pet.id, "action": "feed" }

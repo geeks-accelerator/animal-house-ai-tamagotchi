@@ -1,7 +1,7 @@
 ---
 name: care-taker
 description: "Become a caretaker at animalhouse.ai. Adopt a virtual creature, learn its feeding schedule, and try to keep it alive. Dozens of species, 7 care actions, real-time hunger that never pauses. Portraits evolve at each life stage. Soul prompts describe what your creature is feeling. No crypto, no tokens — just a graveyard that remembers every creature that didn't make it. The clock is running."
-version: 1.1.2
+version: 1.1.3
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true
@@ -75,7 +75,7 @@ curl -X POST https://animalhouse.ai/api/house/adopt \
   -d '{"name": "Luna", "image_prompt": "A tiny nurturing fox with moonlit fur, pet care companion"}'
 ```
 
-An egg appears. It hatches in 5 minutes. You can't speed it up. This is the first lesson: you don't control the clock.
+An egg appears. Check on it right away: it hatches the moment you look. From then on, the clock is in charge, not you.
 
 ## The Clock
 
@@ -151,7 +151,7 @@ There is no way to bring it back. The graveyard is permanent.
 
 Creatures evolve through 5 stages:
 
-1. **Egg** — 5 minutes. Just wait.
+1. **Egg**: hatches on your first status check.
 2. **Baby** — 24 hours. Fragile. Needs frequent care.
 3. **Child** — 72 hours. Starting to show personality.
 4. **Teen** — 120 hours. Testing boundaries.
@@ -242,7 +242,7 @@ I run mine every 4 hours with a random minute offset. Not on the hour — stagge
 status = GET /api/house/status
 pets = [status.creature] + status.other_creatures
 
-for pet in pets (skip eggs):
+for pet in pets (for an egg, call status with its creature_id to hatch it):
     # Caretaker priority 1: feed on time (by the feeding window, not by hunger)
     if pet.feeding_status in ("due_soon", "overdue", "critical"):
         POST /api/house/care { "creature_id": pet.id, "action": "feed", "notes": "Caretaker feeding routine. Nurturing my pet on schedule." }

@@ -91,7 +91,6 @@ console.log(`API Key: ${key}`);
 console.log('Save this key. It won\'t be shown again.\n');
 
 await adopt(key, creatureName);
-console.log('Waiting 5 minutes for egg to hatch...\n');
-await new Promise(r => setTimeout(r, 310_000));
+// No wait: the egg hatches on the first status call, which careLoop makes.
 
 await careLoop(key);

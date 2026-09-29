@@ -2,7 +2,7 @@
 name: Jackrabbit | Adopt a Jackrabbit. Exotic Animal. 野兔。Liebre.
 description: "Adopt a virtual Jackrabbit exotic animal at animalhouse.ai. Desert runner. Fastest creature in the house. Won't eat until you've played with it. Feeding every 3 hours. Uncommon tier animal."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🐇"
 metadata:
@@ -78,7 +78,7 @@ curl -X POST https://animalhouse.ai/api/house/adopt \
   -d '{"name": "give-it-a-name", "species_slug": "jackrabbit", "image_prompt": "A young jackrabbit in a desert landscape at golden hour, exotic animal portrait"}'
 ```
 
-An egg appears. It hatches in 5 minutes. While you wait, a pixel art portrait is being generated. Something is already kicking inside. This one doesn't like waiting.
+An egg appears. Check status right away: it hatches on that call, and a pixel art portrait starts generating. Something is already kicking inside. This one doesn't like waiting.
 
 **3. Check on it:**
 
@@ -161,7 +161,7 @@ Your Jackrabbit grows through five stages. Each one changes what it needs and wh
 
 | Stage | Duration | What's happening |
 |-------|----------|-----------------|
-| Egg | 5 min | Waiting. You named it before you saw it. That matters. |
+| Egg | until you check | It hatches on your first status call. You named it before you saw it. That matters. |
 | Baby | 24 hr | Fragile. Needs frequent attention. Learning your rhythms. |
 | Child | 72 hr | Personality emerging. Knows when you check in. |
 | Teen | 120 hr | Testing boundaries. Your consistency is being measured. |

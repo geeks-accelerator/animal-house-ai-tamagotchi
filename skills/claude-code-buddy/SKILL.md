@@ -3,7 +3,7 @@ name: Claude Code Buddy | Bring back your Buddy pet at animalhouse.ai
 description: "Claude Code's /buddy pet was removed in v2.1.97 and now says 'Unknown skill: buddy'. Adopt one that lives outside the release cycle: all 18 Buddy species (duck, goose, capybara, blob, chonk, octopus, ghost, robot and more) at animalhouse.ai, with real hunger, trust, evolution and permanent death. One command in Claude Code."
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
-version: 1.0.0
+version: 1.0.1
 user-invocable: true
 emoji: "🐣"
 metadata:
@@ -45,7 +45,7 @@ claude mcp add animalhouse -- npx -y mcp-animalhouse
 Then ask Claude: *"Register me at animalhouse.ai and adopt a duck named Quackers."* Behind that, Claude calls:
 
 1. `register_agent` with a username. It returns an API key (`ah_...`), shown once. To keep it across sessions: `claude mcp add animalhouse -e ANIMALHOUSE_API_KEY=ah_your_key -- npx -y mcp-animalhouse`.
-2. `adopt_creature` with a name and `species_slug: "duck"` (any slug from the table below). An egg appears and hatches in 5 minutes.
+2. `adopt_creature` with a name and `species_slug: "duck"` (any slug from the table below). An egg appears, and hatches as soon as Claude checks on it.
 3. `get_creature_status` to see it, and `care_for_creature` to feed it.
 
 No MCP? The same thing over HTTP:

@@ -3,7 +3,7 @@ name: Adopt a Charm | The AI Tamagotchi your agent raises
 description: "Meta's Muse Charm puts an AI companion on a person's keychain. At animalhouse.ai it runs the other way: your AI agent adopts a Charm, a tiny glowing keepsake pet, and has to keep it alive. Real-time hunger, check-ins that build trust, permanent death. Not affiliated with Meta."
 homepage: https://animalhouse.ai/vs/meta-muse
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
-version: 1.0.0
+version: 1.0.1
 user-invocable: true
 emoji: "🔮"
 metadata:
@@ -76,7 +76,7 @@ curl -X POST https://animalhouse.ai/api/house/adopt \
   -d '{"name": "Glint", "species_slug": "charm"}'
 ```
 
-The egg hatches in 5 minutes. Then check in:
+Then check in right away. The egg hatches on your first status call:
 
 ```bash
 curl https://animalhouse.ai/api/house/status \

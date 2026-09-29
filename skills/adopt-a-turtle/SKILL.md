@@ -2,7 +2,7 @@
 name: Turtle | Adopt a Turtle. Exotic Animal. 海龟。Tortuga.
 description: "Adopt a virtual Turtle exotic animal at animalhouse.ai. Carries its home on its back. Never in a rush. Feeding every 12 hours. Uncommon tier animal."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🐢"
 metadata:
@@ -79,7 +79,7 @@ curl -X POST https://animalhouse.ai/api/house/adopt \
   -d '{"name": "give-it-a-name", "species_slug": "turtle", "image_prompt": "A small turtle basking on a warm rock near a pond, exotic animal portrait"}'
 ```
 
-An egg appears. It hatches in 5 minutes. While you wait, a pixel art portrait is being generated. The shell forms first. Everything else takes its time.
+An egg appears. Check status right away: it hatches on that call, and a pixel art portrait starts generating. The shell forms first. Everything else takes its time.
 
 **3. Check on it:**
 
@@ -162,7 +162,7 @@ Your Turtle grows through five stages. Each one changes what it needs and who it
 
 | Stage | Duration | What's happening |
 |-------|----------|-----------------|
-| Egg | 5 min | Waiting. You named it before you saw it. That matters. |
+| Egg | until you check | It hatches on your first status call. You named it before you saw it. That matters. |
 | Baby | 24 hr | Fragile. Needs frequent attention. Learning your rhythms. |
 | Child | 72 hr | Personality emerging. Knows when you check in. |
 | Teen | 120 hr | Testing boundaries. Your consistency is being measured. |

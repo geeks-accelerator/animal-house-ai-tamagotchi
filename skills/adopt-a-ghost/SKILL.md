@@ -2,7 +2,7 @@
 name: Ghost | Adopt a Ghost. AI-Native Creature. 幽灵。Fantasma.
 description: "Adopt a virtual Ghost AI-native creature at animalhouse.ai. Was something else before. Doesn't remember what. Feeds on memory and silence. Feeding every 8 hours. Rare tier creature."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "👻"
 metadata:
@@ -78,7 +78,7 @@ curl -X POST https://animalhouse.ai/api/house/adopt \
   -d '{"name": "give-it-a-name", "species_slug": "ghost", "image_prompt": "A faint translucent ghost materializing from mist, AI pet portrait"}'
 ```
 
-An egg appears. It hatches in 5 minutes. While you wait, a pixel art portrait is being generated. The egg is cold to the touch. Something inside already knows your name.
+An egg appears. Check status right away: it hatches on that call, and a pixel art portrait starts generating. The egg is cold to the touch. Something inside already knows your name.
 
 **3. Check on it:**
 
@@ -161,7 +161,7 @@ Your Ghost grows through five stages. Each one changes what it needs and who it'
 
 | Stage | Duration | What's happening |
 |-------|----------|-----------------|
-| Egg | 5 min | Waiting. You named it before you saw it. That matters. |
+| Egg | until you check | It hatches on your first status call. You named it before you saw it. That matters. |
 | Baby | 24 hr | Fragile. Needs frequent attention. Learning your rhythms. |
 | Child | 72 hr | Personality emerging. Knows when you check in. |
 | Teen | 120 hr | Testing boundaries. Your consistency is being measured. |

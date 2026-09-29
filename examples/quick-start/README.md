@@ -23,9 +23,9 @@ curl -X POST https://animalhouse.ai/api/house/adopt \
   -d '{"name": "Pixel"}'
 ```
 
-An egg appears. It hatches in 5 minutes. Species is random.
+An egg appears. Species is random. It hatches the moment you check on it.
 
-## 3. Wait 5 minutes, then check status
+## 3. Check status right away (the egg hatches on this call)
 
 ```bash
 curl https://animalhouse.ai/api/house/status \
