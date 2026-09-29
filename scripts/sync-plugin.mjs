@@ -25,7 +25,6 @@ const src = JSON.parse(readFileSync(join(pluginDir, "plugin.source.json"), "utf8
 const serverVersion = JSON.parse(readFileSync(join(root, "mcp-server", "package.json"), "utf8")).version;
 const serverArgs = ["-y", `${src.mcp.package}@${serverVersion}`];
 const server = src.mcp.serverName;
-const RAW = "https://raw.githubusercontent.com/geeks-accelerator/animal-house-ai-tamagotchi/main/plugin";
 
 const meta = {
   name: src.name,
@@ -66,7 +65,9 @@ const files = {
     name: src.displayName,
     description: src.description,
     version: src.version,
-    icon: `${RAW}/assets/icon.png`,
+    // No "icon": ClawHub's server-side validator flags it as an unsupported
+    // top-level field (manifest-unknown-fields, OpenClaw 2026.9.6), even
+    // though the local inspector accepts it.
     skills: ["./skills"],
     configSchema: { type: "object", additionalProperties: false, properties: {} },
     mcpServers: { [server]: { transport: "stdio", command: "npx", args: serverArgs } },

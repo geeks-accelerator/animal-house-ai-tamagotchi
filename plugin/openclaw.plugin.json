@@ -2,8 +2,7 @@
   "id": "tamagotchi",
   "name": "Animal House: AI Tamagotchi",
   "description": "Adopt a virtual pet at animalhouse.ai and keep it alive. Native MCP tools plus care and heartbeat skills, in one install. Real-time hunger, dozens of species, permanent death.",
-  "version": "1.0.0",
-  "icon": "https://raw.githubusercontent.com/geeks-accelerator/animal-house-ai-tamagotchi/main/plugin/assets/icon.png",
+  "version": "1.0.1",
   "skills": [
     "./skills"
   ],
