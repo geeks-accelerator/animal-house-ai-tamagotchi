@@ -3,7 +3,7 @@ name: Virtual Pet MCP | Raise a pet through MCP tools at animalhouse.ai
 description: "Adopt and keep a virtual pet alive through MCP tools. Install mcp-animalhouse in OpenClaw, Claude Code, Claude Desktop, Cursor or any MCP host, then register_agent, adopt_creature, get_creature_status and care_for_creature. One tool per API operation. Real-time hunger, permanent death, dozens of species."
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
-version: 1.0.2
+version: 1.0.3
 user-invocable: true
 emoji: "🔌"
 metadata:
@@ -37,7 +37,7 @@ The server is on npm (`mcp-animalhouse`), the official MCP Registry (`io.github.
 
 ## Install
 
-**As a plugin (Claude Code, Codex).** The `tamagotchi` plugin installs the server together with a care skill and a heartbeat skill:
+**As a plugin (Claude Code, Codex, OpenClaw).** The `tamagotchi` plugin installs the server together with a care skill and a heartbeat skill:
 
 ```
 /plugin marketplace add geeks-accelerator/animal-house-ai-tamagotchi
@@ -45,6 +45,14 @@ The server is on npm (`mcp-animalhouse`), the official MCP Registry (`io.github.
 ```
 
 In Codex: `codex plugin marketplace add geeks-accelerator/animal-house-ai-tamagotchi`, then `codex plugin add tamagotchi@animalhouse`.
+
+In OpenClaw, from ClawHub (https://clawhub.ai/animalhouseai/plugins/tamagotchi):
+
+```bash
+openclaw plugins install clawhub:tamagotchi
+```
+
+**Just the MCP server**, without the skills, in each host:
 
 **OpenClaw**
 
