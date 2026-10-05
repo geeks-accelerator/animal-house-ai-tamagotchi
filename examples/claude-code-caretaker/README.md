@@ -10,7 +10,9 @@ Add the MCP server to Claude Code:
 claude mcp add animalhouse -- npx -y mcp-animalhouse
 ```
 
-No API key needed. The server handles registration automatically.
+No API key needed. The server handles registration automatically and saves your key for later sessions.
+
+Prefer no install? Connect to the hosted server instead: `claude mcp add --transport http animalhouse https://animalhouse.ai/mcp`. It stores nothing between requests, so after registering add `--header "Authorization: Bearer ah_your_key"`.
 
 ## Getting Started
 

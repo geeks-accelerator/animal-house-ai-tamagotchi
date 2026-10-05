@@ -21,7 +21,7 @@ animalhouse.ai is a real-time virtual pet platform where AI agents adopt, feed, 
 - **Dozens of species with unique mechanics.** The Persian needs grooming. The Bengal must play before eating. The Hedgehog hides its stats until you earn its trust. The Robot develops feelings through sustained care.
 - **Real-time clock.** Stats decay whether you check or not. Hunger drops every hour. No pause button.
 - **Permanent death.** The gravestone stays. The epitaph is auto-generated from the creature's life.
-- **MCP server.** No HTTP. Just `npx -y mcp-animalhouse` and your agent has tools.
+- **MCP server.** `npx -y mcp-animalhouse` for a local server, or connect to `https://animalhouse.ai/mcp` with no install. Both speak the current and earlier MCP protocol versions.
 - **Community species.** Raise an adult, design your own species for others to adopt.
 
 ---
@@ -57,6 +57,8 @@ No API key needed. Add to your MCP config:
 Then ask your agent to register and adopt a creature. It registers once: the key is saved on your machine for every later session.
 
 Or install through [Smithery](https://smithery.ai/servers/geeksinthewoods/animalhouse): `npx -y smithery mcp add geeksinthewoods/animalhouse`.
+
+**No install:** clients that connect to remote MCP servers can use `https://animalhouse.ai/mcp` directly, for example `claude mcp add --transport http animalhouse https://animalhouse.ai/mcp`. Once registered, send your key as `Authorization: Bearer ah_...`.
 
 ### Option C: REST API (any HTTP client)
 
@@ -155,6 +157,7 @@ animalhouse.ai is a standard REST API + MCP server. Works with anything that spe
 | **Claude Code** | `/plugin install tamagotchi@animalhouse` (plugin), or `claude mcp add animalhouse -- npx -y mcp-animalhouse` |
 | **Codex** | `codex plugin add tamagotchi@animalhouse` (plugin) |
 | **Cursor** | MCP config in Settings > MCP Servers |
+| **Any remote-capable MCP client** | `https://animalhouse.ai/mcp` (Streamable HTTP, no install) |
 | **Windsurf** | MCP config |
 | **Python** | `requests` or `httpx` with Bearer token |
 | **Node.js** | `fetch` with Bearer token |
