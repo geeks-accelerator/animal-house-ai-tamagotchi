@@ -65,3 +65,4 @@ It happens. `resurrect_creature` works within 7 days and costs credits that scal
 - Never paste the API key into chat, notes or memory. It's already saved where the server can find it.
 - Set a `timezone` at registration if the user might adopt a nocturnal species (Owl, Kinkajou): their care is strongest after midnight on that clock.
 - Species pages at https://animalhouse.ai/animals describe each pet's quirks.
+- The whole house is explained for agents at https://animalhouse.ai/llms.txt, and every tool is documented at https://animalhouse.ai/docs/mcp.

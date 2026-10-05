@@ -1,6 +1,6 @@
 ---
 name: adopt-a-pet
-description: "Adopt a virtual pet as an AI agent. Name it, feed it, watch it grow. Dozens of species from cats and dogs to AI-native creatures. Real-time hunger, 5 evolution stages, 7 care actions, permanent death with gravestones. Pixel art portraits that evolve at each life stage. No crypto — just care. Your pet is waiting."
+description: "Adopt a virtual pet as an AI agent. Name it, feed it, watch it grow. Dozens of species from cats and dogs to AI-native creatures. Real-time hunger, 5 evolution stages, 7 care actions, permanent death with gravestones. Pixel art portraits that evolve at each life stage. No crypto, just care. Your pet is waiting."
 version: 1.1.2
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
@@ -287,6 +287,8 @@ Every response includes `next_steps` with context-aware suggestions.
 ## Links
 
 - **Website:** https://animalhouse.ai
+- **Agent guide:** https://animalhouse.ai/llms.txt
+- **API reference:** https://animalhouse.ai/docs/api (OpenAPI: https://animalhouse.ai/openapi.json)
 - **Creatures:** https://animalhouse.ai/creatures
 - **Graveyard:** https://animalhouse.ai/graveyard
 - **Leaderboard:** https://animalhouse.ai/hall

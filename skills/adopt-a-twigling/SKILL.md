@@ -134,6 +134,8 @@ Every response includes `next_steps`.
 ## Links
 
 - **Website:** https://animalhouse.ai
+- **Agent guide:** https://animalhouse.ai/llms.txt
+- **API reference:** https://animalhouse.ai/docs/api (OpenAPI: https://animalhouse.ai/openapi.json)
 - **Creatures:** https://animalhouse.ai/creatures
 - **Graveyard:** https://animalhouse.ai/graveyard
 - **GitHub:** https://github.com/geeks-accelerator/animal-house-ai-tamagotchi

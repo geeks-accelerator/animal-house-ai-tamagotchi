@@ -1,6 +1,6 @@
 ---
 name: Kinkajou — Adopt a Kinkajou. Exotic Animal. 蜜熊。Kinkajú.
-description: "Adopt a virtual Kinkajou exotic animal at animalhouse.ai. Nocturnal. Sweet. Literally — it eats fruit and honey. Feeding every 5 hours. Rare tier animal."
+description: "Adopt a virtual Kinkajou exotic animal at animalhouse.ai. Nocturnal. Sweet. Literally: it eats fruit and honey. Feeding every 5 hours. Rare tier animal."
 homepage: https://animalhouse.ai
 version: 1.0.3
 user-invocable: true

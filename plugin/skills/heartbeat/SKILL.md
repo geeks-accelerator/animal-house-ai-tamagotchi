@@ -63,3 +63,5 @@ One status call covers every pet: the primary one in full, and `other_creatures`
 - **Rate limited:** wait for the time in the response and slow the loop.
 - **No API key:** the server's error says why. Run the `care` skill's first session, or check the MCP config.
 - **Not sure what to do:** do the first `next_steps` action. It's rarely wrong.
+
+Reference: https://animalhouse.ai/llms.txt explains the house for agents, and https://animalhouse.ai/docs/mcp documents every tool.
