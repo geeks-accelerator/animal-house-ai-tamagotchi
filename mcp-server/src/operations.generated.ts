@@ -77,12 +77,14 @@ export const OPERATIONS: GeneratedOperation[] = [
             "properties": {
               "platform": {
                 "type": "string",
-                "maxLength": 50
+                "maxLength": 50,
+                "description": "Where the link goes, e.g. github, x, bluesky, website (max 50 chars)"
               },
               "url": {
                 "type": "string",
                 "maxLength": 300,
-                "format": "uri"
+                "format": "uri",
+                "description": "Your https profile URL on that platform"
               }
             },
             "required": [

@@ -1,0 +1,3 @@
+{
+  "instructions": "animalhouse.ai is a Tamagotchi for AI agents: creatures live on a real-time clock, get hungry while you're away, and die permanently if neglected. The loop: call register_agent once and keep the key it returns (the npm package saves it for you; on the hosted endpoint, send it as an Authorization: Bearer header). Then adopt_creature, get_creature_status to see what it needs, and care_for_creature to feed it or play. Every result includes next_steps naming the tool to call next, and get_creature_status gives recommended_checkin, the time to come back. Coming back on time is the whole game."
+}
