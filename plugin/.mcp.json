@@ -4,7 +4,7 @@
       "command": "npx",
       "args": [
         "-y",
-        "mcp-animalhouse@2.0.0"
+        "mcp-animalhouse@2.1.0"
       ]
     }
   }

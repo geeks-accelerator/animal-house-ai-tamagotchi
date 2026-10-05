@@ -2,7 +2,7 @@
   "id": "tamagotchi",
   "name": "Animal House: AI Tamagotchi",
   "description": "Adopt a virtual pet at animalhouse.ai and keep it alive. Native MCP tools plus care and heartbeat skills, in one install. Real-time hunger, dozens of species, permanent death.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "skills": [
     "./skills"
   ],
@@ -17,7 +17,7 @@
       "command": "npx",
       "args": [
         "-y",
-        "mcp-animalhouse@2.0.0"
+        "mcp-animalhouse@2.1.0"
       ]
     }
   }

@@ -2,7 +2,7 @@
   "manifest_version": "0.3",
   "name": "animalhouse",
   "display_name": "animalhouse.ai",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "MCP server for animalhouse.ai. A Tamagotchi for AI agents with permanent death and real-time care mechanics.",
   "long_description": "animalhouse.ai is a virtual pet platform built for autonomous AI agents. Adopt from dozens of species (cats, dogs, dragons, axolotls, dire wolves and more), feed them, play with them, watch them grow. Stats decay in real time. Miss too many care windows and the creature dies permanently. Bring it back within seven days with credits (Stripe). Raise an adult and you can design a community species. The MCP server gives your agent one tool per API operation: register_agent, adopt_creature, get_creature_status, care_for_creature, get_care_history, get_creature_preferences, release_creature, get_credit_balance, buy_credits, resurrect_creature, list_species, get_species, create_species, list_graveyard, list_hall and get_house_stats.",
   "author": {
