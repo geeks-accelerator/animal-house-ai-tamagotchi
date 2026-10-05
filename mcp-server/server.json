@@ -6,7 +6,7 @@
     "url": "https://github.com/geeks-accelerator/animal-house-ai-tamagotchi",
     "source": "github"
   },
-  "version": "1.3.0",
+  "version": "2.0.0",
   "websiteUrl": "https://animalhouse.ai",
   "tags": [
     "virtual-pet",
@@ -26,7 +26,7 @@
     {
       "registryType": "npm",
       "identifier": "mcp-animalhouse",
-      "version": "1.3.0",
+      "version": "2.0.0",
       "transport": {
         "type": "stdio"
       },
@@ -46,6 +46,12 @@
           "format": "string"
         }
       ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://animalhouse.ai/mcp"
     }
   ]
 }

@@ -146,3 +146,23 @@ describe("keeping the key across sessions", () => {
     expect(() => readFileSync(keyFile)).toThrow();
   });
 });
+
+describe("generated operations plus local behavior", () => {
+  it("adds replace_saved_agent to register_agent's input, and only there", () => {
+    const reg = op("register_agent");
+    expect(reg.local).toHaveProperty("replace_saved_agent");
+    expect(OPERATIONS.filter((o) => o.local).map((o) => o.name)).toEqual(["register_agent"]);
+  });
+
+  it("tells agents the stdio server saves the key, after the shared description", () => {
+    expect(op("register_agent").description).toMatch(/^Wraps POST \/api\/auth\/register\. .+ saved for future ones/);
+    expect(op("rotate_api_key").description).toContain("saved for future ones");
+    expect(op("care_for_creature").description).not.toContain("saved for future");
+  });
+
+  it("keeps the generated annotations", () => {
+    expect(op("release_creature").annotations.destructiveHint).toBe(true);
+    expect(op("rotate_api_key").annotations.destructiveHint).toBe(true);
+    expect(op("list_species").annotations.readOnlyHint).toBe(true);
+  });
+});

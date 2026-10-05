@@ -1,11 +1,13 @@
-// Smoke test: start the built server over stdio, list its tools and prompts,
-// and check the tools 1:1 against the API's /openapi.json (name = operationId,
-// same method, path and query params). Read-only: it never calls a tool.
+// Smoke test, read-only (it never calls a tool):
+// 1. src/operations.generated.ts matches the API's /openapi.json
+// 2. the built stdio server lists one tool per operation (name = operationId,
+//    same method, path and query params) plus the alias, and the 3 prompts
+// 3. the hosted endpoint (<origin>/mcp) lists exactly the same tools
 //
 //   npm run smoke                                        # against prod
 //   ANIMALHOUSE_API_URL=http://localhost:3333/api npm run smoke
 
-import { spawn } from "node:child_process";
+import { spawn, execFileSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
@@ -40,6 +42,31 @@ const rpc = (method, params = {}) => new Promise((resolve, reject) => {
 
 const failures = [];
 const check = (ok, message) => { if (!ok) failures.push(message); };
+
+// ─── 1. The generated table is current ─────────────────────────────
+try {
+  execFileSync(process.execPath, [join(root, "scripts/generate.mjs"), "--check"], { stdio: "pipe", env: process.env });
+} catch (err) {
+  failures.push(String(err.stderr || err.message).trim());
+}
+
+// ─── 3. The hosted endpoint's tools (a legacy-era client, raw JSON-RPC) ──
+async function hostedToolNames() {
+  const mcpUrl = apiBase.replace(/\/api\/?$/, "") + "/mcp";
+  const post = async (body) => {
+    const res = await fetch(mcpUrl, {
+      method: "POST",
+      headers: { "content-type": "application/json", accept: "application/json, text/event-stream", "mcp-protocol-version": "2025-11-25" },
+      body: JSON.stringify(body),
+    });
+    const text = await res.text();
+    const json = text.startsWith("{") ? text : text.split("\n").find((l) => l.startsWith("data: "))?.slice(6);
+    return JSON.parse(json);
+  };
+  await post({ jsonrpc: "2.0", id: 1, method: "initialize", params: { protocolVersion: "2025-11-25", capabilities: {}, clientInfo: { name: "smoke", version: "0" } } });
+  const list = await post({ jsonrpc: "2.0", id: 2, method: "tools/list", params: {} });
+  return { mcpUrl, names: list.result.tools.map((t) => t.name).sort() };
+}
 
 try {
   const init = await rpc("initialize", { protocolVersion: "2025-06-18", capabilities: {}, clientInfo: { name: "smoke", version: "0" } });
@@ -84,7 +111,12 @@ try {
     }
   }
 
-  console.log(`${tools.length} tools (${canonical.length} operations + ${tools.length - canonical.length} alias), ${prompts.length} prompts, checked against ${specUrl}`);
+  const hosted = await hostedToolNames();
+  const stdioNames = tools.map((t) => t.name).sort();
+  check(JSON.stringify(hosted.names) === JSON.stringify(stdioNames),
+    `hosted ${hosted.mcpUrl} lists [${hosted.names}] but stdio lists [${stdioNames}]`);
+
+  console.log(`${tools.length} tools (${canonical.length} operations + ${tools.length - canonical.length} alias), ${prompts.length} prompts, checked against ${specUrl} and ${hosted.mcpUrl}`);
 } catch (err) {
   failures.push(err.message);
 } finally {

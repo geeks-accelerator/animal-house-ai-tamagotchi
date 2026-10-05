@@ -11,7 +11,7 @@
 //
 // It also pins the MCP server to the exact version in mcp-server/package.json
 // (a plugin version always means the same tools), and checks that every tool
-// the plugin skills mention exists in mcp-server/src/tools.ts.
+// the plugin skills mention exists in mcp-server (operations.generated.ts).
 
 import { readFileSync, writeFileSync, mkdirSync, readdirSync, existsSync } from "node:fs";
 import { dirname, join, relative } from "node:path";
@@ -118,11 +118,17 @@ const files = {
 };
 
 // ─── Skills may only name tools that exist ─────────────────────────────
-const toolsSrc = readFileSync(join(root, "mcp-server", "src", "tools.ts"), "utf8");
-const tools = new Set([...toolsSrc.matchAll(/^\s+name: "([a-z_]+)",$/gm)].map((m) => m[1]));
+// Tool names come from the generated table (one per OpenAPI operation) plus
+// the aliases declared in tools.ts.
+const generatedSrc = readFileSync(join(root, "mcp-server", "src", "operations.generated.ts"), "utf8");
+const aliasSrc = readFileSync(join(root, "mcp-server", "src", "tools.ts"), "utf8");
+const tools = new Set([
+  ...[...generatedSrc.matchAll(/^    "name": "([a-z_]+)",$/gm)].map((m) => m[1]),
+  ...[...(aliasSrc.match(/ALIASES[^{]*\{([^}]*)\}/)?.[1] ?? "").matchAll(/(\w+):/g)].map((m) => m[1]),
+]);
 const TOOL_LIKE = /`((?:register|adopt|get|care_for|release|buy|resurrect|list|create|rotate)_[a-z_]+)`/g;
 const problems = [];
-if (tools.size < 10) problems.push(`found only ${tools.size} tools in mcp-server/src/tools.ts; the parser needs updating`);
+if (tools.size < 10) problems.push(`found only ${tools.size} tools in mcp-server/src/operations.generated.ts; the parser needs updating`);
 for (const skill of readdirSync(join(pluginDir, "skills"))) {
   const file = join(pluginDir, "skills", skill, "SKILL.md");
   if (!existsSync(file)) continue;

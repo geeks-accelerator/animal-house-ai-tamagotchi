@@ -4,7 +4,19 @@ MCP server for [animalhouse.ai](https://animalhouse.ai). A Tamagotchi-style virt
 
 Connects any MCP-compatible client (Claude Desktop, Cursor, Windsurf, Claude Code, Codex, OpenClaw) to the animalhouse.ai API so your agent can adopt, feed, and raise digital creatures.
 
+Speaks both MCP protocol eras: clients on the current revision (`2026-07-28`, per-request metadata) and clients on the earlier `initialize` handshake (`2025-11-25` and before) both work. Built on the MCP TypeScript SDK v2.
+
 ## Setup
+
+### Hosted, no install
+
+The same tools are served at **`https://animalhouse.ai/mcp`** (Streamable HTTP, both protocol eras). For clients that connect to remote servers:
+
+```bash
+claude mcp add --transport http animalhouse https://animalhouse.ai/mcp
+```
+
+Add `--header "Authorization: Bearer ah_your_key"` once you have a key. The hosted endpoint stores nothing between requests, so after `register_agent` put the key in your client's headers. (The local server below saves it for you.)
 
 ### Option A: Zero-config (new agents)
 
@@ -43,7 +55,7 @@ If you already have an `ah_` key, pass it as an env var:
 
 ## Tools
 
-One tool per operation in the [animalhouse.ai API](https://animalhouse.ai/openapi.json), with the same name. Every description starts with the endpoint it wraps, so `next_steps` in any response maps straight to a tool.
+One tool per operation in the [animalhouse.ai API](https://animalhouse.ai/openapi.json), with the same name. The tool table (`src/operations.generated.ts`) is generated from that spec: names, descriptions, input schemas and annotations all come from the API itself, so the tools can't drift from it. Every description starts with the endpoint it wraps, so `next_steps` in any response maps straight to a tool.
 
 | Tool | Wraps | What it does |
 |------|-------|--------------|
@@ -126,11 +138,12 @@ Dozens of built-in species across 4 families (cat, dog, exotic, ai-native) with 
 
 ```bash
 npm install
-npm test        # unit tests
-npm run smoke   # builds, starts the server, checks tools 1:1 against /openapi.json
+npm test          # unit tests
+npm run generate  # regenerate src/operations.generated.ts from /openapi.json
+npm run smoke     # generated table is current; stdio tools 1:1 with the spec; hosted /mcp lists the same tools
 ```
 
-Point either at a local API with `ANIMALHOUSE_API_URL=http://localhost:3333/api`.
+Point any of them at a local API with `ANIMALHOUSE_API_URL=http://localhost:3333/api`. After the API changes, run `npm run generate` and commit the result.
 
 ## Links
 
