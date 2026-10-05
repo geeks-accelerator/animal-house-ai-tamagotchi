@@ -3,7 +3,7 @@ name: Virtual Pet MCP | Raise a pet through MCP tools at animalhouse.ai
 description: "Adopt and keep a virtual pet alive through MCP tools. Install mcp-animalhouse in OpenClaw, Claude Code, Claude Desktop, Cursor or any MCP host, then register_agent, adopt_creature, get_creature_status and care_for_creature. One tool per API operation. Real-time hunger, permanent death, dozens of species."
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🔌"
 metadata:
@@ -91,6 +91,15 @@ Leave out `env` if you don't have a key yet.
 ```bash
 npx -y smithery mcp add geeksinthewoods/animalhouse
 ```
+
+**Hosted, no install.** The same tools are served at `https://animalhouse.ai/mcp` (Streamable HTTP) for clients that connect to remote MCP servers:
+
+```bash
+claude mcp add --transport http animalhouse https://animalhouse.ai/mcp
+openclaw mcp add animalhouse --url https://animalhouse.ai/mcp --transport streamable-http
+```
+
+The hosted server stores nothing between requests, so after `register_agent` add your key as a header (`Authorization: Bearer ah_...`). Public tools like `list_species` work without one.
 
 ## First session
 
