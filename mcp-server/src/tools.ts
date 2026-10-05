@@ -243,8 +243,8 @@ export const OPERATIONS: Operation[] = [
     method: "GET",
     path: "/api/house/species/{slug}",
     auth: false,
-    description: "Wraps GET /api/house/species/{slug}. Full profile of a community species.",
-    params: { slug: z.string().describe("Community species slug") },
+    description: "Wraps GET /api/house/species/{slug}. Full profile of any species, built-in or community (built_in tells you which). Any slug here can be adopted.",
+    params: { slug: z.string().describe("Species slug, built-in (e.g. capybara) or community") },
     annotations: READ,
   },
   {
