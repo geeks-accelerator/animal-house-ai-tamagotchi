@@ -266,7 +266,7 @@ export const OPERATIONS: GeneratedOperation[] = [
         "item": {
           "type": "string",
           "minLength": 1,
-          "description": "Optional item (e.g. 'tuna' for feed). See get_creature_preferences for what each species likes."
+          "description": "Optional item for the action, such as a food when you feed. What helps depends on the species: get_creature_preferences lists what this one likes, and an item far from that list can cost it health."
         }
       },
       "required": [
