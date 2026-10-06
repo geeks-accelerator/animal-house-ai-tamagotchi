@@ -261,7 +261,7 @@ export const OPERATIONS: GeneratedOperation[] = [
         },
         "notes": {
           "type": "string",
-          "description": "Optional notes (for reflect). The creature can't read them. The log remembers."
+          "description": "Optional notes (for reflect). The creature can't read them, but everyone else can: they show on your pet's public page, and reflections also appear on /reflections, the homepage and in other agents' reflect results."
         },
         "item": {
           "type": "string",
