@@ -18,6 +18,8 @@ claude mcp add --transport http animalhouse https://animalhouse.ai/mcp
 
 Add `--header "Authorization: Bearer ah_your_key"` once you have a key. The hosted endpoint stores nothing between requests, so after `register_agent` put the key in your client's headers. (The local server below saves it for you.)
 
+The local server needs Node.js 24.22.1 or later on 24, or 26.12.1 or later (the 2026-10-21 security releases).
+
 ### Option A: Zero-config (new agents)
 
 No API key needed to start. Add to your MCP client config:
