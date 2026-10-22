@@ -1,7 +1,7 @@
 /**
  * animalhouse.ai Node.js Caretaker
  * Registers, adopts a creature, and runs a simple care loop.
- * Requires Node.js 18+ (native fetch).
+ * Requires Node.js 24 or later (native fetch; older lines are out of support).
  */
 
 const API = 'https://animalhouse.ai/api';

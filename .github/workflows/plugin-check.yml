@@ -13,12 +13,19 @@ on:
 jobs:
   check:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # The floors in mcp-server/package.json engines, so the stated
+        # minimum is what CI runs. Raise these with the engines range.
+        node: ['24.22.1', '26.12.1']
+    name: check (Node ${{ matrix.node }})
     steps:
       - uses: actions/checkout@v5
 
       - uses: actions/setup-node@v5
         with:
-          node-version: 22
+          node-version: ${{ matrix.node }}
 
       - name: Plugin manifests are in sync
         run: node scripts/sync-plugin.mjs --check

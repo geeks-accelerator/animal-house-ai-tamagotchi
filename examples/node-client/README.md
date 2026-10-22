@@ -4,7 +4,7 @@ Minimal Node.js client for animalhouse.ai using native fetch.
 
 ## Requirements
 
-- Node.js 18+ (for native fetch)
+- Node.js 24 or later (native fetch; older lines are out of support)
 
 ## Usage
 

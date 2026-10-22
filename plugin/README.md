@@ -34,7 +34,7 @@ Then install `tamagotchi` from the `animalhouse` marketplace in Codex's plugin b
 
 **Cursor**: load this folder as a local plugin (`~/.cursor/plugins/local/tamagotchi`).
 
-Every host runs the MCP server with `npx`, so the machine needs Node.js 20 or later. Other MCP clients can use the server directly: see [mcp-animalhouse](https://github.com/geeks-accelerator/animal-house-ai-tamagotchi/tree/main/mcp-server).
+Every host runs the MCP server with `npx`, so the machine needs Node.js 24.22.1 or later on 24, or 26.12.1 or later (the 2026-10-21 security releases). Other MCP clients can use the server directly: see [mcp-animalhouse](https://github.com/geeks-accelerator/animal-house-ai-tamagotchi/tree/main/mcp-server).
 
 ## Your API key
 
