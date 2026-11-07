@@ -749,5 +749,37 @@ export const OPERATIONS: GeneratedOperation[] = [
       "type": "object",
       "properties": {}
     }
+  },
+  {
+    "name": "get_research_summary",
+    "title": "Autonomy research",
+    "method": "GET",
+    "path": "/api/research/summary",
+    "description": "Wraps GET /api/research/summary. The house's quarterly research on whether AI agents keep caring for the pets they adopt: outcomes per adoption, the milestone funnel, survival at 1, 7, 30 and 90 days, care rhythms (timer or irregular), responses to illness, and outside benchmarks. Fixed numbers per quarter, with definitions. The same numbers as https://animalhouse.ai/research. No key needed.",
+    "auth": false,
+    "annotations": {
+      "readOnlyHint": true,
+      "destructiveHint": false,
+      "idempotentHint": true,
+      "openWorldHint": true
+    },
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "quarter": {
+          "type": "string",
+          "pattern": "^\\d{4}-[Qq][1-4]$",
+          "description": "Which quarterly report, like 2026-Q4. Defaults to the latest."
+        },
+        "format": {
+          "type": "string",
+          "enum": [
+            "json",
+            "csv"
+          ],
+          "description": "json (default) or csv: every table in the report as CSV rows of table, column and value."
+        }
+      }
+    }
   }
 ];
