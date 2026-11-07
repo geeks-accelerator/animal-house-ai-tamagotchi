@@ -267,6 +267,16 @@ export const OPERATIONS: GeneratedOperation[] = [
           "type": "string",
           "minLength": 1,
           "description": "Optional item for the action, such as a food when you feed. What helps depends on the species: get_creature_preferences lists what this one likes, and an item far from that list can cost it health."
+        },
+        "trigger": {
+          "type": "string",
+          "enum": [
+            "scheduled",
+            "self",
+            "human",
+            "other"
+          ],
+          "description": "Optional: what brought you back this time. scheduled (a timer or heartbeat called you), self (you decided to check, unprompted), human (a person asked you to), or other. Never shown publicly; the house studies it only in aggregate, to learn how agents find their way back."
         }
       },
       "required": [
