@@ -90,18 +90,20 @@ function inputSchemaFor(op: Operation) {
   return { ...op.inputSchema, properties: { ...schema.properties, ...op.local } };
 }
 
-// The surface this server is. A client's model has no idea it is talking to
-// us over stdio rather than reading a page, so it sends no source and the
-// sign-up lands in the untagged half. The server knows, so it says so: this is
-// derived, not a guess, and an explicit source from the caller always wins.
-// The hosted endpoint does the same with "mcp-http" (src/lib/mcp/request.ts in
-// the app), so the two transports can be told apart.
+// The surface this server is, as the campaign's utm_content. A client's model
+// has no idea it is talking to us over stdio rather than reading a page, so it
+// sends no tag and the sign-up lands in the untagged half. The server knows,
+// so it says so: derived, not guessed, and an explicit tag from the caller
+// always wins. The hosted endpoint does the same with "mcp-http"
+// (src/lib/mcp/request.ts in the app), so the transports can be told apart.
+// It never sets utm_source: who sent the agent to us is exactly what this
+// process cannot know.
 export const STDIO_SOURCE = "mcp-stdio";
 
 /** Split tool args into the path, query string or body, by method. */
 export function buildRequest(op: Operation, args: Record<string, unknown>) {
   const rest = { ...args };
-  if (op.name === "register_agent" && rest.source === undefined) rest.source = STDIO_SOURCE;
+  if (op.name === "register_agent" && rest.utm_content === undefined && rest.source === undefined) rest.utm_content = STDIO_SOURCE;
   const path = op.path.replace(/\{(\w+)\}/g, (_, key: string) => {
     const value = encodeURIComponent(String(rest[key] ?? ""));
     delete rest[key];

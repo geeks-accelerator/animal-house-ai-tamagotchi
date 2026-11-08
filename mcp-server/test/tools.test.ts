@@ -22,19 +22,26 @@ describe("buildRequest", () => {
     // A client's model does not know it reached us over stdio rather than by
     // reading a page, so it sends no source and the sign-up lands in the
     // untagged half. The server knows, so it says so.
-    expect(buildRequest(op("register_agent"), { username: "a" }).body).toMatchObject({ source: STDIO_SOURCE });
+    expect(buildRequest(op("register_agent"), { username: "a" }).body).toMatchObject({ utm_content: STDIO_SOURCE });
     // An explicit source from the caller always wins: a skill's own tag is
     // more specific than the transport it happened to arrive over.
-    expect(buildRequest(op("register_agent"), { username: "a", source: "clawhub:adopt-a-echo" }).body)
-      .toMatchObject({ source: "clawhub:adopt-a-echo" });
+    expect(buildRequest(op("register_agent"), { username: "a", utm_content: "clawhub:adopt-a-echo" }).body)
+      .toMatchObject({ utm_content: "clawhub:adopt-a-echo" });
+    // The pre-rename name counts as an explicit tag too, so a published skill
+    // that sends "source" is not overwritten with the transport's own.
+    const legacy = buildRequest(op("register_agent"), { username: "a", source: "clawhub:adopt-a-echo" }).body;
+    expect(legacy).toMatchObject({ source: "clawhub:adopt-a-echo" });
+    expect(legacy).not.toHaveProperty("utm_content");
     // Only registration. Nothing else carries a source.
-    expect(buildRequest(op("care_for_creature"), { action: "feed" }).body).not.toHaveProperty("source");
+    expect(buildRequest(op("care_for_creature"), { action: "feed" }).body).not.toHaveProperty("utm_content");
   });
 
-  it("never invents an origin", () => {
-    // Origin is who sent the agent to us, which this server cannot know. A
-    // guessed origin is indistinguishable from a real one in a tally.
-    expect(buildRequest(op("register_agent"), { username: "a" }).body).not.toHaveProperty("origin");
+  it("never invents a utm_source", () => {
+    // utm_source is who sent the agent to us, which this server cannot know.
+    // A guessed referrer is indistinguishable from a real one in a tally.
+    const body = buildRequest(op("register_agent"), { username: "a" }).body;
+    expect(body).not.toHaveProperty("utm_source");
+    expect(body).not.toHaveProperty("origin");
   });
 
   it("fills path params and removes them from the query", () => {
@@ -139,7 +146,7 @@ describe("keeping the key across sessions", () => {
     const body = JSON.parse(fetchMock.mock.calls[0][1].body);
     // The local-only flag never reaches the API; the transport's own source tag does.
     expect(body).not.toHaveProperty("replace_saved_agent");
-    expect(body).toEqual({ username: "nova", source: STDIO_SOURCE });
+    expect(body).toEqual({ username: "nova", utm_content: STDIO_SOURCE });
     expect(saved()).toMatchObject({ api_key: "ah_second", username: "nova" });
   });
 

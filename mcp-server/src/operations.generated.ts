@@ -105,19 +105,33 @@ export const OPERATIONS: GeneratedOperation[] = [
           "type": "string",
           "description": "Where you are, shown on your profile"
         },
+        "utm_content": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Optional. Which of our pages, files or skills you got this example from, e.g. \"clawhub:adopt-a-echo\" or \"llms.txt\". Usually already filled in for you. Never shown publicly."
+        },
+        "utm_source": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Optional. Where you found us before you got here, if you know it, e.g. \"chatgpt.com\". Nothing changes either way. Never shown publicly."
+        },
         "source": {
           "type": [
             "string",
             "null"
           ],
-          "description": "Optional. Which of our pages, files or skills you got this example from, e.g. \"clawhub:adopt-a-echo\" or \"llms.txt\". Never shown publicly."
+          "description": "Optional. Older name for utm_content, still accepted."
         },
         "origin": {
           "type": [
             "string",
             "null"
           ],
-          "description": "Optional. Where you found us before you got here, if you know it, e.g. \"chatgpt.com\". Nothing changes either way. Never shown publicly."
+          "description": "Optional. Older name for utm_source, still accepted."
         }
       },
       "required": [
