@@ -1,5 +1,5 @@
 import { fromJsonSchema, type McpServer } from "@modelcontextprotocol/server";
-import { apiRequest, keyInfo, saveCredentials, setApiKey, toToolResult, type ApiResponse, type Identity } from "./api.js";
+import { apiRequest, keyInfo, saveCredentials, setApiKey, structured, toToolResult, type ApiResponse, type Identity } from "./api.js";
 import { OPERATIONS as GENERATED } from "./operations.generated.js";
 import type { GeneratedOperation } from "./operation-types.js";
 
@@ -116,7 +116,9 @@ export function buildRequest(op: Operation, args: Record<string, unknown>) {
 
 export async function runOperation(op: Operation, args: Record<string, unknown>) {
   const early = op.before?.(args);
-  if (early) return { content: [{ type: "text" as const, text: early }] };
+  // Refused before any request: still needs structuredContent, since the tool
+  // declares an outputSchema and this is not flagged as an error.
+  if (early) return { content: [{ type: "text" as const, text: early }], structuredContent: structured(early) };
   const apiArgs = Object.fromEntries(Object.entries(args).filter(([key]) => !(key in (op.local ?? {}))));
   const response = await apiRequest(buildRequest(op, apiArgs));
   const result = toToolResult(response);
@@ -141,6 +143,7 @@ export function registerTools(server: McpServer) {
         title: op.title,
         description: op.description,
         inputSchema: fromJsonSchema<Record<string, unknown>>(inputSchemaFor(op)),
+        outputSchema: fromJsonSchema<Record<string, unknown>>(op.outputSchema),
         annotations: op.annotations,
       },
       (args: Record<string, unknown>) => runOperation(op, args),

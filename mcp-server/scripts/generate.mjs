@@ -39,6 +39,14 @@ for (const [path, methods] of Object.entries(spec.paths)) {
     for (const [name, prop] of Object.entries(body?.properties ?? {})) properties[name] = prop;
     for (const name of body?.required ?? []) if (!required.includes(name)) required.push(name);
 
+    // What a successful reply looks like, as the tool's outputSchema (N6).
+    // The API declares every field optional and allows unknown keys, so this
+    // describes a response without constraining it: see the app's
+    // src/lib/openapi/responses.ts for why that matters.
+    const success = Object.keys(op.responses ?? {}).find((code) => code.startsWith("2"));
+    const outputSchema = success && op.responses[success]?.content?.["application/json"]?.schema;
+    if (!outputSchema) throw new Error(`${op.operationId} has no success response schema in ${specUrl}`);
+
     const upper = method.toUpperCase();
     operations.push({
       name: op.operationId,
@@ -49,6 +57,7 @@ for (const [path, methods] of Object.entries(spec.paths)) {
       auth: Boolean(op.security?.length),
       annotations: meta.annotations,
       inputSchema: { type: "object", properties, ...(required.length ? { required } : {}) },
+      outputSchema,
     });
   }
 }

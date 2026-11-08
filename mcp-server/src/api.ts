@@ -149,6 +149,18 @@ export function toToolResult({ status, data }: ApiResponse) {
   const text = typeof data === "string" ? data : JSON.stringify(data, null, 2);
   return {
     content: [{ type: "text" as const, text }],
+    // Every tool declares an outputSchema, and the SDK makes that a promise:
+    // a successful call with no structuredContent is a protocol error, and
+    // structuredContent has to be an object. The API answers with a JSON
+    // object, so this is normally the parsed body; anything else is wrapped.
+    structuredContent: structured(data),
     ...(status >= 400 ? { isError: true } : {}),
   };
+}
+
+/** Any value as an object, for structuredContent. */
+export function structured(data: unknown): Record<string, unknown> {
+  return typeof data === "object" && data !== null && !Array.isArray(data)
+    ? (data as Record<string, unknown>)
+    : { result: data };
 }

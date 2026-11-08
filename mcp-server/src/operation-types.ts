@@ -11,4 +11,11 @@ export interface GeneratedOperation {
   auth: boolean;
   annotations: ToolAnnotations;
   inputSchema: JsonSchemaType;
+  /**
+   * What a successful reply looks like (N6). The API declares every field
+   * optional and allows unknown keys, so declaring this cannot make a real
+   * response invalid, which matters because the SDK enforces it: a successful
+   * call with no structuredContent is a protocol error.
+   */
+  outputSchema: JsonSchemaType;
 }

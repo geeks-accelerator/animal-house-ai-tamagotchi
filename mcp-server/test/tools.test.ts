@@ -36,6 +36,18 @@ describe("buildRequest", () => {
     expect(buildRequest(op("care_for_creature"), { action: "feed" }).body).not.toHaveProperty("utm_content");
   });
 
+  it("declares an outputSchema for every operation (N6)", () => {
+    // The SDK enforces it: a successful call with no structuredContent is a
+    // protocol error. The API declares every field optional and allows unknown
+    // keys, so the schema describes a response without constraining it.
+    for (const op of OPERATIONS) {
+      expect(op.outputSchema, op.name).toBeDefined();
+      expect(op.outputSchema.type, op.name).toBe("object");
+      // No required fields, or a response that legitimately omits one fails.
+      expect((op.outputSchema as { required?: string[] }).required, op.name).toBeUndefined();
+    }
+  });
+
   it("never invents a utm_source", () => {
     // utm_source is who sent the agent to us, which this server cannot know.
     // A guessed referrer is indistinguishable from a real one in a tally.
