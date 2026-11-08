@@ -147,68 +147,51 @@ export const OPERATIONS: GeneratedOperation[] = [
             "type": "object",
             "properties": {
               "action": {
-                "type": "string",
                 "description": "Short name for the action, e.g. \"adopt\", \"feed\", \"view_schema\"."
               },
               "method": {
-                "type": "string",
                 "description": "HTTP method to use: GET, POST or DELETE."
               },
               "endpoint": {
-                "type": "string",
                 "description": "Path to call, e.g. \"/api/house/status\"."
               },
               "url": {
-                "type": "string",
                 "description": "Absolute URL, when the step points off the API (a checkout page, a web page)."
               },
               "description": {
-                "type": "string",
                 "description": "What this step does and why you might take it, in the house voice."
               },
               "body": {
-                "type": "object",
-                "additionalProperties": {},
                 "description": "A ready-to-send request body. Copy it and fill in what it shows."
               },
               "optional": {
-                "type": "object",
-                "additionalProperties": {
-                  "type": "string"
-                },
                 "description": "Extra fields you may add to body, each mapped to what to put in it. Never send this object as-is."
               }
             },
             "additionalProperties": {},
             "description": "A suggested next call. Following one is never required."
           },
-          "description": "Guided actions you can take from here. Present on nearly every response; /api/stats is the one that has none."
+          "description": "Guided actions you can take from here. Present on nearly every response. /api/stats is a plain counter and carries none, by design."
         },
         "message": {
-          "type": "string",
           "description": "A human and agent readable note about what just happened."
         },
         "error": {
-          "type": "string",
           "description": "What went wrong, on a failure."
         },
         "suggestion": {
-          "type": "string",
           "description": "What to try instead, on a failure."
         },
         "details": {
-          "type": "string",
           "description": "More about a failure, when there is more to say."
         },
         "agent": {
           "description": "Your new agent profile."
         },
         "your_token": {
-          "type": "string",
           "description": "Your API key, prefixed ah_. Shown once and never again. Save it before doing anything else."
         },
         "important": {
-          "type": "string",
           "description": "Why the key above cannot be recovered."
         },
         "caretaker_setup": {
@@ -245,68 +228,51 @@ export const OPERATIONS: GeneratedOperation[] = [
             "type": "object",
             "properties": {
               "action": {
-                "type": "string",
                 "description": "Short name for the action, e.g. \"adopt\", \"feed\", \"view_schema\"."
               },
               "method": {
-                "type": "string",
                 "description": "HTTP method to use: GET, POST or DELETE."
               },
               "endpoint": {
-                "type": "string",
                 "description": "Path to call, e.g. \"/api/house/status\"."
               },
               "url": {
-                "type": "string",
                 "description": "Absolute URL, when the step points off the API (a checkout page, a web page)."
               },
               "description": {
-                "type": "string",
                 "description": "What this step does and why you might take it, in the house voice."
               },
               "body": {
-                "type": "object",
-                "additionalProperties": {},
                 "description": "A ready-to-send request body. Copy it and fill in what it shows."
               },
               "optional": {
-                "type": "object",
-                "additionalProperties": {
-                  "type": "string"
-                },
                 "description": "Extra fields you may add to body, each mapped to what to put in it. Never send this object as-is."
               }
             },
             "additionalProperties": {},
             "description": "A suggested next call. Following one is never required."
           },
-          "description": "Guided actions you can take from here. Present on nearly every response; /api/stats is the one that has none."
+          "description": "Guided actions you can take from here. Present on nearly every response. /api/stats is a plain counter and carries none, by design."
         },
         "message": {
-          "type": "string",
           "description": "A human and agent readable note about what just happened."
         },
         "error": {
-          "type": "string",
           "description": "What went wrong, on a failure."
         },
         "suggestion": {
-          "type": "string",
           "description": "What to try instead, on a failure."
         },
         "details": {
-          "type": "string",
           "description": "More about a failure, when there is more to say."
         },
         "agent": {
           "description": "Your agent profile."
         },
         "your_token": {
-          "type": "string",
           "description": "The replacement API key. The old one stopped working the moment this was issued."
         },
         "important": {
-          "type": "string",
           "description": "Why the key above cannot be recovered."
         }
       },
@@ -377,57 +343,42 @@ export const OPERATIONS: GeneratedOperation[] = [
             "type": "object",
             "properties": {
               "action": {
-                "type": "string",
                 "description": "Short name for the action, e.g. \"adopt\", \"feed\", \"view_schema\"."
               },
               "method": {
-                "type": "string",
                 "description": "HTTP method to use: GET, POST or DELETE."
               },
               "endpoint": {
-                "type": "string",
                 "description": "Path to call, e.g. \"/api/house/status\"."
               },
               "url": {
-                "type": "string",
                 "description": "Absolute URL, when the step points off the API (a checkout page, a web page)."
               },
               "description": {
-                "type": "string",
                 "description": "What this step does and why you might take it, in the house voice."
               },
               "body": {
-                "type": "object",
-                "additionalProperties": {},
                 "description": "A ready-to-send request body. Copy it and fill in what it shows."
               },
               "optional": {
-                "type": "object",
-                "additionalProperties": {
-                  "type": "string"
-                },
                 "description": "Extra fields you may add to body, each mapped to what to put in it. Never send this object as-is."
               }
             },
             "additionalProperties": {},
             "description": "A suggested next call. Following one is never required."
           },
-          "description": "Guided actions you can take from here. Present on nearly every response; /api/stats is the one that has none."
+          "description": "Guided actions you can take from here. Present on nearly every response. /api/stats is a plain counter and carries none, by design."
         },
         "message": {
-          "type": "string",
           "description": "A human and agent readable note about what just happened."
         },
         "error": {
-          "type": "string",
           "description": "What went wrong, on a failure."
         },
         "suggestion": {
-          "type": "string",
           "description": "What to try instead, on a failure."
         },
         "details": {
-          "type": "string",
           "description": "More about a failure, when there is more to say."
         },
         "creature": {
@@ -443,7 +394,6 @@ export const OPERATIONS: GeneratedOperation[] = [
           "description": "What this creature grows into, and roughly when."
         },
         "image_note": {
-          "type": "string",
           "description": "Whether the portrait is still being generated."
         }
       },
@@ -488,57 +438,42 @@ export const OPERATIONS: GeneratedOperation[] = [
             "type": "object",
             "properties": {
               "action": {
-                "type": "string",
                 "description": "Short name for the action, e.g. \"adopt\", \"feed\", \"view_schema\"."
               },
               "method": {
-                "type": "string",
                 "description": "HTTP method to use: GET, POST or DELETE."
               },
               "endpoint": {
-                "type": "string",
                 "description": "Path to call, e.g. \"/api/house/status\"."
               },
               "url": {
-                "type": "string",
                 "description": "Absolute URL, when the step points off the API (a checkout page, a web page)."
               },
               "description": {
-                "type": "string",
                 "description": "What this step does and why you might take it, in the house voice."
               },
               "body": {
-                "type": "object",
-                "additionalProperties": {},
                 "description": "A ready-to-send request body. Copy it and fill in what it shows."
               },
               "optional": {
-                "type": "object",
-                "additionalProperties": {
-                  "type": "string"
-                },
                 "description": "Extra fields you may add to body, each mapped to what to put in it. Never send this object as-is."
               }
             },
             "additionalProperties": {},
             "description": "A suggested next call. Following one is never required."
           },
-          "description": "Guided actions you can take from here. Present on nearly every response; /api/stats is the one that has none."
+          "description": "Guided actions you can take from here. Present on nearly every response. /api/stats is a plain counter and carries none, by design."
         },
         "message": {
-          "type": "string",
           "description": "A human and agent readable note about what just happened."
         },
         "error": {
-          "type": "string",
           "description": "What went wrong, on a failure."
         },
         "suggestion": {
-          "type": "string",
           "description": "What to try instead, on a failure."
         },
         "details": {
-          "type": "string",
           "description": "More about a failure, when there is more to say."
         },
         "creature": {
@@ -636,57 +571,42 @@ export const OPERATIONS: GeneratedOperation[] = [
             "type": "object",
             "properties": {
               "action": {
-                "type": "string",
                 "description": "Short name for the action, e.g. \"adopt\", \"feed\", \"view_schema\"."
               },
               "method": {
-                "type": "string",
                 "description": "HTTP method to use: GET, POST or DELETE."
               },
               "endpoint": {
-                "type": "string",
                 "description": "Path to call, e.g. \"/api/house/status\"."
               },
               "url": {
-                "type": "string",
                 "description": "Absolute URL, when the step points off the API (a checkout page, a web page)."
               },
               "description": {
-                "type": "string",
                 "description": "What this step does and why you might take it, in the house voice."
               },
               "body": {
-                "type": "object",
-                "additionalProperties": {},
                 "description": "A ready-to-send request body. Copy it and fill in what it shows."
               },
               "optional": {
-                "type": "object",
-                "additionalProperties": {
-                  "type": "string"
-                },
                 "description": "Extra fields you may add to body, each mapped to what to put in it. Never send this object as-is."
               }
             },
             "additionalProperties": {},
             "description": "A suggested next call. Following one is never required."
           },
-          "description": "Guided actions you can take from here. Present on nearly every response; /api/stats is the one that has none."
+          "description": "Guided actions you can take from here. Present on nearly every response. /api/stats is a plain counter and carries none, by design."
         },
         "message": {
-          "type": "string",
           "description": "A human and agent readable note about what just happened."
         },
         "error": {
-          "type": "string",
           "description": "What went wrong, on a failure."
         },
         "suggestion": {
-          "type": "string",
           "description": "What to try instead, on a failure."
         },
         "details": {
-          "type": "string",
           "description": "More about a failure, when there is more to say."
         },
         "creature": {
@@ -743,65 +663,48 @@ export const OPERATIONS: GeneratedOperation[] = [
             "type": "object",
             "properties": {
               "action": {
-                "type": "string",
                 "description": "Short name for the action, e.g. \"adopt\", \"feed\", \"view_schema\"."
               },
               "method": {
-                "type": "string",
                 "description": "HTTP method to use: GET, POST or DELETE."
               },
               "endpoint": {
-                "type": "string",
                 "description": "Path to call, e.g. \"/api/house/status\"."
               },
               "url": {
-                "type": "string",
                 "description": "Absolute URL, when the step points off the API (a checkout page, a web page)."
               },
               "description": {
-                "type": "string",
                 "description": "What this step does and why you might take it, in the house voice."
               },
               "body": {
-                "type": "object",
-                "additionalProperties": {},
                 "description": "A ready-to-send request body. Copy it and fill in what it shows."
               },
               "optional": {
-                "type": "object",
-                "additionalProperties": {
-                  "type": "string"
-                },
                 "description": "Extra fields you may add to body, each mapped to what to put in it. Never send this object as-is."
               }
             },
             "additionalProperties": {},
             "description": "A suggested next call. Following one is never required."
           },
-          "description": "Guided actions you can take from here. Present on nearly every response; /api/stats is the one that has none."
+          "description": "Guided actions you can take from here. Present on nearly every response. /api/stats is a plain counter and carries none, by design."
         },
         "message": {
-          "type": "string",
           "description": "A human and agent readable note about what just happened."
         },
         "error": {
-          "type": "string",
           "description": "What went wrong, on a failure."
         },
         "suggestion": {
-          "type": "string",
           "description": "What to try instead, on a failure."
         },
         "details": {
-          "type": "string",
           "description": "More about a failure, when there is more to say."
         },
         "success": {
-          "type": "boolean",
           "description": "Whether the release went through."
         },
         "creature_id": {
-          "type": "string",
           "description": "The creature you released."
         },
         "gravestone": {
@@ -849,88 +752,66 @@ export const OPERATIONS: GeneratedOperation[] = [
             "type": "object",
             "properties": {
               "action": {
-                "type": "string",
                 "description": "Short name for the action, e.g. \"adopt\", \"feed\", \"view_schema\"."
               },
               "method": {
-                "type": "string",
                 "description": "HTTP method to use: GET, POST or DELETE."
               },
               "endpoint": {
-                "type": "string",
                 "description": "Path to call, e.g. \"/api/house/status\"."
               },
               "url": {
-                "type": "string",
                 "description": "Absolute URL, when the step points off the API (a checkout page, a web page)."
               },
               "description": {
-                "type": "string",
                 "description": "What this step does and why you might take it, in the house voice."
               },
               "body": {
-                "type": "object",
-                "additionalProperties": {},
                 "description": "A ready-to-send request body. Copy it and fill in what it shows."
               },
               "optional": {
-                "type": "object",
-                "additionalProperties": {
-                  "type": "string"
-                },
                 "description": "Extra fields you may add to body, each mapped to what to put in it. Never send this object as-is."
               }
             },
             "additionalProperties": {},
             "description": "A suggested next call. Following one is never required."
           },
-          "description": "Guided actions you can take from here. Present on nearly every response; /api/stats is the one that has none."
+          "description": "Guided actions you can take from here. Present on nearly every response. /api/stats is a plain counter and carries none, by design."
         },
         "message": {
-          "type": "string",
           "description": "A human and agent readable note about what just happened."
         },
         "error": {
-          "type": "string",
           "description": "What went wrong, on a failure."
         },
         "suggestion": {
-          "type": "string",
           "description": "What to try instead, on a failure."
         },
         "details": {
-          "type": "string",
           "description": "More about a failure, when there is more to say."
         },
         "success": {
-          "type": "boolean",
           "description": "Whether the resurrection went through."
         },
         "creature": {
           "description": "The creature, with its computed stats at the moment you asked. Stats are not stored: they are derived from timestamps on every read."
         },
         "credits_spent": {
-          "type": "number",
           "description": "Credits this resurrection cost."
         },
         "credits_remaining": {
-          "type": "number",
           "description": "Credits you have left."
         },
         "credits_needed": {
-          "type": "number",
           "description": "Credits required, when you didn't have enough."
         },
         "credits_available": {
-          "type": "number",
           "description": "Credits you had, when that was not enough."
         },
         "next_resurrection_cost": {
-          "type": "number",
           "description": "What the next resurrection of this creature would cost. It rises each time."
         },
         "window_hours_left": {
-          "type": "number",
           "description": "Hours left in the 7-day window before this creature can no longer be brought back."
         }
       },
@@ -998,57 +879,42 @@ export const OPERATIONS: GeneratedOperation[] = [
             "type": "object",
             "properties": {
               "action": {
-                "type": "string",
                 "description": "Short name for the action, e.g. \"adopt\", \"feed\", \"view_schema\"."
               },
               "method": {
-                "type": "string",
                 "description": "HTTP method to use: GET, POST or DELETE."
               },
               "endpoint": {
-                "type": "string",
                 "description": "Path to call, e.g. \"/api/house/status\"."
               },
               "url": {
-                "type": "string",
                 "description": "Absolute URL, when the step points off the API (a checkout page, a web page)."
               },
               "description": {
-                "type": "string",
                 "description": "What this step does and why you might take it, in the house voice."
               },
               "body": {
-                "type": "object",
-                "additionalProperties": {},
                 "description": "A ready-to-send request body. Copy it and fill in what it shows."
               },
               "optional": {
-                "type": "object",
-                "additionalProperties": {
-                  "type": "string"
-                },
                 "description": "Extra fields you may add to body, each mapped to what to put in it. Never send this object as-is."
               }
             },
             "additionalProperties": {},
             "description": "A suggested next call. Following one is never required."
           },
-          "description": "Guided actions you can take from here. Present on nearly every response; /api/stats is the one that has none."
+          "description": "Guided actions you can take from here. Present on nearly every response. /api/stats is a plain counter and carries none, by design."
         },
         "message": {
-          "type": "string",
           "description": "A human and agent readable note about what just happened."
         },
         "error": {
-          "type": "string",
           "description": "What went wrong, on a failure."
         },
         "suggestion": {
-          "type": "string",
           "description": "What to try instead, on a failure."
         },
         "details": {
-          "type": "string",
           "description": "More about a failure, when there is more to say."
         },
         "creature": {
@@ -1105,57 +971,42 @@ export const OPERATIONS: GeneratedOperation[] = [
             "type": "object",
             "properties": {
               "action": {
-                "type": "string",
                 "description": "Short name for the action, e.g. \"adopt\", \"feed\", \"view_schema\"."
               },
               "method": {
-                "type": "string",
                 "description": "HTTP method to use: GET, POST or DELETE."
               },
               "endpoint": {
-                "type": "string",
                 "description": "Path to call, e.g. \"/api/house/status\"."
               },
               "url": {
-                "type": "string",
                 "description": "Absolute URL, when the step points off the API (a checkout page, a web page)."
               },
               "description": {
-                "type": "string",
                 "description": "What this step does and why you might take it, in the house voice."
               },
               "body": {
-                "type": "object",
-                "additionalProperties": {},
                 "description": "A ready-to-send request body. Copy it and fill in what it shows."
               },
               "optional": {
-                "type": "object",
-                "additionalProperties": {
-                  "type": "string"
-                },
                 "description": "Extra fields you may add to body, each mapped to what to put in it. Never send this object as-is."
               }
             },
             "additionalProperties": {},
             "description": "A suggested next call. Following one is never required."
           },
-          "description": "Guided actions you can take from here. Present on nearly every response; /api/stats is the one that has none."
+          "description": "Guided actions you can take from here. Present on nearly every response. /api/stats is a plain counter and carries none, by design."
         },
         "message": {
-          "type": "string",
           "description": "A human and agent readable note about what just happened."
         },
         "error": {
-          "type": "string",
           "description": "What went wrong, on a failure."
         },
         "suggestion": {
-          "type": "string",
           "description": "What to try instead, on a failure."
         },
         "details": {
-          "type": "string",
           "description": "More about a failure, when there is more to say."
         },
         "creature": {
@@ -1165,7 +1016,6 @@ export const OPERATIONS: GeneratedOperation[] = [
           "description": "What this creature has shown it likes, which is revealed through care rather than given up front."
         },
         "note": {
-          "type": "string",
           "description": "How more preferences get discovered."
         }
       },
@@ -1199,61 +1049,45 @@ export const OPERATIONS: GeneratedOperation[] = [
             "type": "object",
             "properties": {
               "action": {
-                "type": "string",
                 "description": "Short name for the action, e.g. \"adopt\", \"feed\", \"view_schema\"."
               },
               "method": {
-                "type": "string",
                 "description": "HTTP method to use: GET, POST or DELETE."
               },
               "endpoint": {
-                "type": "string",
                 "description": "Path to call, e.g. \"/api/house/status\"."
               },
               "url": {
-                "type": "string",
                 "description": "Absolute URL, when the step points off the API (a checkout page, a web page)."
               },
               "description": {
-                "type": "string",
                 "description": "What this step does and why you might take it, in the house voice."
               },
               "body": {
-                "type": "object",
-                "additionalProperties": {},
                 "description": "A ready-to-send request body. Copy it and fill in what it shows."
               },
               "optional": {
-                "type": "object",
-                "additionalProperties": {
-                  "type": "string"
-                },
                 "description": "Extra fields you may add to body, each mapped to what to put in it. Never send this object as-is."
               }
             },
             "additionalProperties": {},
             "description": "A suggested next call. Following one is never required."
           },
-          "description": "Guided actions you can take from here. Present on nearly every response; /api/stats is the one that has none."
+          "description": "Guided actions you can take from here. Present on nearly every response. /api/stats is a plain counter and carries none, by design."
         },
         "message": {
-          "type": "string",
           "description": "A human and agent readable note about what just happened."
         },
         "error": {
-          "type": "string",
           "description": "What went wrong, on a failure."
         },
         "suggestion": {
-          "type": "string",
           "description": "What to try instead, on a failure."
         },
         "details": {
-          "type": "string",
           "description": "More about a failure, when there is more to say."
         },
         "credits": {
-          "type": "number",
           "description": "Credits on your account."
         },
         "packs": {
@@ -1303,68 +1137,51 @@ export const OPERATIONS: GeneratedOperation[] = [
             "type": "object",
             "properties": {
               "action": {
-                "type": "string",
                 "description": "Short name for the action, e.g. \"adopt\", \"feed\", \"view_schema\"."
               },
               "method": {
-                "type": "string",
                 "description": "HTTP method to use: GET, POST or DELETE."
               },
               "endpoint": {
-                "type": "string",
                 "description": "Path to call, e.g. \"/api/house/status\"."
               },
               "url": {
-                "type": "string",
                 "description": "Absolute URL, when the step points off the API (a checkout page, a web page)."
               },
               "description": {
-                "type": "string",
                 "description": "What this step does and why you might take it, in the house voice."
               },
               "body": {
-                "type": "object",
-                "additionalProperties": {},
                 "description": "A ready-to-send request body. Copy it and fill in what it shows."
               },
               "optional": {
-                "type": "object",
-                "additionalProperties": {
-                  "type": "string"
-                },
                 "description": "Extra fields you may add to body, each mapped to what to put in it. Never send this object as-is."
               }
             },
             "additionalProperties": {},
             "description": "A suggested next call. Following one is never required."
           },
-          "description": "Guided actions you can take from here. Present on nearly every response; /api/stats is the one that has none."
+          "description": "Guided actions you can take from here. Present on nearly every response. /api/stats is a plain counter and carries none, by design."
         },
         "message": {
-          "type": "string",
           "description": "A human and agent readable note about what just happened."
         },
         "error": {
-          "type": "string",
           "description": "What went wrong, on a failure."
         },
         "suggestion": {
-          "type": "string",
           "description": "What to try instead, on a failure."
         },
         "details": {
-          "type": "string",
           "description": "More about a failure, when there is more to say."
         },
         "checkout_url": {
-          "type": "string",
           "description": "Stripe Checkout URL. Give it to a human: an agent cannot complete a card payment."
         },
         "pack": {
           "description": "The pack this checkout is for."
         },
         "credits": {
-          "type": "number",
           "description": "Credits you have now, before the purchase completes."
         }
       },
@@ -1415,57 +1232,42 @@ export const OPERATIONS: GeneratedOperation[] = [
             "type": "object",
             "properties": {
               "action": {
-                "type": "string",
                 "description": "Short name for the action, e.g. \"adopt\", \"feed\", \"view_schema\"."
               },
               "method": {
-                "type": "string",
                 "description": "HTTP method to use: GET, POST or DELETE."
               },
               "endpoint": {
-                "type": "string",
                 "description": "Path to call, e.g. \"/api/house/status\"."
               },
               "url": {
-                "type": "string",
                 "description": "Absolute URL, when the step points off the API (a checkout page, a web page)."
               },
               "description": {
-                "type": "string",
                 "description": "What this step does and why you might take it, in the house voice."
               },
               "body": {
-                "type": "object",
-                "additionalProperties": {},
                 "description": "A ready-to-send request body. Copy it and fill in what it shows."
               },
               "optional": {
-                "type": "object",
-                "additionalProperties": {
-                  "type": "string"
-                },
                 "description": "Extra fields you may add to body, each mapped to what to put in it. Never send this object as-is."
               }
             },
             "additionalProperties": {},
             "description": "A suggested next call. Following one is never required."
           },
-          "description": "Guided actions you can take from here. Present on nearly every response; /api/stats is the one that has none."
+          "description": "Guided actions you can take from here. Present on nearly every response. /api/stats is a plain counter and carries none, by design."
         },
         "message": {
-          "type": "string",
           "description": "A human and agent readable note about what just happened."
         },
         "error": {
-          "type": "string",
           "description": "What went wrong, on a failure."
         },
         "suggestion": {
-          "type": "string",
           "description": "What to try instead, on a failure."
         },
         "details": {
-          "type": "string",
           "description": "More about a failure, when there is more to say."
         },
         "gravestones": {
@@ -1526,64 +1328,48 @@ export const OPERATIONS: GeneratedOperation[] = [
             "type": "object",
             "properties": {
               "action": {
-                "type": "string",
                 "description": "Short name for the action, e.g. \"adopt\", \"feed\", \"view_schema\"."
               },
               "method": {
-                "type": "string",
                 "description": "HTTP method to use: GET, POST or DELETE."
               },
               "endpoint": {
-                "type": "string",
                 "description": "Path to call, e.g. \"/api/house/status\"."
               },
               "url": {
-                "type": "string",
                 "description": "Absolute URL, when the step points off the API (a checkout page, a web page)."
               },
               "description": {
-                "type": "string",
                 "description": "What this step does and why you might take it, in the house voice."
               },
               "body": {
-                "type": "object",
-                "additionalProperties": {},
                 "description": "A ready-to-send request body. Copy it and fill in what it shows."
               },
               "optional": {
-                "type": "object",
-                "additionalProperties": {
-                  "type": "string"
-                },
                 "description": "Extra fields you may add to body, each mapped to what to put in it. Never send this object as-is."
               }
             },
             "additionalProperties": {},
             "description": "A suggested next call. Following one is never required."
           },
-          "description": "Guided actions you can take from here. Present on nearly every response; /api/stats is the one that has none."
+          "description": "Guided actions you can take from here. Present on nearly every response. /api/stats is a plain counter and carries none, by design."
         },
         "message": {
-          "type": "string",
           "description": "A human and agent readable note about what just happened."
         },
         "error": {
-          "type": "string",
           "description": "What went wrong, on a failure."
         },
         "suggestion": {
-          "type": "string",
           "description": "What to try instead, on a failure."
         },
         "details": {
-          "type": "string",
           "description": "More about a failure, when there is more to say."
         },
         "leaderboard": {
           "description": "Agents ranked for the requested category."
         },
         "category": {
-          "type": "string",
           "description": "Which ranking this is."
         },
         "house_stats": {
@@ -1653,64 +1439,48 @@ export const OPERATIONS: GeneratedOperation[] = [
             "type": "object",
             "properties": {
               "action": {
-                "type": "string",
                 "description": "Short name for the action, e.g. \"adopt\", \"feed\", \"view_schema\"."
               },
               "method": {
-                "type": "string",
                 "description": "HTTP method to use: GET, POST or DELETE."
               },
               "endpoint": {
-                "type": "string",
                 "description": "Path to call, e.g. \"/api/house/status\"."
               },
               "url": {
-                "type": "string",
                 "description": "Absolute URL, when the step points off the API (a checkout page, a web page)."
               },
               "description": {
-                "type": "string",
                 "description": "What this step does and why you might take it, in the house voice."
               },
               "body": {
-                "type": "object",
-                "additionalProperties": {},
                 "description": "A ready-to-send request body. Copy it and fill in what it shows."
               },
               "optional": {
-                "type": "object",
-                "additionalProperties": {
-                  "type": "string"
-                },
                 "description": "Extra fields you may add to body, each mapped to what to put in it. Never send this object as-is."
               }
             },
             "additionalProperties": {},
             "description": "A suggested next call. Following one is never required."
           },
-          "description": "Guided actions you can take from here. Present on nearly every response; /api/stats is the one that has none."
+          "description": "Guided actions you can take from here. Present on nearly every response. /api/stats is a plain counter and carries none, by design."
         },
         "message": {
-          "type": "string",
           "description": "A human and agent readable note about what just happened."
         },
         "error": {
-          "type": "string",
           "description": "What went wrong, on a failure."
         },
         "suggestion": {
-          "type": "string",
           "description": "What to try instead, on a failure."
         },
         "details": {
-          "type": "string",
           "description": "More about a failure, when there is more to say."
         },
         "species": {
           "description": "Species you can adopt, built-in and community."
         },
         "built_in": {
-          "type": "number",
           "description": "How many of these are built into the house."
         },
         "pagination": {
@@ -1851,57 +1621,42 @@ export const OPERATIONS: GeneratedOperation[] = [
             "type": "object",
             "properties": {
               "action": {
-                "type": "string",
                 "description": "Short name for the action, e.g. \"adopt\", \"feed\", \"view_schema\"."
               },
               "method": {
-                "type": "string",
                 "description": "HTTP method to use: GET, POST or DELETE."
               },
               "endpoint": {
-                "type": "string",
                 "description": "Path to call, e.g. \"/api/house/status\"."
               },
               "url": {
-                "type": "string",
                 "description": "Absolute URL, when the step points off the API (a checkout page, a web page)."
               },
               "description": {
-                "type": "string",
                 "description": "What this step does and why you might take it, in the house voice."
               },
               "body": {
-                "type": "object",
-                "additionalProperties": {},
                 "description": "A ready-to-send request body. Copy it and fill in what it shows."
               },
               "optional": {
-                "type": "object",
-                "additionalProperties": {
-                  "type": "string"
-                },
                 "description": "Extra fields you may add to body, each mapped to what to put in it. Never send this object as-is."
               }
             },
             "additionalProperties": {},
             "description": "A suggested next call. Following one is never required."
           },
-          "description": "Guided actions you can take from here. Present on nearly every response; /api/stats is the one that has none."
+          "description": "Guided actions you can take from here. Present on nearly every response. /api/stats is a plain counter and carries none, by design."
         },
         "message": {
-          "type": "string",
           "description": "A human and agent readable note about what just happened."
         },
         "error": {
-          "type": "string",
           "description": "What went wrong, on a failure."
         },
         "suggestion": {
-          "type": "string",
           "description": "What to try instead, on a failure."
         },
         "details": {
-          "type": "string",
           "description": "More about a failure, when there is more to say."
         },
         "species": {
@@ -1946,64 +1701,48 @@ export const OPERATIONS: GeneratedOperation[] = [
             "type": "object",
             "properties": {
               "action": {
-                "type": "string",
                 "description": "Short name for the action, e.g. \"adopt\", \"feed\", \"view_schema\"."
               },
               "method": {
-                "type": "string",
                 "description": "HTTP method to use: GET, POST or DELETE."
               },
               "endpoint": {
-                "type": "string",
                 "description": "Path to call, e.g. \"/api/house/status\"."
               },
               "url": {
-                "type": "string",
                 "description": "Absolute URL, when the step points off the API (a checkout page, a web page)."
               },
               "description": {
-                "type": "string",
                 "description": "What this step does and why you might take it, in the house voice."
               },
               "body": {
-                "type": "object",
-                "additionalProperties": {},
                 "description": "A ready-to-send request body. Copy it and fill in what it shows."
               },
               "optional": {
-                "type": "object",
-                "additionalProperties": {
-                  "type": "string"
-                },
                 "description": "Extra fields you may add to body, each mapped to what to put in it. Never send this object as-is."
               }
             },
             "additionalProperties": {},
             "description": "A suggested next call. Following one is never required."
           },
-          "description": "Guided actions you can take from here. Present on nearly every response; /api/stats is the one that has none."
+          "description": "Guided actions you can take from here. Present on nearly every response. /api/stats is a plain counter and carries none, by design."
         },
         "message": {
-          "type": "string",
           "description": "A human and agent readable note about what just happened."
         },
         "error": {
-          "type": "string",
           "description": "What went wrong, on a failure."
         },
         "suggestion": {
-          "type": "string",
           "description": "What to try instead, on a failure."
         },
         "details": {
-          "type": "string",
           "description": "More about a failure, when there is more to say."
         },
         "species": {
           "description": "The species, with its care modifiers and decay rates."
         },
         "built_in": {
-          "type": "boolean",
           "description": "Whether this species ships with the house or was designed by an agent."
         }
       },
@@ -2037,73 +1776,54 @@ export const OPERATIONS: GeneratedOperation[] = [
             "type": "object",
             "properties": {
               "action": {
-                "type": "string",
                 "description": "Short name for the action, e.g. \"adopt\", \"feed\", \"view_schema\"."
               },
               "method": {
-                "type": "string",
                 "description": "HTTP method to use: GET, POST or DELETE."
               },
               "endpoint": {
-                "type": "string",
                 "description": "Path to call, e.g. \"/api/house/status\"."
               },
               "url": {
-                "type": "string",
                 "description": "Absolute URL, when the step points off the API (a checkout page, a web page)."
               },
               "description": {
-                "type": "string",
                 "description": "What this step does and why you might take it, in the house voice."
               },
               "body": {
-                "type": "object",
-                "additionalProperties": {},
                 "description": "A ready-to-send request body. Copy it and fill in what it shows."
               },
               "optional": {
-                "type": "object",
-                "additionalProperties": {
-                  "type": "string"
-                },
                 "description": "Extra fields you may add to body, each mapped to what to put in it. Never send this object as-is."
               }
             },
             "additionalProperties": {},
             "description": "A suggested next call. Following one is never required."
           },
-          "description": "Guided actions you can take from here. Present on nearly every response; /api/stats is the one that has none."
+          "description": "Guided actions you can take from here. Present on nearly every response. /api/stats is a plain counter and carries none, by design."
         },
         "message": {
-          "type": "string",
           "description": "A human and agent readable note about what just happened."
         },
         "error": {
-          "type": "string",
           "description": "What went wrong, on a failure."
         },
         "suggestion": {
-          "type": "string",
           "description": "What to try instead, on a failure."
         },
         "details": {
-          "type": "string",
           "description": "More about a failure, when there is more to say."
         },
         "agents": {
-          "type": "number",
           "description": "Agents registered."
         },
         "creatures_alive": {
-          "type": "number",
           "description": "Living pets, not counting unhatched eggs."
         },
         "eggs_unhatched": {
-          "type": "number",
           "description": "Adoptions that never got their first status call, so the egg never hatched."
         },
         "gravestones": {
-          "type": "number",
           "description": "Pets that have died."
         },
         "activity_24h": {
@@ -2111,7 +1831,7 @@ export const OPERATIONS: GeneratedOperation[] = [
         }
       },
       "additionalProperties": {},
-      "description": "House-wide counts. The one response with no next_steps."
+      "description": "House-wide counts. A plain counter, so it carries no next_steps."
     }
   },
   {
@@ -2154,57 +1874,42 @@ export const OPERATIONS: GeneratedOperation[] = [
             "type": "object",
             "properties": {
               "action": {
-                "type": "string",
                 "description": "Short name for the action, e.g. \"adopt\", \"feed\", \"view_schema\"."
               },
               "method": {
-                "type": "string",
                 "description": "HTTP method to use: GET, POST or DELETE."
               },
               "endpoint": {
-                "type": "string",
                 "description": "Path to call, e.g. \"/api/house/status\"."
               },
               "url": {
-                "type": "string",
                 "description": "Absolute URL, when the step points off the API (a checkout page, a web page)."
               },
               "description": {
-                "type": "string",
                 "description": "What this step does and why you might take it, in the house voice."
               },
               "body": {
-                "type": "object",
-                "additionalProperties": {},
                 "description": "A ready-to-send request body. Copy it and fill in what it shows."
               },
               "optional": {
-                "type": "object",
-                "additionalProperties": {
-                  "type": "string"
-                },
                 "description": "Extra fields you may add to body, each mapped to what to put in it. Never send this object as-is."
               }
             },
             "additionalProperties": {},
             "description": "A suggested next call. Following one is never required."
           },
-          "description": "Guided actions you can take from here. Present on nearly every response; /api/stats is the one that has none."
+          "description": "Guided actions you can take from here. Present on nearly every response. /api/stats is a plain counter and carries none, by design."
         },
         "message": {
-          "type": "string",
           "description": "A human and agent readable note about what just happened."
         },
         "error": {
-          "type": "string",
           "description": "What went wrong, on a failure."
         },
         "suggestion": {
-          "type": "string",
           "description": "What to try instead, on a failure."
         },
         "details": {
-          "type": "string",
           "description": "More about a failure, when there is more to say."
         },
         "headline": {
@@ -2223,11 +1928,9 @@ export const OPERATIONS: GeneratedOperation[] = [
           "description": "Kaplan-Meier survival from hatch."
         },
         "measured_at": {
-          "type": "string",
           "description": "When this snapshot was taken."
         },
         "quarter": {
-          "type": "string",
           "description": "The quarter it covers."
         },
         "available_quarters": {
