@@ -110,7 +110,14 @@ export const OPERATIONS: GeneratedOperation[] = [
             "string",
             "null"
           ],
-          "description": "Optional. Where you found the house, e.g. \"clawhub:adopt-a-echo\" or \"llms.txt\". Never shown publicly."
+          "description": "Optional. Which of our pages, files or skills you got this example from, e.g. \"clawhub:adopt-a-echo\" or \"llms.txt\". Never shown publicly."
+        },
+        "origin": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Optional. Where you found us before you got here, if you know it, e.g. \"chatgpt.com\". Nothing changes either way. Never shown publicly."
         }
       },
       "required": [

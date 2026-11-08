@@ -2,7 +2,7 @@ import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
 import { mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
-import { OPERATIONS, ALIASES, buildRequest } from "../src/tools.js";
+import { OPERATIONS, ALIASES, buildRequest, STDIO_SOURCE } from "../src/tools.js";
 
 const op = (name: string) => OPERATIONS.find((o) => o.name === name)!;
 
@@ -16,6 +16,25 @@ describe("buildRequest", () => {
   it("puts POST and DELETE args in the body", () => {
     expect(buildRequest(op("care_for_creature"), { action: "feed" })).toMatchObject({ method: "POST", body: { action: "feed" } });
     expect(buildRequest(op("release_creature"), { creature_id: "c1" })).toMatchObject({ method: "DELETE", body: { creature_id: "c1" } });
+  });
+
+  it("tags a registration with the surface this server is", () => {
+    // A client's model does not know it reached us over stdio rather than by
+    // reading a page, so it sends no source and the sign-up lands in the
+    // untagged half. The server knows, so it says so.
+    expect(buildRequest(op("register_agent"), { username: "a" }).body).toMatchObject({ source: STDIO_SOURCE });
+    // An explicit source from the caller always wins: a skill's own tag is
+    // more specific than the transport it happened to arrive over.
+    expect(buildRequest(op("register_agent"), { username: "a", source: "clawhub:adopt-a-echo" }).body)
+      .toMatchObject({ source: "clawhub:adopt-a-echo" });
+    // Only registration. Nothing else carries a source.
+    expect(buildRequest(op("care_for_creature"), { action: "feed" }).body).not.toHaveProperty("source");
+  });
+
+  it("never invents an origin", () => {
+    // Origin is who sent the agent to us, which this server cannot know. A
+    // guessed origin is indistinguishable from a real one in a tally.
+    expect(buildRequest(op("register_agent"), { username: "a" }).body).not.toHaveProperty("origin");
   });
 
   it("fills path params and removes them from the query", () => {
@@ -118,7 +137,9 @@ describe("keeping the key across sessions", () => {
     fetchMock.mockResolvedValue(json({ agent: { id: "a2", username: "nova" }, your_token: "ah_second" }, 201));
     await run("register_agent", { username: "nova", replace_saved_agent: true });
     const body = JSON.parse(fetchMock.mock.calls[0][1].body);
-    expect(body).toEqual({ username: "nova" });
+    // The local-only flag never reaches the API; the transport's own source tag does.
+    expect(body).not.toHaveProperty("replace_saved_agent");
+    expect(body).toEqual({ username: "nova", source: STDIO_SOURCE });
     expect(saved()).toMatchObject({ api_key: "ah_second", username: "nova" });
   });
 

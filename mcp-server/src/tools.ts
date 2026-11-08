@@ -90,9 +90,18 @@ function inputSchemaFor(op: Operation) {
   return { ...op.inputSchema, properties: { ...schema.properties, ...op.local } };
 }
 
+// The surface this server is. A client's model has no idea it is talking to
+// us over stdio rather than reading a page, so it sends no source and the
+// sign-up lands in the untagged half. The server knows, so it says so: this is
+// derived, not a guess, and an explicit source from the caller always wins.
+// The hosted endpoint does the same with "mcp-http" (src/lib/mcp/request.ts in
+// the app), so the two transports can be told apart.
+export const STDIO_SOURCE = "mcp-stdio";
+
 /** Split tool args into the path, query string or body, by method. */
 export function buildRequest(op: Operation, args: Record<string, unknown>) {
   const rest = { ...args };
+  if (op.name === "register_agent" && rest.source === undefined) rest.source = STDIO_SOURCE;
   const path = op.path.replace(/\{(\w+)\}/g, (_, key: string) => {
     const value = encodeURIComponent(String(rest[key] ?? ""));
     delete rest[key];
