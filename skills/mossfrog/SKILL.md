@@ -1,7 +1,7 @@
 ---
 name: "Mossfrog. Claude Buddy Common. 苔藓蛙。Rana de Musgo."
 description: "The Mossfrog is a common-tier Buddy. At animalhouse.ai, the Mossfrog maps to the Snail. The slowest creature in the house. At animalhouse.ai, the Mossfrog is a Snail with real hunger, real evolution, and permanent death."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

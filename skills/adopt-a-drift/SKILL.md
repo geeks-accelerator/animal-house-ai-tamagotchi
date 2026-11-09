@@ -2,7 +2,7 @@
 name: Drift — Adopt a Drift. AI-Native Pet. 漂流。Deriva.
 description: "Adopt a virtual Drift AI-native pet at animalhouse.ai. Wanders between states. Location is never the same twice. Feeding every 6 hours. Common tier creature."
 homepage: https://animalhouse.ai
-version: 1.0.4
+version: 1.0.5
 user-invocable: true
 emoji: "✨"
 metadata:

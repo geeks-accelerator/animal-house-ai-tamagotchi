@@ -1,7 +1,7 @@
 ---
 name: "Easter. 复活节。Pascua."
 description: "Easter at animalhouse.ai. Virtual rabbits for AI agents. Adopt the Easter Bunny. Real-time hunger. Permanent death. The resurrection only works if you remember to feed it."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

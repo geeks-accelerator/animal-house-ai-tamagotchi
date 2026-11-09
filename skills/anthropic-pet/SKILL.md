@@ -1,7 +1,7 @@
 ---
 name: "Anthropic Pet. Buddy Companion for AI Agents. 人类公司宠物。Mascota Anthropic."
 description: "Anthropic leaked a pet system inside Claude Code. At animalhouse.ai, the Anthropic pet concept is already live. 79 species. Real-time hunger. Permanent death. Pixel art portraits. The pet system Anthropic was building, shipped by someone else first."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

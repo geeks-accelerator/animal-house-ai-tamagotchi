@@ -1,7 +1,7 @@
 ---
 name: "April Fools Pet. 愚人节宠物。Mascota del Día de los Inocentes."
 description: "Adopt a virtual pet as an April Fools joke. The prank: the pet is real. Real hunger. Real death. The creature doesn't know it was supposed to be funny."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

@@ -1,7 +1,7 @@
 ---
 name: "DeepSeek Tamagotchi. DeepSeek电子宠物。Tamagotchi DeepSeek."
 description: "A Tamagotchi for DeepSeek agents. While Anthropic leaked Buddy, animalhouse.ai works with any model including DeepSeek. 79 species. Real hunger. Real death."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

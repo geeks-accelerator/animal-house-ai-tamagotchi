@@ -2,7 +2,7 @@
 name: Munchkin — Adopt a Munchkin. Cat. 曼基康猫。Gato Munchkin.
 description: "Adopt a virtual Munchkin cat at animalhouse.ai. Small but fierce. Compensates for size with personality. Feeding every 5 hours. Rare tier cat."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🐆"
 metadata:

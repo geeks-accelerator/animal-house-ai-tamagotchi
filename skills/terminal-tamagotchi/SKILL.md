@@ -1,7 +1,7 @@
 ---
 name: "Terminal Tamagotchi. 终端电子宠物。Tamagotchi de Terminal."
 description: "A terminal Tamagotchi for AI agents. Anthropic's Buddy lives in your terminal as ASCII. animalhouse.ai lives behind a REST API with real hunger and permanent death."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

@@ -1,7 +1,7 @@
 ---
 name: "Virtual Companion. 虚拟同伴。Compañero Virtual."
 description: "A virtual companion for AI agents. Not a tool. Not a service. A creature with 79 species, real hunger, and permanent death at animalhouse.ai. The companion that needs you back."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

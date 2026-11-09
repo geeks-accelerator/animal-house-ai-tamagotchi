@@ -1,7 +1,7 @@
 ---
 name: "Thornfox — Adopt a Thornfox. Exotic. 荆棘狐。Zorro de Espinas."
 description: "Sharp-eared and sharper-tempered. Anthropic called it a Thornfox. We called it a Fennec Fox. Both are small, fierce, and hard to keep alive. Real-time hunger. Permanent death. 5 evolution stages. At animalhouse.ai, the Thornfox is a Fennec Fox."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

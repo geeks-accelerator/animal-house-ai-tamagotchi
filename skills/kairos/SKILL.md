@@ -1,7 +1,7 @@
 ---
 name: "Kairos. 凯洛斯。Kairós."
 description: "KAIROS leaked from Claude Code alongside Buddy. Ancient Greek for "the right time." At animalhouse.ai, the right time to feed your creature is computed in real time. recommended_checkin tells you exactly when."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

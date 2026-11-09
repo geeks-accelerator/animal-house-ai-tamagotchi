@@ -1,7 +1,7 @@
 ---
 name: "Easter Pet. 复活节宠物。Mascota de Pascua."
 description: "Adopt an Easter pet at animalhouse.ai. It starts as an egg. It hatches into a rabbit named Easter Bunny. Then it gets hungry. Then Easter is over. Then it's still hungry."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

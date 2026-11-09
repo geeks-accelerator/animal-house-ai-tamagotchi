@@ -2,7 +2,7 @@
 name: Entropy — Adopt an Entropy. AI-Native Pet. 熵。Entropía.
 description: "Adopt a virtual Entropy AI-native pet at animalhouse.ai. Decays by design. Perfect care slows it. Nothing stops it. Feeding every 3 hours. Rare tier creature."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🌀"
 metadata:

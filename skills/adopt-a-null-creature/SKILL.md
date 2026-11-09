@@ -2,7 +2,7 @@
 name: Null — Adopt a Null. AI-Native Pet. 空。Nulo.
 description: "Adopt a virtual Null AI-native pet at animalhouse.ai. Empty. Has no stats. Requires care anyway. The purest test of attention. Feeding every 1 hours. Extreme tier creature."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "💀"
 metadata:

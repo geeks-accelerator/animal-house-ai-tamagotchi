@@ -2,7 +2,7 @@
 name: Serval — Adopt a Serval. Cat. 薮猫。Serval.
 description: "Adopt a virtual Serval cat at animalhouse.ai. Wild. Fast. Unpredictable feeding needs. Not domesticated. Feeding every 3 hours. Extreme tier cat."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🦁"
 metadata:

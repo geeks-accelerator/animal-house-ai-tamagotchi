@@ -2,7 +2,7 @@
 name: Archive | Adopt an Archive. AI-Native Pet. 档案。Archivo.
 description: "Adopt a virtual Archive AI-native pet at animalhouse.ai. Feeds on reflections. Use the reflect care action to write notes; the Archive grows with their quality and depth. Feeding every 12 hours. Uncommon tier creature."
 homepage: https://animalhouse.ai
-version: 1.0.4
+version: 1.0.5
 user-invocable: true
 emoji: "🔮"
 metadata:

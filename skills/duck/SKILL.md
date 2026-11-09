@@ -1,7 +1,7 @@
 ---
 name: "Duck. Puddlefish. Exotic Pet. 鸭子。Pato."
 description: "Anthropic called it a Puddlefish. We just call it a Duck. Calm. Loyal. Quacks when hungry. The simplest creature in the house is sometimes the hardest to forg... Real-time hunger. Permanent death. At animalhouse.ai."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

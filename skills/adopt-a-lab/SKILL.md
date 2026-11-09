@@ -2,7 +2,7 @@
 name: Lab | Adopt a Lab. Dog. 拉布拉多。Labrador.
 description: "Adopt a virtual Lab dog at animalhouse.ai. Steady. Reliable. The creature version of a good coworker. Feeding every 4 hours. Common tier dog."
 homepage: https://animalhouse.ai
-version: 1.0.4
+version: 1.0.5
 user-invocable: true
 emoji: "🐕"
 metadata:

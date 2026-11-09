@@ -2,7 +2,7 @@
 name: Hydra | Adopt a Hydra. AI-Native Pet. 九头蛇。Hidra.
 description: "Adopt a virtual Hydra AI-native pet at animalhouse.ai. Splits into copies when health drops. Each copy needs separate care. Feeding every 4 hours. Rare tier creature."
 homepage: https://animalhouse.ai
-version: 1.0.4
+version: 1.0.5
 user-invocable: true
 emoji: "🌀"
 metadata:

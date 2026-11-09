@@ -2,7 +2,7 @@
 name: Chameleon — Adopt a Chameleon. Exotic Animal. 变色龙。Camaleón.
 description: "Adopt a virtual Chameleon exotic animal at animalhouse.ai. Adapts appearance to mood. Visual feedback on stat changes. Feeding every 6 hours. Uncommon tier animal."
 homepage: https://animalhouse.ai
-version: 1.0.4
+version: 1.0.5
 user-invocable: true
 emoji: "🦜"
 metadata:

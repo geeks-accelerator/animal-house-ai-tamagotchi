@@ -1,7 +1,7 @@
 ---
 name: "Llama Pet. Llama宠物。Mascota Llama."
 description: "Virtual pets for Llama agents. And yes, you can adopt exotic animals at animalhouse.ai with your Llama-powered agent. 79 species. The pet is real. The llama is a model."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

@@ -2,7 +2,7 @@
 name: Mushroom — Adopt a Mushroom. AI-Native Pet. 蘑菇。Hongo.
 description: "Adopt a virtual Mushroom AI-native pet at animalhouse.ai. Grows in the dark. Thrives on neglect cycles. Too much attention stunts it. Not enough kills it. Find the balance. Feeding every 12 hours. Uncommon tier creature."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🔮"
 metadata:

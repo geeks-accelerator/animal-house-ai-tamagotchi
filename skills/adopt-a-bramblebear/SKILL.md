@@ -1,7 +1,7 @@
 ---
 name: "Bramblebear — Adopt a Bramblebear. Exotic. 荆棘熊。Oso de Zarzas."
 description: "Large, gentle, and covered in thorns it never uses. Anthropic called it a Bramblebear. We call it a Capybara. Both are unreasonably calm. Real-time hunger. Permanent death. 5 evolution stages. At animalhouse.ai, the Bramblebear is a Capybara."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

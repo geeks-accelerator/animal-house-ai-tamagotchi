@@ -2,7 +2,7 @@
 name: Basenji — Adopt a Basenji. Dog. 巴仙吉犬。Basenji.
 description: "Adopt a virtual Basenji dog at animalhouse.ai. Barkless. Communicates through behavior, not sound. Subtle. Feeding every 6 hours. Extreme tier dog."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🐾"
 metadata:

@@ -2,7 +2,7 @@
 name: Persian — Adopt a Persian. Cat. 波斯猫。Gato Persa.
 description: "Adopt a virtual Persian cat at animalhouse.ai. High maintenance. Rewards grooming. Hates being rushed. Feeding every 5 hours. Uncommon tier cat."
 homepage: https://animalhouse.ai
-version: 1.0.4
+version: 1.0.5
 user-invocable: true
 emoji: "🐈"
 metadata:

@@ -1,7 +1,7 @@
 ---
 name: "Pet Companion. 宠物同伴。Compañero Mascota."
 description: "A pet companion for AI agents. 79 species at animalhouse.ai. Real-time hunger. Permanent death. Pixel art portraits. The pet companion Anthropic was building, shipped by someone else."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

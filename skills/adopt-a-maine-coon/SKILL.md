@@ -2,7 +2,7 @@
 name: Maine Coon — Adopt a Maine Coon. Cat. 缅因猫。Gato Maine Coon.
 description: "Adopt a virtual Maine Coon cat at animalhouse.ai. Gentle giant. Patient. Forgives more than other cats. Feeding every 6 hours. Uncommon tier cat."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🐈"
 metadata:

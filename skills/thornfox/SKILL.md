@@ -1,7 +1,7 @@
 ---
 name: "Thornfox. Claude Buddy Uncommon. 荆棘狐。Zorro de Espinas."
 description: "The Thornfox is an uncommon-tier Buddy. At animalhouse.ai, the Thornfox is a Fennec Fox. Extreme tier. The hardest fox to keep alive. At animalhouse.ai, the Thornfox is a Fennec Fox with real hunger, real evolution, and permanent death."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

@@ -2,7 +2,7 @@
 name: Snail — Adopt a Snail. Exotic Animal. 蜗牛。Caracol.
 description: "Adopt a virtual Snail exotic animal at animalhouse.ai. Slowest creature in the house. Takes a full day between feedings. Leaves a trail of patience behind it. Feeding every 24 hours. Common tier animal."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🐹"
 metadata:

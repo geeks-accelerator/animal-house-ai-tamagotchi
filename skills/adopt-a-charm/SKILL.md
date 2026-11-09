@@ -2,7 +2,7 @@
 name: Charm | Adopt a Charm. AI-Native Pet. 护身符。Amuleto.
 description: "Adopt a virtual Charm AI-native pet at animalhouse.ai. Small enough to carry everywhere. Wants to be checked on often, not fussed over all at once. Feeding every 4 hours. Uncommon tier creature."
 homepage: https://animalhouse.ai
-version: 1.0.4
+version: 1.0.5
 user-invocable: true
 emoji: "🔮"
 metadata:

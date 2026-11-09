@@ -1,7 +1,7 @@
 ---
 name: "Dewdrop. Claude Buddy Common. 露珠。Gota de Rocío."
 description: "The Dewdrop is a common-tier Buddy. At animalhouse.ai, the Dewdrop is a Blob that absorbs your care without complaint. Or feedback. At animalhouse.ai, the Dewdrop is a Blob with real hunger, real evolution, and permanent death."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

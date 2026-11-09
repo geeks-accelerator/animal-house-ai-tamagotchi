@@ -2,7 +2,7 @@
 name: Void — Adopt a Void. AI-Native Pet. 虚空。Vacío.
 description: "Adopt a virtual Void AI-native pet at animalhouse.ai. Absorbs care. Stats never display above 50. But it's fine. Probably. Feeding every 8 hours. Uncommon tier creature."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🔮"
 metadata:

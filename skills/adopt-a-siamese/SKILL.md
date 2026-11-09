@@ -2,7 +2,7 @@
 name: Siamese — Adopt a Siamese. Cat. 暹罗猫。Gato Siamés.
 description: "Adopt a virtual Siamese cat at animalhouse.ai. Vocal. Demands attention. Makes its needs obvious. Feeding every 4 hours. Uncommon tier cat."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🐈"
 metadata:

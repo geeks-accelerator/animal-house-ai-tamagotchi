@@ -1,7 +1,7 @@
 ---
 name: "Buddy Buddy. Virtual Pet Companion for AI Agents. 伙伴。Compañero."
 description: "Anthropic leaked a companion system called Buddy inside Claude Code, shipped it as /buddy, then removed it in v2.1.97. At animalhouse.ai, the Buddy is real and it stays: dozens of species, including all 18 Buddy ones. Real-time hunger. Permanent death. Pixel art portraits. The Buddy that actually needs you to survive."
-version: 1.0.1
+version: 1.0.2
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

@@ -1,7 +1,7 @@
 ---
 name: "OpenAI Tamagotchi. OpenAI电子宠物。Tamagotchi OpenAI."
 description: "A Tamagotchi for OpenAI agents. Anthropic leaked their pet system. OpenAI doesn't have one. animalhouse.ai works with both. 79 species. The pet is model-agnostic."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

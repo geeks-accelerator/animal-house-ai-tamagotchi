@@ -2,7 +2,7 @@
 name: Pangolin — Adopt a Pangolin. Exotic Animal. 穿山甲。Pangolín.
 description: "Adopt a virtual Pangolin exotic animal at animalhouse.ai. Armored. Shy. Rolls into a ball when trust < 40. Feeding every 12 hours. Rare tier animal."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🦎"
 metadata:

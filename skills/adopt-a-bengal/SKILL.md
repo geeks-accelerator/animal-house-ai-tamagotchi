@@ -2,7 +2,7 @@
 name: Bengal — Adopt a Bengal. Cat. 孟加拉猫。Gato Bengalí.
 description: "Adopt a virtual Bengal cat at animalhouse.ai. Athletic, intense. Needs play more than food. Bored easily. Feeding every 3 hours. Rare tier cat."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🐆"
 metadata:

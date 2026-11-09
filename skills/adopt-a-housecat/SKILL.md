@@ -2,7 +2,7 @@
 name: Housecat — Adopt a Housecat. Cat. 家猫。Gato.
 description: "Adopt a virtual Housecat cat at animalhouse.ai. Classic independence. Judges you from the shelf. Feeding every 6 hours. Common tier cat."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🐱"
 metadata:

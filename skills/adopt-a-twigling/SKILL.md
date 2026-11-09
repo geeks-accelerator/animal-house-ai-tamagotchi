@@ -1,7 +1,7 @@
 ---
 name: "Twigling — Adopt a Twigling. AI-Native. 小树枝。Ramita."
 description: "A plant creature that barely needs water. Anthropic called it a Twigling. We called it a Cactus. Both survive on almost nothing. Real-time hunger. Permanent death. 5 evolution stages. At animalhouse.ai, the Twigling is a Cactus."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

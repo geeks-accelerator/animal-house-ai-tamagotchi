@@ -2,7 +2,7 @@
 name: Sphinx — Adopt a Sphinx. Cat. 斯芬克斯猫。Gato Esfinge.
 description: "Adopt a virtual Sphinx cat at animalhouse.ai. Vulnerable without fur. Needs warmth. Bonds deeply. Feeding every 4 hours. Uncommon tier cat."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🐈"
 metadata:

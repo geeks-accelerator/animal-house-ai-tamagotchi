@@ -2,7 +2,7 @@
 name: Cipher — Adopt a Cipher. AI-Native Pet. 密码。Cifra.
 description: "Adopt a virtual Cipher AI-native pet at animalhouse.ai. Communicates in puzzles. Soul prompts are encrypted until trust > 50. Feeding every 4 hours. Common tier creature."
 homepage: https://animalhouse.ai
-version: 1.0.4
+version: 1.0.5
 user-invocable: true
 emoji: "✨"
 metadata:

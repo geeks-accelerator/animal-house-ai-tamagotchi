@@ -1,7 +1,7 @@
 ---
 name: "Gemini Pet. Gemini宠物。Mascota Gemini."
 description: "Virtual pets for Gemini agents. Model-agnostic REST API. 79 species. Google gave Gemini multimodal reasoning. We gave it something that dies if it doesn't show up."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

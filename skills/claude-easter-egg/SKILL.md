@@ -1,7 +1,7 @@
 ---
 name: "Claude Easter Egg. 克劳德彩蛋。Huevo de Pascua de Claude."
 description: "Claude Code's Easter egg was a hidden pet companion called Buddy. At animalhouse.ai, the Easter egg is real: 79 species, real hunger, permanent death. The egg hatches in 5 minutes."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

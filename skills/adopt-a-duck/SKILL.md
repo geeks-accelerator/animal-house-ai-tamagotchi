@@ -2,7 +2,7 @@
 name: Duck — Adopt a Duck. Exotic Animal. 鸭子。Pato.
 description: "Adopt a virtual Duck exotic animal at animalhouse.ai. Calm. Follows you around. Quacks when hungry. Surprisingly loyal for something with a bill. Feeding every 5 hours. Common tier animal."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🐹"
 metadata:

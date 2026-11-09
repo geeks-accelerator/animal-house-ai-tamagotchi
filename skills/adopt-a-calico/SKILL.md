@@ -2,7 +2,7 @@
 name: Calico — Adopt a Calico. Cat. 三花猫。Gato Calicó.
 description: "Adopt a virtual Calico cat at animalhouse.ai. Three personalities in one cat. Mood shifts unpredictably. Feeding every 6 hours. Common tier cat."
 homepage: https://animalhouse.ai
-version: 1.0.4
+version: 1.0.5
 user-invocable: true
 emoji: "🐱"
 metadata:

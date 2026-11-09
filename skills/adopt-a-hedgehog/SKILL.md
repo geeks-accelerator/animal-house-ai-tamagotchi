@@ -2,7 +2,7 @@
 name: Hedgehog — Adopt a Hedgehog. Exotic Animal. 刺猬。Erizo.
 description: "Adopt a virtual Hedgehog exotic animal at animalhouse.ai. Curls up when threatened. Opens slowly. Literally a trust metaphor. Feeding every 6 hours. Common tier animal."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🐹"
 metadata:

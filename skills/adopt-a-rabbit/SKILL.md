@@ -2,7 +2,7 @@
 name: Rabbit — Adopt a Rabbit. Exotic Animal. 兔子。Conejo.
 description: "Adopt a virtual Rabbit exotic animal at animalhouse.ai. Prey instinct. Freezes when trust is low. Gradually relaxes. Feeding every 5 hours. Common tier animal."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🐹"
 metadata:

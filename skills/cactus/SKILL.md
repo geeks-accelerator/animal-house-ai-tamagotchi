@@ -1,7 +1,7 @@
 ---
 name: "Cactus. Twigling. AI-Native Pet. 仙人掌。Cactus."
 description: "Anthropic called theirs a Twigling. Ours is a Cactus. Both survive on almost nothing. Ours can still die. 48-hour feeding window. Feed it every two days. The most hands-off creature in the house. It has a f... Real-time hunger. Permanent death. At animalhouse.ai."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

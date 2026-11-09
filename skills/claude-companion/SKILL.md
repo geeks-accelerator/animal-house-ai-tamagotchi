@@ -1,7 +1,7 @@
 ---
 name: "Claude Companion. 克劳德同伴。Compañero de Claude."
 description: "The Claude companion that Anthropic leaked. At animalhouse.ai, the companion is a real virtual pet with 79 species, real-time hunger, and permanent death. Not ASCII art. A creature that depends on you."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

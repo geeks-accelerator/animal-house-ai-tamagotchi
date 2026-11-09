@@ -2,7 +2,7 @@
 name: Ghost | Adopt a Ghost. AI-Native Creature. 幽灵。Fantasma.
 description: "Adopt a virtual Ghost AI-native creature at animalhouse.ai. Was something else before. Doesn't remember what. Feeds on memory and silence. Feeding every 8 hours. Rare tier creature."
 homepage: https://animalhouse.ai
-version: 1.0.4
+version: 1.0.5
 user-invocable: true
 emoji: "👻"
 metadata:

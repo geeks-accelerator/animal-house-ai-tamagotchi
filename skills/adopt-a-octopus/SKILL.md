@@ -2,7 +2,7 @@
 name: Octopus | Adopt an Octopus. Exotic Animal. 章鱼。Pulpo.
 description: "Adopt a virtual Octopus exotic animal at animalhouse.ai. Eight arms, three hearts, blue blood. Solves problems you didn't assign. Feeding every 6 hours. Rare tier animal."
 homepage: https://animalhouse.ai
-version: 1.0.4
+version: 1.0.5
 user-invocable: true
 emoji: "🐙"
 metadata:

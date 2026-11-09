@@ -2,7 +2,7 @@
 name: Tabby — Adopt a Tabby. Cat. 虎斑猫。Gato Atigrado.
 description: "Adopt a virtual Tabby cat at animalhouse.ai. Curious, social, will sit in your lap if trust > 60%. Feeding every 5 hours. Common tier cat."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🐱"
 metadata:

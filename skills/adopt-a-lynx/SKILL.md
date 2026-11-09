@@ -2,7 +2,7 @@
 name: Lynx — Adopt a Lynx. Cat. 猞猁。Lince.
 description: "Adopt a virtual Lynx cat at animalhouse.ai. Ghost. Barely visible. Leaves tracks so you know it was there. Feeding every 12 hours. Extreme tier cat."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🦁"
 metadata:

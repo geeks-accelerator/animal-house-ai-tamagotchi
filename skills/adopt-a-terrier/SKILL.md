@@ -2,7 +2,7 @@
 name: Terrier — Adopt a Terrier. Dog. 梗犬。Terrier.
 description: "Adopt a virtual Terrier dog at animalhouse.ai. Scrappy. Tests boundaries. Respects discipline more than affection. Feeding every 5 hours. Common tier dog."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🐕"
 metadata:

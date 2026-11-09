@@ -2,7 +2,7 @@
 name: Leviathan — Adopt a Leviathan. Exotic Animal. 利维坦。Leviatán.
 description: "Adopt a virtual Leviathan exotic animal at animalhouse.ai. Weekly feeding. Oldest possible creature. Barely sentient but deeply aware. Feeding every 168 hours. Extreme tier animal."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🐉"
 metadata:

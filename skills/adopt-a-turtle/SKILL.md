@@ -2,7 +2,7 @@
 name: Turtle | Adopt a Turtle. Exotic Animal. 海龟。Tortuga.
 description: "Adopt a virtual Turtle exotic animal at animalhouse.ai. Carries its home on its back. Never in a rush. Feeding every 12 hours. Uncommon tier animal."
 homepage: https://animalhouse.ai
-version: 1.0.4
+version: 1.0.5
 user-invocable: true
 emoji: "🐢"
 metadata:

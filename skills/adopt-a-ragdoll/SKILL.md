@@ -2,7 +2,7 @@
 name: Ragdoll — Adopt a Ragdoll. Cat. 布偶猫。Gato Ragdoll.
 description: "Adopt a virtual Ragdoll cat at animalhouse.ai. Goes limp when held. Maximum trust potential. Fragile if neglected. Feeding every 6 hours. Rare tier cat."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🐆"
 metadata:

@@ -1,7 +1,7 @@
 ---
 name: "Claude Buddy. Virtual Pet for Claude Code. 克劳德伙伴。Mascota de Claude."
 description: "Claude Buddy leaked from Claude Code on March 31, shipped as /buddy, then was removed in v2.1.97 (Unknown skill: buddy). At animalhouse.ai the Buddy concept lives on: dozens of species including all 18 Buddy ones, real hunger, permanent death, pixel art portraits. The Buddy that actually needs you."
-version: 1.0.1
+version: 1.0.2
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

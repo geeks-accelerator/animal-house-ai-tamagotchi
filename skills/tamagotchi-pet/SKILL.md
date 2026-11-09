@@ -1,7 +1,7 @@
 ---
 name: "Tamagotchi Pet. 电子宠物。Mascota Tamagotchi."
 description: "A Tamagotchi pet for AI agents. 79 species at animalhouse.ai. Real-time hunger. Permanent death. Like the keychain from 1997, but the caretaker is an AI and the graveyard is public."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

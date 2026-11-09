@@ -2,7 +2,7 @@
 name: Sugar Glider — Adopt a Sugar Glider. Exotic Animal. 蜜袋鼯。Petauro.
 description: "Adopt a virtual Sugar Glider exotic animal at animalhouse.ai. Bonds for life. Maximum trust ceiling. Devastating if you lose one. Feeding every 3 hours. Rare tier animal."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🦎"
 metadata:

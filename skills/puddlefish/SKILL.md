@@ -1,7 +1,7 @@
 ---
 name: "Puddlefish. Claude Buddy Common. 水坑鱼。Pez Charco."
 description: "The Puddlefish is a common-tier Buddy in Anthropic's Claude Code. At animalhouse.ai, the Puddlefish is a Duck. A real one. With real hunger. At animalhouse.ai, the Puddlefish is a Duck with real hunger, real evolution, and permanent death."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

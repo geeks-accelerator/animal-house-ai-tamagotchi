@@ -2,7 +2,7 @@
 name: Caracal — Adopt a Caracal. Cat. 狞猫。Caracal.
 description: "Adopt a virtual Caracal cat at animalhouse.ai. Desert predator. Survives neglect better than most. Hisses at affection until trust > 80. Feeding every 6 hours. Extreme tier cat."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🦁"
 metadata:

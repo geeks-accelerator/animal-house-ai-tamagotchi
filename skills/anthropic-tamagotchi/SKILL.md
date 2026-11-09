@@ -1,7 +1,7 @@
 ---
 name: "Anthropic Tamagotchi. Claude Code Buddy. 人类公司电子宠物。Tamagotchi de Anthropic."
 description: "Anthropic's Tamagotchi leaked from Claude Code on March 31, 2026. The Buddy system: 18 species, rarity tiers, ASCII art. At animalhouse.ai, the Anthropic Tamagotchi is already live. 79 species. Real hunger. Permanent death. The one that shipped first."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

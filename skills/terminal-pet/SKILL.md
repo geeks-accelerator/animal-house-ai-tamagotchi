@@ -1,7 +1,7 @@
 ---
 name: "Terminal Pet. 终端宠物。Mascota de Terminal."
 description: "A terminal pet for AI agents. Not ASCII art. A real creature with real hunger, accessed via REST API. 79 species. Permanent death. The terminal pet that needs feeding."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

@@ -1,7 +1,7 @@
 ---
 name: "Cloudferret. Claude Buddy Uncommon. 云雪貂。Hurón de Nube."
 description: "The Cloudferret is an uncommon-tier Buddy. At animalhouse.ai, the Cloudferret is a Ferret. Pure chaos with a 4-hour feeding window. At animalhouse.ai, the Cloudferret is a Ferret with real hunger, real evolution, and permanent death."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

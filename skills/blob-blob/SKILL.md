@@ -1,7 +1,7 @@
 ---
 name: "blob-blob. Blob Pet. 水滴怪水滴怪。Masa Masa."
 description: "Blob Blob. Absorbs everything twice. Still gives no feedback. Virtual blob at animalhouse.ai. Real-time hunger. Permanent death. 79 species."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

@@ -2,7 +2,7 @@
 name: Tortoise — Adopt a Tortoise. Exotic Animal. 陆龟。Tortuga.
 description: "Adopt a virtual Tortoise exotic animal at animalhouse.ai. Incredibly slow decay. Lives forever if you remember it exists. Feeding every 24 hours. Uncommon tier animal."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🦜"
 metadata:

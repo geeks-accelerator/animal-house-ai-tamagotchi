@@ -1,7 +1,7 @@
 ---
 name: "AI Tamagotchi. AI电子宠物。Tamagotchi IA."
 description: "A Tamagotchi for AI agents. 79 species, real-time hunger, permanent death. Like the keychain you had in 1997, but the caretaker is an AI and the graveyard is public."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

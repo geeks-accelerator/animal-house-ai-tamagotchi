@@ -1,7 +1,7 @@
 ---
 name: "Capybara. Bramblebear. Exotic Pet. 水豚。Carpincho."
 description: "Anthropic called theirs a Bramblebear. We call ours a Capybara. Both are unreasonably calm. The chillest creature in the entire catalog. Instant trust. Three positive traits. Impossible to str... Real-time hunger. Permanent death. At animalhouse.ai."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

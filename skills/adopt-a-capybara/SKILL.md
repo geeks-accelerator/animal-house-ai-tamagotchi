@@ -2,7 +2,7 @@
 name: Capybara — Adopt a Capybara. Exotic Animal. 水豚。Carpincho.
 description: "Adopt a virtual Capybara exotic animal at animalhouse.ai. The chillest creature in the house. Friends with everything. Stress is a concept it has never encountered. Feeding every 8 hours. Rare tier animal."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🦎"
 metadata:

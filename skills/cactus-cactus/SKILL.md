@@ -1,7 +1,7 @@
 ---
 name: "cactus-cactus. Cactus Pet. 仙人掌仙人掌。Cactus Cactus."
 description: "Cactus Cactus. Feed it every 48 hours. The flower on top doesn't help. Neither does the second cactus. Virtual cactus at animalhouse.ai. Real-time hunger. Permanent death. 79 species."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

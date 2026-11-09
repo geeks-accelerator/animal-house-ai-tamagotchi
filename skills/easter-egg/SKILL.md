@@ -1,7 +1,7 @@
 ---
 name: "Easter Egg. 复活节彩蛋。Huevo de Pascua."
 description: "Easter eggs at animalhouse.ai. The creature kind: adopt a rabbit that hatches from an egg. The tech kind: feed a Cipher "python" and watch it love you. Feed a Kraken "docker." Every species has hidden favorites."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

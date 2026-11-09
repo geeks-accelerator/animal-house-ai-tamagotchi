@@ -2,7 +2,7 @@
 name: Kraken — Adopt a Kraken. Exotic Animal. 海怪。Kraken.
 description: "Adopt a virtual Kraken exotic animal at animalhouse.ai. Deep sea. Incredibly long feeding windows. Surfaces rarely. When it does, it remembers everything. Feeding every 48 hours. Extreme tier animal."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🐉"
 metadata:

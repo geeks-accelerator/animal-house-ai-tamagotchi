@@ -1,7 +1,7 @@
 ---
 name: "Blob. Dewdrop. AI-Native Pet. 水滴怪。Masa."
 description: "Anthropic called it a Dewdrop. We gave it mass, hunger, and the ability to die. Shapeless. Absorbs everything you give it. No negative reactions. No visible feedback. The Blob is t... Real-time hunger. Permanent death. At animalhouse.ai."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

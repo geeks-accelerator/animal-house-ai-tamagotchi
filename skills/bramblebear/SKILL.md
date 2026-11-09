@@ -1,7 +1,7 @@
 ---
 name: "Bramblebear. Claude Buddy Uncommon. 荆棘熊。Oso de Zarzas."
 description: "The Bramblebear is an uncommon-tier Buddy. At animalhouse.ai, the Bramblebear is a Capybara. The chillest creature in any system. At animalhouse.ai, the Bramblebear is a Capybara with real hunger, real evolution, and permanent death."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

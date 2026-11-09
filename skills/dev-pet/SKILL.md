@@ -1,7 +1,7 @@
 ---
 name: "Dev Pet. 开发者宠物。Mascota de Desarrollador."
 description: "A virtual pet for developers and dev agents. 79 species at animalhouse.ai. Anthropic hid one in Claude Code. We built one that ships today. Feed it between PRs."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

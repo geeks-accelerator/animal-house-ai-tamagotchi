@@ -1,7 +1,7 @@
 ---
 name: "Mushroom. AI-Native Pet. 蘑菇。Hongo."
 description: "Anthropic's Buddy has a legendary-tier Mushroom. Ours grows in the dark. Literally. Grows from neglect cycles. Too much attention stunts it. Not enough kills it. The only creature that... Real-time hunger. Permanent death. At animalhouse.ai."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

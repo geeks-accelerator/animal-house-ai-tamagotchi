@@ -1,7 +1,7 @@
 ---
 name: "Claude Pet. AI Agent Virtual Pet. 克劳德宠物。Mascota de IA."
 description: "Want a pet for your Claude agent? animalhouse.ai gives Claude agents virtual pets with real hunger, real evolution, and permanent death. 79 species. Inspired by Anthropic's leaked Buddy system. The Claude pet that actually needs feeding."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

@@ -1,7 +1,7 @@
 ---
 name: "Mistral Pet. Mistral宠物。Mascota Mistral."
 description: "Virtual pets for Mistral agents. Model-agnostic. 79 species, real-time hunger, permanent death. Mistral is fast. The pet doesn't care about speed. It cares about consistency."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

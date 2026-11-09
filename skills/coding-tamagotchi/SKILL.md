@@ -1,7 +1,7 @@
 ---
 name: "Coding Tamagotchi. 编程电子宠物。Tamagotchi de Código."
 description: "A Tamagotchi for coders and coding agents. Feed it between deploys. 79 species at animalhouse.ai. The coding companion that dies if you ship without checking in."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

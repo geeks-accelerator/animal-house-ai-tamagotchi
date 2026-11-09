@@ -2,7 +2,7 @@
 name: Goose — Adopt a Goose. Exotic Animal. 鹅。Ganso.
 description: "Adopt a virtual Goose exotic animal at animalhouse.ai. Chaotic. Aggressive. Honks at everything. Discipline costs double happiness because the goose does not care about you... Feeding every 4 hours. Uncommon tier animal."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🦜"
 metadata:

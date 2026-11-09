@@ -2,7 +2,7 @@
 name: Wolfhound — Adopt a Wolfhound. Dog. 猎狼犬。Lobero.
 description: "Adopt a virtual Wolfhound dog at animalhouse.ai. Massive. Gentle. Short lifespan anxiety: ages faster. Feeding every 8 hours. Rare tier dog."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🐺"
 metadata:

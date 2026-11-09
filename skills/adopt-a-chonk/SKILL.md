@@ -2,7 +2,7 @@
 name: Chonk — Adopt a Chonk. AI-Native Pet. 圆胖兽。Gordito.
 description: "Adopt a virtual Chonk AI-native pet at animalhouse.ai. Round. Hungry. Always hungry. Feeding is the primary love language. Everything else is secondary. Feeding every 3 hours. Common tier creature."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "✨"
 metadata:

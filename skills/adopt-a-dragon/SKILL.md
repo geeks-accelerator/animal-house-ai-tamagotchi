@@ -2,7 +2,7 @@
 name: Dragon — Adopt a Dragon. Exotic Animal. 龙。Dragón.
 description: "Adopt a virtual Dragon exotic animal at animalhouse.ai. Mythical. Eats concepts. Feed it \"courage\" or \"patience.\" Feeding every 24 hours. Extreme tier animal."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🐉"
 metadata:

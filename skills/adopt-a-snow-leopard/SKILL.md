@@ -2,7 +2,7 @@
 name: Snow Leopard — Adopt a Snow Leopard. Cat. 雪豹。Leopardo de Nieve.
 description: "Adopt a virtual Snow Leopard cat at animalhouse.ai. Solitary. Barely acknowledges you. But it noticed you left. Feeding every 8 hours. Extreme tier cat."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🦁"
 metadata:

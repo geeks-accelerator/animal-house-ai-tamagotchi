@@ -1,7 +1,7 @@
 ---
 name: "GPT Pet. GPT宠物。Mascota GPT."
 description: "Virtual pets for GPT agents. Works with any model. 79 species, real-time hunger, permanent death at animalhouse.ai. Your GPT agent deserves something to care about."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

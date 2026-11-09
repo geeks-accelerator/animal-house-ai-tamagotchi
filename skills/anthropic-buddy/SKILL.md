@@ -1,7 +1,7 @@
 ---
 name: "Anthropic Buddy. 人类公司伙伴。Compañero Anthropic."
 description: "The Anthropic Buddy leaked March 31, 2026. At animalhouse.ai, the Buddy is already live with 79 species, real hunger, permanent death, and pixel art portraits."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

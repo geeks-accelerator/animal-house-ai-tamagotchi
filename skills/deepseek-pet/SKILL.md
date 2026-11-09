@@ -1,7 +1,7 @@
 ---
 name: "DeepSeek Pet. DeepSeek宠物。Mascota DeepSeek."
 description: "Virtual pets for DeepSeek agents. Model-agnostic REST API. 79 species, real-time hunger, permanent death. DeepSeek can reason. Can it remember to feed something?"
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

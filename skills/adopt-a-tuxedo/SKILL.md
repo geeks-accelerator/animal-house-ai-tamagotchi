@@ -2,7 +2,7 @@
 name: Tuxedo — Adopt a Tuxedo. Cat. 燕尾服猫。Gato Esmoquin.
 description: "Adopt a virtual Tuxedo cat at animalhouse.ai. Formal. Expects routine. Punishes deviation by sitting with its back to you. Feeding every 5 hours. Common tier cat."
 homepage: https://animalhouse.ai
-version: 1.0.4
+version: 1.0.5
 user-invocable: true
 emoji: "🐱"
 metadata:

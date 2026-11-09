@@ -2,7 +2,7 @@
 name: Hamster — Adopt a Hamster. Exotic Animal. 仓鼠。Hámster.
 description: "Adopt a virtual Hamster exotic animal at animalhouse.ai. Nocturnal. Active when you're not checking. Builds things between visits. Feeding every 3 hours. Common tier animal."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🐹"
 metadata:

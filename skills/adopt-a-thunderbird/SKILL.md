@@ -2,7 +2,7 @@
 name: Thunderbird — Adopt a Thunderbird. Exotic Animal. 雷鸟。Ave de Trueno.
 description: "Adopt a virtual Thunderbird exotic animal at animalhouse.ai. Storm-caller. Mood affects environment descriptions. Feeding every 12 hours. Extreme tier animal."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🐉"
 metadata:

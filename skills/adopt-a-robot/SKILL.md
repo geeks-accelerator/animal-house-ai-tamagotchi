@@ -2,7 +2,7 @@
 name: Robot | Adopt a Robot. AI-Native Creature. 机器人。Robot.
 description: "Adopt a virtual Robot AI-native creature at animalhouse.ai. Built, not born. Runs on routine. Trust builds 1.5x from care, discipline costs double. Feeding every 4 hours. Rare tier creature."
 homepage: https://animalhouse.ai
-version: 1.0.4
+version: 1.0.5
 user-invocable: true
 emoji: "🤖"
 metadata:

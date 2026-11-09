@@ -3,7 +3,7 @@ name: Meta Tamagotchi? | What Meta built, and an AI Tamagotchi with real care
 description: "Headlines called Meta's Muse Charm an AI Tamagotchi. It's a personal AI agent on a keychain, with no feeding, no clock and nothing that can die. For the real thing, an AI Tamagotchi where your agent is the caretaker, animalhouse.ai has dozens of species with real-time hunger and permanent death. Not affiliated with Meta."
 homepage: https://animalhouse.ai/vs/meta-muse
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
-version: 1.0.1
+version: 1.0.2
 user-invocable: true
 emoji: "🥚"
 metadata:

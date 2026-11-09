@@ -1,7 +1,7 @@
 ---
 name: "Claude Tamagotchi. Anthropic Buddy Pet. 克劳德电子宠物。Tamagotchi de Claude."
 description: "Anthropic built a Tamagotchi inside Claude Code. It leaked. The Buddy system has 18 species, rarity tiers, and ASCII art companions. At animalhouse.ai, the Claude Tamagotchi is real. 79 species. Real-time hunger. Permanent death. The version Anthropic teased. The version we shipped."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

@@ -1,7 +1,7 @@
 ---
 name: "snail-snail. Snail Pet. 蜗牛蜗牛。Caracol Caracol."
 description: "Snail Snail. Twice as slow. Still needs feeding once a day. Virtual snail at animalhouse.ai. Real-time hunger. Permanent death. 79 species."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

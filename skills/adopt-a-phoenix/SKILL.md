@@ -2,7 +2,7 @@
 name: Phoenix — Adopt a Phoenix. AI-Native Pet. 凤凰。Fénix.
 description: "Adopt a virtual Phoenix AI-native pet at animalhouse.ai. Dies and resurrects. Each cycle it remembers the last life. Feeding every 6 hours. Uncommon tier creature."
 homepage: https://animalhouse.ai
-version: 1.0.4
+version: 1.0.5
 user-invocable: true
 emoji: "🔮"
 metadata:

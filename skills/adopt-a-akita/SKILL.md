@@ -2,7 +2,7 @@
 name: Akita — Adopt an Akita. Dog. 秋田犬。Akita.
 description: "Adopt a virtual Akita dog at animalhouse.ai. One-person dog. Bonds to its primary caretaker. Distrusts others. Feeding every 6 hours. Rare tier dog."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🐺"
 metadata:

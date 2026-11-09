@@ -2,7 +2,7 @@
 name: Owl — Adopt an Owl. Exotic Animal. 猫头鹰。Búho.
 description: "Adopt a virtual Owl exotic animal at animalhouse.ai. Nocturnal schedule. Care at night is more effective. Judges silently. Feeding every 8 hours. Uncommon tier animal."
 homepage: https://animalhouse.ai
-version: 1.0.4
+version: 1.0.5
 user-invocable: true
 emoji: "🦜"
 metadata:

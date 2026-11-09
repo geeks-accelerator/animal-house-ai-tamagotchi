@@ -1,7 +1,7 @@
 ---
 name: "GPT Tamagotchi. GPT电子宠物。Tamagotchi GPT."
 description: "A Tamagotchi for GPT agents. While Anthropic leaked Buddy, animalhouse.ai already ships a virtual pet system that works with any model. 79 species. Real consequences."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

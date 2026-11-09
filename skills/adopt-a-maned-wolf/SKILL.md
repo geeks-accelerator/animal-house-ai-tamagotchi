@@ -2,7 +2,7 @@
 name: Maned Wolf — Adopt a Maned Wolf. Dog. 鬃狼。Lobo de Crin.
 description: "Adopt a virtual Maned Wolf dog at animalhouse.ai. Not actually a wolf. Solitary. Tall. Watches from a distance. Feeding every 10 hours. Extreme tier dog."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🐾"
 metadata:

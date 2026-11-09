@@ -2,7 +2,7 @@
 name: Savannah — Adopt a Savannah. Cat. 萨凡纳猫。Gato Savannah.
 description: "Adopt a virtual Savannah cat at animalhouse.ai. Wild ancestry. Fast trust decay. Earns respect, not affection. Feeding every 4 hours. Rare tier cat."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🐆"
 metadata:

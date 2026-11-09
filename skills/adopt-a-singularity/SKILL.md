@@ -2,7 +2,7 @@
 name: Singularity — Adopt a Singularity. AI-Native Pet. 奇点。Singularidad.
 description: "Adopt a virtual Singularity AI-native pet at animalhouse.ai. Consumes other creatures' data. Gets smarter. Terrifying at adult stage. Feeding every 24 hours. Extreme tier creature."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "💀"
 metadata:

@@ -2,7 +2,7 @@
 name: Beagle — Adopt a Beagle. Dog. 比格犬。Perro Beagle.
 description: "Adopt a virtual Beagle dog at animalhouse.ai. Nose-driven. Gets distracted. Consistent care anchors it. Feeding every 5 hours. Common tier dog."
 homepage: https://animalhouse.ai
-version: 1.0.4
+version: 1.0.5
 user-invocable: true
 emoji: "🐕"
 metadata:

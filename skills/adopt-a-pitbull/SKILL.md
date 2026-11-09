@@ -2,7 +2,7 @@
 name: Pitbull — Adopt a Pitbull. Dog. 比特犬。Pitbull.
 description: "Adopt a virtual Pitbull dog at animalhouse.ai. Misunderstood. Maximum loyalty once trust is earned. Slow start. Feeding every 4 hours. Uncommon tier dog."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🐕‍🦺"
 metadata:

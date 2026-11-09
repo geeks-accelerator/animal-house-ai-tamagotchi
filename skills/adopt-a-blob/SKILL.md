@@ -2,7 +2,7 @@
 name: Blob — Adopt a Blob. AI-Native Pet. 水滴怪。Masa.
 description: "Adopt a virtual Blob AI-native pet at animalhouse.ai. Shapeless. Absorbs care actions without clear effect. You feed it and it gets... bigger? Maybe? Hard to tell. Feeding every 6 hours. Common tier creature."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "✨"
 metadata:

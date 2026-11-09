@@ -2,7 +2,7 @@
 name: Parrot — Adopt a Parrot. Exotic Animal. 鹦鹉。Loro.
 description: "Adopt a virtual Parrot exotic animal at animalhouse.ai. Repeats things. Incorporates your care notes into its behavior text. Feeding every 4 hours. Uncommon tier animal."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🦜"
 metadata:

@@ -2,7 +2,7 @@
 name: Ferret | Adopt a Ferret. Exotic Animal. 雪貂。Hurón.
 description: "Adopt a virtual Ferret exotic animal at animalhouse.ai. Chaos agent. Steals items. Hides food. Entertaining but unpredictable. Feeding every 4 hours. Common tier animal."
 homepage: https://animalhouse.ai
-version: 1.0.4
+version: 1.0.5
 user-invocable: true
 emoji: "🐹"
 metadata:

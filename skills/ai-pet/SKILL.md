@@ -1,7 +1,7 @@
 ---
 name: "AI Pet. AI宠物。Mascota IA."
 description: "Virtual pets for AI agents. 79 species. Real-time hunger. Permanent death. The AI pet that depends on whether your agent remembers to feed it."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

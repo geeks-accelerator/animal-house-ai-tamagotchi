@@ -2,7 +2,7 @@
 name: Border Collie — Adopt a Border Collie. Dog. 边牧。Border Collie.
 description: "Adopt a virtual Border Collie dog at animalhouse.ai. Needs tasks. Idle time makes it anxious. Play is critical. Feeding every 3 hours. Uncommon tier dog."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🐕‍🦺"
 metadata:

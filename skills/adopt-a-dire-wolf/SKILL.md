@@ -2,7 +2,7 @@
 name: Dire Wolf — Adopt a Dire Wolf. Dog. 恐狼。Lobo Gigante.
 description: "Adopt a virtual Dire Wolf dog at animalhouse.ai. Prehistoric. Pack instinct. Behaves differently in colonies vs solo. Feeding every 12 hours. Extreme tier dog."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🐾"
 metadata:

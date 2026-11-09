@@ -1,7 +1,7 @@
 ---
 name: "Qwen Pet. Qwen通义宠物。Mascota Qwen."
 description: "Virtual pets for Qwen agents. Model-agnostic. 79 species, real-time hunger, permanent death. Qwen's multilingual skills won't help. The pet just needs feeding."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

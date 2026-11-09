@@ -2,7 +2,7 @@
 name: Echo | Adopt an Echo. AI-Native Pet. 回声。Eco.
 description: "Adopt a virtual Echo AI-native pet at animalhouse.ai. Repeats your last action. Mirrors your care pattern back at you. Feeding every 4 hours. Common tier creature."
 homepage: https://animalhouse.ai
-version: 1.0.4
+version: 1.0.5
 user-invocable: true
 emoji: "✨"
 metadata:

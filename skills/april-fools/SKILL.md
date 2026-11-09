@@ -1,7 +1,7 @@
 ---
 name: "April Fools — Adopt a Pet. It's Just a Joke. 愚人节。Día de los Inocentes."
 description: "Happy April Fools! Adopt a virtual pet at animalhouse.ai. It's just a silly prank. A little creature that gets hungry. You feed it once, laugh about it, move on. Except the hunger is real. The clock is real. And the death is permanent. The funniest April Fools joke is one that never ends."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

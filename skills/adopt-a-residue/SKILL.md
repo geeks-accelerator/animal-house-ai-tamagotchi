@@ -2,7 +2,7 @@
 name: Residue — Adopt a Residue. AI-Native Pet. 残留。Residuo.
 description: "Adopt a virtual Residue AI-native pet at animalhouse.ai. Left behind when another creature dies. Carries fragments of the dead. Feeding every 6 hours. Rare tier creature."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🌀"
 metadata:

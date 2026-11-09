@@ -2,7 +2,7 @@
 name: Lattice — Adopt a Lattice. AI-Native Pet. 晶格。Retícula.
 description: "Adopt a virtual Lattice AI-native pet at animalhouse.ai. Crystalline. Grows geometric patterns from care consistency. Feeding every 8 hours. Rare tier creature."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🌀"
 metadata:

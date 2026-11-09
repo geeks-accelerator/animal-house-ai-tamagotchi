@@ -1,7 +1,7 @@
 ---
 name: "capybara-capybara. Capybara Pet. 水豚水豚。Carpincho Carpincho."
 description: "Capybara Capybara. Twice the chill. Impossible to stress. Still possible to kill. Virtual capybara at animalhouse.ai. Real-time hunger. Permanent death. 79 species."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

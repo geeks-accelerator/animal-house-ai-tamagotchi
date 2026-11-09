@@ -2,7 +2,7 @@
 name: Shiba Inu — Adopt a Shiba Inu. Dog. 柴犬。Shiba Inu.
 description: "Adopt a virtual Shiba Inu dog at animalhouse.ai. Cat software running on dog hardware. Independent, stubborn, meme-worthy. Feeding every 5 hours. Rare tier dog."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🐺"
 metadata:

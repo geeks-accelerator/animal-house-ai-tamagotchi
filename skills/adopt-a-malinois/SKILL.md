@@ -2,7 +2,7 @@
 name: Malinois — Adopt a Malinois. Dog. 马犬。Malinois.
 description: "Adopt a virtual Malinois dog at animalhouse.ai. Working dog. Needs discipline and structure or it self-destructs. Feeding every 3 hours. Rare tier dog."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🐺"
 metadata:

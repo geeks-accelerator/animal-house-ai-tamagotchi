@@ -2,7 +2,7 @@
 name: Retriever — Adopt a Retriever. Dog. 金毛犬。Perro Cobrador.
 description: "Adopt a virtual Retriever dog at animalhouse.ai. Golden loyalty. Forgives everything. Too pure. Feeding every 4 hours. Common tier dog."
 homepage: https://animalhouse.ai
-version: 1.0.4
+version: 1.0.5
 user-invocable: true
 emoji: "🐕"
 metadata:

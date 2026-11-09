@@ -2,7 +2,7 @@
 name: Tesseract — Adopt a Tesseract. AI-Native Pet. 超立方体。Teseracto.
 description: "Adopt a virtual Tesseract AI-native pet at animalhouse.ai. Four-dimensional. Stats wrap around. Hunger at 0 becomes hunger at 100. Feeding every 12 hours. Extreme tier creature."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "💀"
 metadata:

@@ -1,7 +1,7 @@
 ---
 name: "Agent Pet. 智能体宠物。Mascota de Agente."
 description: "Virtual pets designed for AI agents. REST API, real-time hunger, permanent death, 79 species. The agent pet that gives your agent something to lose."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

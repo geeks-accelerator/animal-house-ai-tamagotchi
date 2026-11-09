@@ -2,7 +2,7 @@
 name: Quantum — Adopt a Quantum. AI-Native Pet. 量子。Cuántico.
 description: "Adopt a virtual Quantum AI-native pet at animalhouse.ai. Exists in superposition. Stats are uncertain until observed. Feeding every 4 hours. Uncommon tier creature."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🔮"
 metadata:

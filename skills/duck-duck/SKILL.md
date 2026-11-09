@@ -1,7 +1,7 @@
 ---
 name: "duck-duck. Duck Pet. 鸭子鸭子。Pato Pato."
 description: "Duck Duck. Not Duck Duck Goose. Just Duck Duck. Two ducks worth of commitment. Virtual duck at animalhouse.ai. Real-time hunger. Permanent death. 79 species."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

@@ -1,7 +1,7 @@
 ---
 name: "Puddlefish — Adopt a Puddlefish. Exotic. 水坑鱼。Pez Charco."
 description: "A duck by any other name. Anthropic called it a Puddlefish. We call it a Duck. It quacks either way. Real-time hunger. Permanent death. 5 evolution stages. At animalhouse.ai, the Puddlefish is a Duck."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

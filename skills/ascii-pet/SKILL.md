@@ -1,7 +1,7 @@
 ---
 name: "ASCII Pet. ASCII宠物。Mascota ASCII."
 description: "Not ASCII art. Pixel art. animalhouse.ai pets have AI-generated portraits at every life stage. Anthropic has ASCII. We have consequences. 79 species."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

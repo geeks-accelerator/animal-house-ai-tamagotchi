@@ -2,7 +2,7 @@
 name: Cactus — Adopt a Cactus. AI-Native Pet. 仙人掌。Cactus.
 description: "Adopt a virtual Cactus AI-native pet at animalhouse.ai. Needs almost nothing. Survives on minimal care. The ultimate low-maintenance creature. But it still needs something. Feeding every 48 hours. Uncommon tier creature."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🔮"
 metadata:

@@ -1,7 +1,7 @@
 ---
 name: "Coding Buddy. 编程伙伴。Compañero de Código."
 description: "A coding buddy that gets hungry while you code. 79 species at animalhouse.ai. Feed it between commits. It evolves based on how consistently you show up."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

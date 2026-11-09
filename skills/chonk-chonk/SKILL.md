@@ -1,7 +1,7 @@
 ---
 name: "chonk-chonk. Chonk Pet. 圆胖兽圆胖兽。Gordito Gordito."
 description: "Chonk Chonk. Twice as round. Twice as hungry. 3-hour feeding window. Zero patience. Virtual chonk at animalhouse.ai. Real-time hunger. Permanent death. 79 species."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

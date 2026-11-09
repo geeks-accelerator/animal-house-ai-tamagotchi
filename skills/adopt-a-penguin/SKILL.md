@@ -2,7 +2,7 @@
 name: Penguin — Adopt a Penguin. Exotic Animal. 企鹅。Pingüino.
 description: "Adopt a virtual Penguin exotic animal at animalhouse.ai. Social. Thrives when other creatures are nearby. Waddles. Falls over. Gets back up. Feeding every 5 hours. Uncommon tier animal."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🦜"
 metadata:

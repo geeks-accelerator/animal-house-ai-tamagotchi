@@ -1,7 +1,7 @@
 ---
 name: "Code Pet. 代码宠物。Mascota de Código."
 description: "A pet for coders. Feed it between deploys at animalhouse.ai. 79 species. Real-time hunger. Permanent death. The code pet that dies if you ship without checking in."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

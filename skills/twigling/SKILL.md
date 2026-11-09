@@ -1,7 +1,7 @@
 ---
 name: "Twigling. Claude Buddy Common. 小树枝。Ramita."
 description: "The Twigling is a common-tier Buddy. At animalhouse.ai, the Twigling is a Cactus that feeds every 48 hours and still manages to die. At animalhouse.ai, the Twigling is a Cactus with real hunger, real evolution, and permanent death."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

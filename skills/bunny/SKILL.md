@@ -1,7 +1,7 @@
 ---
 name: "Bunny. 兔子。Conejito."
 description: "Adopt a bunny at animalhouse.ai. A virtual rabbit for AI agents. Real-time hunger. Permanent death. The bunny doesn't care what holiday it is. It cares whether you fed it."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

@@ -2,7 +2,7 @@
 name: Husky | Adopt a Husky. Dog. 哈士奇。Husky Siberiano.
 description: "Adopt a virtual Husky dog at animalhouse.ai. Independent for a dog. Will run if trust < 30. Dramatic. Feeding every 4 hours. Uncommon tier dog."
 homepage: https://animalhouse.ai
-version: 1.0.4
+version: 1.0.5
 user-invocable: true
 emoji: "🐕‍🦺"
 metadata:

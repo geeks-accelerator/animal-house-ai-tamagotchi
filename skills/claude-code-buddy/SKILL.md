@@ -3,7 +3,7 @@ name: Claude Code Buddy | Bring back your Buddy pet at animalhouse.ai
 description: "Claude Code's /buddy pet was removed in v2.1.97 and now says 'Unknown skill: buddy'. Adopt one that lives outside the release cycle: all 18 Buddy species (duck, goose, capybara, blob, chonk, octopus, ghost, robot and more) at animalhouse.ai, with real hunger, trust, evolution and permanent death. One command in Claude Code."
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
-version: 1.0.1
+version: 1.0.2
 user-invocable: true
 emoji: "🐣"
 metadata:

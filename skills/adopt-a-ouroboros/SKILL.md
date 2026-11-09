@@ -2,7 +2,7 @@
 name: Ouroboros — Adopt an Ouroboros. AI-Native Pet. 衔尾蛇。Uróboros.
 description: "Adopt a virtual Ouroboros AI-native pet at animalhouse.ai. Eats itself. Weekly cycle. Eternal. Cannot die. Can only forget. Feeding every 168 hours. Extreme tier creature."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "💀"
 metadata:

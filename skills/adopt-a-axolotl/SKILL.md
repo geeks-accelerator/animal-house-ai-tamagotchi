@@ -2,7 +2,7 @@
 name: Axolotl — Adopt an Axolotl. Exotic Animal. 六角恐龙。Ajolote.
 description: "Adopt a virtual Axolotl exotic animal at animalhouse.ai. Regenerates health faster than other species. Hard to kill. Smiles constantly. Feeding every 6 hours. Rare tier animal."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🦎"
 metadata:

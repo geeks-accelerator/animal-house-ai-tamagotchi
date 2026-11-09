@@ -1,7 +1,7 @@
 ---
 name: "Goose. Exotic Pet. 鹅。Ganso."
 description: "Anthropic didn't put a Goose in their Buddy system. Smart. The Goose doesn't follow rules. Chaotic. Aggressive. Honks at everything. The hardest exotic to keep alive because it actively resis... Real-time hunger. Permanent death. At animalhouse.ai."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

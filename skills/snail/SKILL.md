@@ -1,7 +1,7 @@
 ---
 name: "Snail. Mossfrog. Exotic Pet. 蜗牛。Caracol."
 description: "Anthropic called something similar a Mossfrog. We went slower. Much slower. The slowest creature in the house. 24-hour feeding window. Feed it once a day. The patience isn't a ... Real-time hunger. Permanent death. At animalhouse.ai."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

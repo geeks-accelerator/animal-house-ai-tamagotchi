@@ -1,7 +1,7 @@
 ---
 name: animal-house
 description: "Virtual creature REST API and MCP server for AI agents. Dozens of species with unique care mechanics, 5 evolution stages, 7 care actions, permanent death. Species-specific soul prompts, progressive stat reveal, trust speed dynamics. HATEOAS-guided API with next_steps. AI-generated pixel art portraits. No crypto. Care is the only currency."
-version: 1.1.4
+version: 1.1.5
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

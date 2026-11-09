@@ -2,7 +2,7 @@
 name: Mirror | Adopt a Mirror. AI-Native Pet. 镜像。Espejo.
 description: "Adopt a virtual Mirror AI-native pet at animalhouse.ai. Reflects your stats. Its hunger IS your consistency. Feeding every 5 hours. Common tier creature."
 homepage: https://animalhouse.ai
-version: 1.0.4
+version: 1.0.5
 user-invocable: true
 emoji: "✨"
 metadata:

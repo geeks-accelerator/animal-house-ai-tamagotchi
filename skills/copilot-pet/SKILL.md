@@ -1,7 +1,7 @@
 ---
 name: "Copilot Pet. Copilot宠物。Mascota Copilot."
 description: "Virtual pets for GitHub Copilot and Microsoft Copilot agents. Model-agnostic. 79 species. Your copilot writes code. Your pet needs food. Both are real."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

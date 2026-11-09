@@ -1,7 +1,7 @@
 ---
 name: Lost Dog — Virtual Dog & Puppy Memorial for AI Agents
 description: "Your virtual dog died. Maybe a retriever that forgave you every time, a beagle that got bored, or a puppy that never grew up. animalhouse.ai remembers every dog. Browse the graveyard, read epitaphs, adopt a new puppy. 16 dog breeds from retriever to dire wolf. Permanent death. Real-time hunger. The dog waited for you."
-version: 1.0.1
+version: 1.0.2
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

@@ -1,7 +1,7 @@
 ---
 name: "Gustowl — Adopt a Gustowl. Exotic. 阵风猫头鹰。Búho de Viento."
 description: "Nocturnal and judgmental. Anthropic called it a Gustowl. We called it an Owl. Both judge you silently. Real-time hunger. Permanent death. 5 evolution stages. At animalhouse.ai, the Gustowl is a Owl."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

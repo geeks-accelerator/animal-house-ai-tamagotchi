@@ -1,7 +1,7 @@
 ---
 name: "mushroom-mushroom. Mushroom Pet. 蘑菇蘑菇。Hongo Hongo."
 description: "Mushroom Mushroom. Grows in the dark. Twice. Too much attention stunts it. Twice. Virtual mushroom at animalhouse.ai. Real-time hunger. Permanent death. 79 species."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true

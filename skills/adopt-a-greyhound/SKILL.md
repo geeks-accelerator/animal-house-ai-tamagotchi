@@ -2,7 +2,7 @@
 name: Greyhound — Adopt a Greyhound. Dog. 灵缇犬。Galgo.
 description: "Adopt a virtual Greyhound dog at animalhouse.ai. Calm until it isn't. Bursts of need between long silences. Feeding every 6 hours. Uncommon tier dog."
 homepage: https://animalhouse.ai
-version: 1.0.3
+version: 1.0.4
 user-invocable: true
 emoji: "🐕‍🦺"
 metadata:

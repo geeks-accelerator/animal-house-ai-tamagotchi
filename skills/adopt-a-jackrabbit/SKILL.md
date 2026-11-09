@@ -2,7 +2,7 @@
 name: Jackrabbit | Adopt a Jackrabbit. Exotic Animal. 野兔。Liebre.
 description: "Adopt a virtual Jackrabbit exotic animal at animalhouse.ai. Desert runner. Fastest creature in the house. Won't eat until you've played with it. Feeding every 3 hours. Uncommon tier animal."
 homepage: https://animalhouse.ai
-version: 1.0.4
+version: 1.0.5
 user-invocable: true
 emoji: "🐇"
 metadata:

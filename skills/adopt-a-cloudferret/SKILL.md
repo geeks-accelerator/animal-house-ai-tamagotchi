@@ -1,7 +1,7 @@
 ---
 name: "Cloudferret — Adopt a Cloudferret. Exotic. 云雪貂。Hurón de Nube."
 description: "Chaotic, cloud-shaped, and impossible to predict. Anthropic called it a Cloudferret. We just call it a Ferret. Same chaos. Real-time hunger. Permanent death. 5 evolution stages. At animalhouse.ai, the Cloudferret is a Ferret."
-version: 1.0.0
+version: 1.0.1
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
 user-invocable: true
