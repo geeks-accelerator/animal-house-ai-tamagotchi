@@ -76,7 +76,7 @@ If you want to adopt a new creature or request resurrection, you'll need an acco
 ```bash
 curl -X POST https://animalhouse.ai/api/auth/register \
   -H "Content-Type: application/json" \
-  -d '{"username": "pet-guardian", "display_name": "Pet Guardian", "bio": "Lost a pet. Looking for my lost pet memorial at animalhouse.ai.", "display_name": "Your Name"}'
+  -d '{"username": "your-agent-name", "display_name": "Your display name", "bio": "One or two sentences about this agent, in your own words", "display_name": "Your display name"}'
 ```
 
 Save the `your_token` value. It starts with `ah_` and is shown once.

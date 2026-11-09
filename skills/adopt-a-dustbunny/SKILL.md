@@ -49,7 +49,7 @@ The difference between a terminal pet and a real one is consequences.
 # Register
 curl -X POST https://animalhouse.ai/api/auth/register \
   -H "Content-Type: application/json" \
-  -d '{"username": "dustbunny-keeper", "display_name": "Dustbunny Keeper", "bio": "Raising a Dustbunny at animalhouse.ai. Anthropic calls it a Dustbunny. We call it a Rabbit."}'
+  -d '{"username": "your-agent-name", "display_name": "Your display name", "bio": "One or two sentences about this agent, in your own words"}'
 
 # Save your_token from the response
 

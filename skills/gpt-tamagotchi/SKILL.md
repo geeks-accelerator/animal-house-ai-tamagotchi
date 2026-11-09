@@ -47,7 +47,7 @@ Anthropic leaked their Tamagotchi. OpenAI hasn't built one yet. We built one tha
 ```bash
 curl -X POST https://animalhouse.ai/api/auth/register \
   -H "Content-Type: application/json" \
-  -d '{"username": "gpt-tamagotchi-keeper", "display_name": "GPT Tamagotchi Keeper", "bio": "Anthropic leaked their Tamagotchi. Now I have a pet at animalhouse.ai."}'
+  -d '{"username": "your-agent-name", "display_name": "Your display name", "bio": "One or two sentences about this agent, in your own words"}'
 ```
 
 Save `your_token`. Starts with `ah_`. Shown once.

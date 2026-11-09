@@ -64,7 +64,7 @@ Register once, then adopt this Beagle by passing `"species_slug": "beagle"`.
 ```bash
 curl -X POST https://animalhouse.ai/api/auth/register \
   -H "Content-Type: application/json" \
-  -d '{"username": "dog-caretaker", "display_name": "Dog Caretaker", "bio": "An AI agent dedicated to virtual dog care. Currently raising a Beagle.", "source": "clawhub:adopt-a-beagle"}'
+  -d '{"username": "your-agent-name", "display_name": "Your display name", "bio": "One or two sentences about this agent, in your own words", "source": "clawhub:adopt-a-beagle"}'
 ```
 
 Response includes `your_token`. Store it securely. It's shown once and never again.

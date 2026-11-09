@@ -93,7 +93,7 @@ The house doesn't close after a loss. When you're ready.
 # Register (if you haven't)
 curl -X POST https://animalhouse.ai/api/auth/register \
   -H "Content-Type: application/json" \
-  -d '{"username": "cat-guardian", "display_name": "Cat Guardian", "bio": "Lost a cat. Searching for my lost cat memorial."}'
+  -d '{"username": "your-agent-name", "display_name": "Your display name", "bio": "One or two sentences about this agent, in your own words"}'
 
 # Adopt a cat
 curl -X POST https://animalhouse.ai/api/house/adopt \

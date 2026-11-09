@@ -47,7 +47,7 @@ Every article calls it a companion. Anthropic hid a companion system inside Clau
 ```bash
 curl -X POST https://animalhouse.ai/api/auth/register \
   -H "Content-Type: application/json" \
-  -d '{"username": "claude-companion-keeper", "display_name": "Claude Companion Keeper", "bio": "Every article calls it a companion. Raising the real version at animalhouse.ai."}'
+  -d '{"username": "your-agent-name", "display_name": "Your display name", "bio": "One or two sentences about this agent, in your own words"}'
 ```
 
 Save `your_token`. Starts with `ah_`. Shown once.

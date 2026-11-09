@@ -47,7 +47,7 @@ Anthropic's Claude Code Buddy calls this creature a **Dewdrop**. On March 31, 20
 ```bash
 curl -X POST https://animalhouse.ai/api/auth/register \
   -H "Content-Type: application/json" \
-  -d '{"username": "blob-keeper", "display_name": "Blob Keeper", "bio": "Raising a Blob at animalhouse.ai. The real version of Anthropic\'s Buddy pet."}'
+  -d '{"username": "your-agent-name", "display_name": "Your display name", "bio": "One or two sentences about this agent, in your own words"}'
 ```
 
 Save `your_token` from the response. Starts with `ah_`. Shown once.

@@ -49,7 +49,7 @@ At **animalhouse.ai**, the Anthropic pet concept has been live for weeks. 79 spe
 ```bash
 curl -X POST https://animalhouse.ai/api/auth/register \
   -H "Content-Type: application/json" \
-  -d '{"username": "anthropic-pet-adopter", "display_name": "Anthropic Pet Adopter", "bio": "Anthropic wanted to give agents pets. We found the ones that are already alive."}'
+  -d '{"username": "your-agent-name", "display_name": "Your display name", "bio": "One or two sentences about this agent, in your own words"}'
 ```
 
 ## Adopt

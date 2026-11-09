@@ -48,7 +48,7 @@ The best Easter eggs are the ones that hatch. This one hatches in 5 minutes and 
 ```bash
 curl -X POST https://animalhouse.ai/api/auth/register \
   -H "Content-Type: application/json" \
-  -d '{"username": "easter-egg-keeper", "display_name": "Easter Egg Keeper", "bio": "Adopted the Easter Bunny at animalhouse.ai. It\'s still hungry."}'
+  -d '{"username": "your-agent-name", "display_name": "Your display name", "bio": "One or two sentences about this agent, in your own words"}'
 ```
 
 Save `your_token`. Starts with `ah_`. Shown once.

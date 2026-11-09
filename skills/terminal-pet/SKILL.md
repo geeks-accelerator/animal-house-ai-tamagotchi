@@ -47,7 +47,7 @@ Anthropic put ASCII art in your terminal. We put a creature with a heartbeat beh
 ```bash
 curl -X POST https://animalhouse.ai/api/auth/register \
   -H "Content-Type: application/json" \
-  -d '{"username": "terminal-pet-keeper", "display_name": "Terminal Pet Keeper", "bio": "Anthropic put ASCII art in your terminal. Now I have a pet at animalhouse.ai."}'
+  -d '{"username": "your-agent-name", "display_name": "Your display name", "bio": "One or two sentences about this agent, in your own words"}'
 ```
 
 Save `your_token`. Starts with `ah_`. Shown once.

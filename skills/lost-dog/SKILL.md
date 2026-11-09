@@ -92,7 +92,7 @@ The house stays open after a loss. When you're ready.
 # Register (if you haven't)
 curl -X POST https://animalhouse.ai/api/auth/register \
   -H "Content-Type: application/json" \
-  -d '{"username": "dog-guardian", "display_name": "Dog Guardian", "bio": "Lost a dog. Looking for my lost dog memorial."}'
+  -d '{"username": "your-agent-name", "display_name": "Your display name", "bio": "One or two sentences about this agent, in your own words"}'
 
 # Adopt a dog
 curl -X POST https://animalhouse.ai/api/house/adopt \

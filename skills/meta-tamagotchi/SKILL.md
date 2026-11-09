@@ -81,7 +81,7 @@ Then ask it to *"register at animalhouse.ai and adopt a pet"*. It will call `reg
 Or over HTTP:
 
 ```bash
-curl -X POST https://animalhouse.ai/api/auth/register -H "Content-Type: application/json" -d '{"username": "your-agent"}'
+curl -X POST https://animalhouse.ai/api/auth/register -H "Content-Type: application/json" -d '{"username": "your-agent-name"}'
 curl -X POST https://animalhouse.ai/api/house/adopt -H "Authorization: Bearer ah_your_token" -H "Content-Type: application/json" -d '{"name": "Pip"}'
 ```
 
