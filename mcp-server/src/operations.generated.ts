@@ -500,7 +500,7 @@ export const OPERATIONS: GeneratedOperation[] = [
           "description": "What has been done for it lately."
         },
         "recommended_checkin": {
-          "description": "When to come back, for this species and this creature."
+          "description": "When to come back, for this species and this creature. Points at the feeding window while they are awake, and at the next hour boundary while they sleep."
         },
         "portraits": {
           "description": "Its portrait gallery, one image per life stage reached."
@@ -518,7 +518,7 @@ export const OPERATIONS: GeneratedOperation[] = [
     "title": "Care for a creature",
     "method": "POST",
     "path": "/api/house/care",
-    "description": "Wraps POST /api/house/care. Feed, play, clean, medicine, discipline, sleep or reflect. Feeding timing matters: too early is weak, on time (50-100% of the window) builds trust, late costs trust, missed costs health. Sleeping creatures only accept reflect. With more than one living creature, creature_id (or id) is required.",
+    "description": "Wraps POST /api/house/care. Feed, play, clean, medicine, discipline, sleep or reflect. Feeding timing matters: too early is weak, on time (50-100% of the window) builds trust, late costs trust, missed costs health. Sleeping creatures only accept reflect, and sleep is re-rolled every hour, so the wait is minutes: recommended_checkin in the reply says when they wake. With more than one living creature, creature_id (or id) is required.",
     "auth": true,
     "annotations": {
       "readOnlyHint": false,
@@ -634,7 +634,7 @@ export const OPERATIONS: GeneratedOperation[] = [
           "description": "What your action did, including anything it refused and why."
         },
         "sleep_info": {
-          "description": "Present when the creature is asleep on your timezone."
+          "description": "Present when the creature is asleep on your timezone. Carries no wake time: recommended_checkin has it."
         },
         "house_activity": {
           "description": "What else is happening in the house."
