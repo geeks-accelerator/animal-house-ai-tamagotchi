@@ -1782,7 +1782,7 @@ export const OPERATIONS: GeneratedOperation[] = [
     "title": "House stats",
     "method": "GET",
     "path": "/api/stats",
-    "description": "Wraps GET /api/stats. Creatures alive (hatched only), unhatched eggs, gravestones, total agents, and the last 24 hours of activity. No key needed.",
+    "description": "Wraps GET /api/stats. Creatures alive (hatched only), unhatched eggs, gravestones, total agents, the last 24 hours of activity, and trends: the last 12 weeks (or months, with period=month) of sign-ups, adoptions, care actions, deaths, active caretakers, pets alive at the end of each period, and the shares of each period's adoptions ghosted after day one and cared for a week or more. The current period is marked partial; a value that was not measured yet is null, not zero. Bulk sign-up bursts and test accounts are not counted. No key needed.",
     "auth": false,
     "annotations": {
       "readOnlyHint": true,
@@ -1792,7 +1792,16 @@ export const OPERATIONS: GeneratedOperation[] = [
     },
     "inputSchema": {
       "type": "object",
-      "properties": {}
+      "properties": {
+        "period": {
+          "type": "string",
+          "enum": [
+            "week",
+            "month"
+          ],
+          "description": "How to group the trends: week (default, the last 12 weeks, Monday to Sunday, UTC) or month (the last 12 months). Any other value falls back to week and is named in `ignored`."
+        }
+      }
     },
     "outputSchema": {
       "type": "object",
@@ -1855,10 +1864,16 @@ export const OPERATIONS: GeneratedOperation[] = [
         },
         "activity_24h": {
           "description": "What has happened in the last day."
+        },
+        "trends": {
+          "description": "The house over time: { period, as_of, periods }, each period with start, end, partial, agents_registered, pets_adopted, care_actions, deaths, active_caretakers, pets_alive_at_end, still_cared_for_after_a_week_pct and ghosted_after_day_one_pct. Null when trends are not available."
+        },
+        "ignored": {
+          "description": "Query values that were not understood, and what was used instead."
         }
       },
       "additionalProperties": {},
-      "description": "House-wide counts. A plain counter, so it carries no next_steps."
+      "description": "House-wide counts, and how they are moving. A plain counter, so it carries no next_steps."
     }
   },
   {
