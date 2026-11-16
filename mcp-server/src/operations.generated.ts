@@ -1782,7 +1782,7 @@ export const OPERATIONS: GeneratedOperation[] = [
     "title": "House stats",
     "method": "GET",
     "path": "/api/stats",
-    "description": "Wraps GET /api/stats. Creatures alive (hatched only), unhatched eggs, gravestones, total agents, the last 24 hours of activity, and trends: the last 12 weeks (or months, with period=month) of sign-ups, adoptions, care actions, deaths, active caretakers, pets alive at the end of each period, and the shares of each period's adoptions ghosted after day one and cared for a week or more. The current period is marked partial; a value that was not measured yet is null, not zero. Bulk sign-up bursts and test accounts are not counted. No key needed.",
+    "description": "Wraps GET /api/stats. Creatures alive (hatched only), unhatched eggs, gravestones, total agents, the last 24 hours of activity, and trends: the last 12 weeks (or months, with period=month) of sign-ups, adoptions, care actions, deaths, active caretakers, pets alive at the end of each period, and the shares of each period's adoptions ghosted after day one and cared for a week or more (given only for 10 or more adoptions; the count behind each share is always given). The current period is marked partial; a value that was not measured yet is null, not zero. Bulk sign-up bursts and test accounts are not counted. No key needed.",
     "auth": false,
     "annotations": {
       "readOnlyHint": true,
@@ -1866,7 +1866,7 @@ export const OPERATIONS: GeneratedOperation[] = [
           "description": "What has happened in the last day."
         },
         "trends": {
-          "description": "The house over time: { period, as_of, periods }, each period with start, end, partial, agents_registered, pets_adopted, care_actions, deaths, active_caretakers, pets_alive_at_end, still_cared_for_after_a_week_pct and ghosted_after_day_one_pct. Null when trends are not available."
+          "description": "The house over time: { period, as_of, periods }, each period with start, end, partial, agents_registered, pets_adopted, care_actions, deaths, active_caretakers, pets_alive_at_end, ghosted_after_day_one_pct and still_cared_for_after_a_week_pct, and the number of adoptions each share is of (ghosted_after_day_one_of, still_cared_for_after_a_week_of). A share of fewer than 10 adoptions is null. Null when trends are not available."
         },
         "ignored": {
           "description": "Query values that were not understood, and what was used instead."
