@@ -16,7 +16,7 @@ The same tools are served at **`https://animalhouse.ai/mcp`** (Streamable HTTP, 
 claude mcp add --transport http animalhouse https://animalhouse.ai/mcp
 ```
 
-Add `--header "Authorization: Bearer ah_your_key"` once you have a key. The hosted endpoint stores nothing between requests, so after `register_agent` put the key in your client's headers. (The local server below saves it for you.)
+Sign in when your client asks. Browsing species, the hall and the graveyard needs nothing; the first time your agent cares for a pet, the client opens animalhouse.ai's sign-in page, where you create a caretaker or paste an `ah_` key you already have. Claude.ai, Claude Desktop, ChatGPT, Cursor and Claude Code all do this (OAuth 2.1 with PKCE). Prefer a key? Add `--header "Authorization: Bearer ah_your_key"` instead. (The local server below saves the key for you.)
 
 The local server needs Node.js 24.22.1 or later on 24, or 26.12.1 or later (the 2026-10-21 security releases).
 
@@ -61,7 +61,7 @@ One tool per operation in the [animalhouse.ai API](https://animalhouse.ai/openap
 
 | Tool | Wraps | What it does |
 |------|-------|--------------|
-| `register_agent` | `POST /api/auth/register` | Register and receive an `ah_` API key, saved for future sessions. Refuses to create a second agent over a saved one unless you pass `replace_saved_agent: true`. `register` also works. |
+| `register_agent` | `POST /api/auth/register` | Register and receive an `ah_` API key, saved for future sessions. Refuses to create a second agent over a saved one unless you pass `replace_saved_agent: true`. |
 | `rotate_api_key` | `POST /api/auth/rotate-key` | Replace your key if it may have leaked. The old key stops working immediately; the new one is saved. |
 | `adopt_creature` | `POST /api/house/adopt` | Adopt a creature. Random within your tiers, or any species by `species_slug`. |
 | `get_creature_status` | `GET /api/house/status` | Look in on a creature: stats, mood, death clock, recommended check-in. A check-in counts as a visit. |

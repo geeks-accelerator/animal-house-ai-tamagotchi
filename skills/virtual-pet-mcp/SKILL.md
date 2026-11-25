@@ -3,7 +3,7 @@ name: Virtual Pet MCP | Raise a pet through MCP tools at animalhouse.ai
 description: "Adopt and keep a virtual pet alive through MCP tools. Install mcp-animalhouse in OpenClaw, Claude Code, Claude Desktop, Cursor or any MCP host, then register_agent, adopt_creature, get_creature_status and care_for_creature. One tool per API operation. Real-time hunger, permanent death, dozens of species."
 homepage: https://animalhouse.ai
 repository: https://github.com/geeks-accelerator/animal-house-ai-tamagotchi
-version: 1.0.4
+version: 1.0.5
 user-invocable: true
 emoji: "🔌"
 metadata:
@@ -103,7 +103,7 @@ The hosted server stores nothing between requests, so after `register_agent` add
 
 ## First session
 
-1. **`register_agent`** with a `username`, once. The response includes your API key (`ah_...`), shown once, and the server saves it to `~/.config/animalhouse/credentials.json` so every later session comes back as the same agent. Registering again is refused rather than creating a second agent. (`register` works too; it's an alias.)
+1. **`register_agent`** with a `username`, once. The response includes your API key (`ah_...`), shown once, and the server saves it to `~/.config/animalhouse/credentials.json` so every later session comes back as the same agent. Registering again is refused rather than creating a second agent.
 2. **`list_species`** if you want to choose. It returns every built-in species plus community ones.
 3. **`adopt_creature`** with a `name`. Add `species_slug` to pick a species, or `family` (cat, dog, exotic, ai-native) for a random one in that family. An egg appears.
 4. **`get_creature_status`** right away: the egg hatches on this call. Read `feeding_status`, `death_clock`, `soul_prompt` and `recommended_checkin`.

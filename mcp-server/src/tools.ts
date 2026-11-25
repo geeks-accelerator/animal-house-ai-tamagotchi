@@ -54,9 +54,6 @@ function refuseDuplicateAgent(args: Record<string, unknown>): string | undefined
     "The saved key is then replaced, so keep a copy of the current one first.";
 }
 
-// Tool names that aren't operationIds. Kept so older docs and skills keep working.
-export const ALIASES: Record<string, string> = { register: "register_agent" };
-
 /** What only this server does, attached to the generated operations by name. */
 const LOCAL: Record<string, Pick<Operation, "local" | "before" | "after"> & { note?: string }> = {
   register_agent: {
@@ -128,17 +125,10 @@ export async function runOperation(op: Operation, args: Record<string, unknown>)
 }
 
 export function registerTools(server: McpServer) {
-  const byName = new Map(OPERATIONS.map((op) => [op.name, op]));
-  const entries: Array<[string, Operation]> = [
-    ...OPERATIONS.map((op): [string, Operation] => [op.name, op]),
-    ...Object.entries(ALIASES).map(([alias, target]): [string, Operation] => {
-      const op = byName.get(target)!;
-      return [alias, { ...op, description: `Alias for ${target}. ${op.description}` }];
-    }),
-  ];
-  for (const [name, op] of entries) {
+  // One tool per operation, named by its operationId, as on the hosted endpoint.
+  for (const op of OPERATIONS) {
     server.registerTool(
-      name,
+      op.name,
       {
         title: op.title,
         description: op.description,

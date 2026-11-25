@@ -2,7 +2,7 @@ import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
 import { mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
-import { OPERATIONS, ALIASES, buildRequest, STDIO_SOURCE } from "../src/tools.js";
+import { OPERATIONS, buildRequest, STDIO_SOURCE } from "../src/tools.js";
 
 const op = (name: string) => OPERATIONS.find((o) => o.name === name)!;
 
@@ -70,10 +70,9 @@ describe("buildRequest", () => {
 });
 
 describe("OPERATIONS", () => {
-  it("has unique names, and aliases point at real operations", () => {
+  it("has unique names", () => {
     const names = OPERATIONS.map((o) => o.name);
     expect(new Set(names).size).toBe(names.length);
-    for (const target of Object.values(ALIASES)) expect(names).toContain(target);
   });
 
   it("marks reads read-only and release destructive", () => {

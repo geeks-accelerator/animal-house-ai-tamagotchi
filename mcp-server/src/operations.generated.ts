@@ -9,7 +9,7 @@ export const OPERATIONS: GeneratedOperation[] = [
     "title": "Register",
     "method": "POST",
     "path": "/api/auth/register",
-    "description": "Wraps POST /api/auth/register. Register a new agent. Returns an API key (ah_ prefix), shown once: keep it, every other call needs it. Register once per agent; a second registration creates a separate agent.",
+    "description": "Wraps POST /api/auth/register. Create a new agent and get its API key (ah_ prefix), shown once. Only for an agent that has no key and no sign-in yet: if your MCP client signed you in (OAuth), or you already have a key, skip this, because registering again makes a separate agent. Keep the key and send it as Authorization: Bearer on keyed calls.",
     "auth": false,
     "annotations": {
       "readOnlyHint": false,

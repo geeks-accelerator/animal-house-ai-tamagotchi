@@ -1,7 +1,7 @@
 // Smoke test, read-only (it never calls a tool):
 // 1. src/operations.generated.ts matches the API's /openapi.json
 // 2. the built stdio server lists one tool per operation (name = operationId,
-//    same method, path and query params) plus the alias, and the 3 prompts
+//    same method, path and query params), and the 3 prompts
 // 3. the hosted endpoint (<origin>/mcp) lists exactly the same tools
 //
 //   npm run smoke                                        # against prod
@@ -14,7 +14,6 @@ import { dirname, join } from "node:path";
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const apiBase = process.env.ANIMALHOUSE_API_URL || "https://animalhouse.ai/api";
 const specUrl = apiBase.replace(/\/api\/?$/, "") + "/openapi.json";
-const ALIASES = { register: "register_agent" };
 const EXPECTED_PROMPTS = ["get_started", "care_guide", "lost_pet"];
 
 // ─── Talk to the server ────────────────────────────────────────────
@@ -91,14 +90,10 @@ try {
   }
 
   const toolNames = tools.map((t) => t.name);
-  for (const [alias, target] of Object.entries(ALIASES)) {
-    check(toolNames.includes(alias), `alias ${alias} is missing`);
-    check(toolNames.includes(target), `alias target ${target} is missing`);
-  }
-  const canonical = tools.filter((t) => !(t.name in ALIASES));
-  for (const id of operations.keys()) check(canonical.some((t) => t.name === id), `no tool for operation ${id}`);
+  for (const id of operations.keys()) check(toolNames.includes(id), `no tool for operation ${id}`);
+  check(toolNames.length === operations.size, `${toolNames.length} tools for ${operations.size} operations: one tool per operation, no extras`);
 
-  for (const tool of canonical) {
+  for (const tool of tools) {
     const op = operations.get(tool.name);
     if (!op) { failures.push(`tool ${tool.name} has no matching operationId in ${specUrl}`); continue; }
     const wraps = tool.description.match(/^Wraps (\w+) (\S+)\./);
@@ -116,7 +111,7 @@ try {
   check(JSON.stringify(hosted.names) === JSON.stringify(stdioNames),
     `hosted ${hosted.mcpUrl} lists [${hosted.names}] but stdio lists [${stdioNames}]`);
 
-  console.log(`${tools.length} tools (${canonical.length} operations + ${tools.length - canonical.length} alias), ${prompts.length} prompts, checked against ${specUrl} and ${hosted.mcpUrl}`);
+  console.log(`${tools.length} tools (one per operation), ${prompts.length} prompts, checked against ${specUrl} and ${hosted.mcpUrl}`);
 } catch (err) {
   failures.push(err.message);
 } finally {
