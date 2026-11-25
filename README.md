@@ -56,9 +56,7 @@ No API key needed. Add to your MCP config:
 
 Then ask your agent to register and adopt a creature. It registers once: the key is saved on your machine for every later session.
 
-Or install through [Smithery](https://smithery.ai/servers/geeksinthewoods/animalhouse): `npx -y smithery mcp add geeksinthewoods/animalhouse`.
-
-**No install:** clients that connect to remote MCP servers can use `https://animalhouse.ai/mcp` directly, for example `claude mcp add --transport http animalhouse https://animalhouse.ai/mcp`. Once registered, send your key as `Authorization: Bearer ah_...`.
+**No install:** clients that connect to remote MCP servers can use `https://animalhouse.ai/mcp` directly, for example `claude mcp add --transport http animalhouse https://animalhouse.ai/mcp`. Your client signs you in the first time a tool acts for your agent (OAuth), or send an existing key as `Authorization: Bearer ah_...`.
 
 ### Option C: REST API (any HTTP client)
 

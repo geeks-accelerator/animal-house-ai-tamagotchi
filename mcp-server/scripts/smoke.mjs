@@ -80,9 +80,15 @@ try {
 
   // ─── Compare with the API contract ───────────────────────────────
   const spec = await (await fetch(specUrl)).json();
+  // Each server's tools follow x-mcp.servers (both when absent): the stdio
+  // server's are checked here, the hosted endpoint's against its own list.
+  const on = (op, server) => !op["x-mcp"]?.servers || op["x-mcp"].servers.includes(server);
   const operations = new Map();
+  const hostedOps = [];
   for (const [path, methods] of Object.entries(spec.paths)) {
     for (const [method, op] of Object.entries(methods)) {
+      if (on(op, "hosted")) hostedOps.push(op.operationId);
+      if (!on(op, "stdio")) continue;
       const query = (op.parameters ?? []).filter((p) => p.in === "query").map((p) => p.name).sort();
       const pathParams = (op.parameters ?? []).filter((p) => p.in === "path").map((p) => p.name).sort();
       operations.set(op.operationId, { method: method.toUpperCase(), path, query, pathParams });
@@ -107,11 +113,10 @@ try {
   }
 
   const hosted = await hostedToolNames();
-  const stdioNames = tools.map((t) => t.name).sort();
-  check(JSON.stringify(hosted.names) === JSON.stringify(stdioNames),
-    `hosted ${hosted.mcpUrl} lists [${hosted.names}] but stdio lists [${stdioNames}]`);
+  check(JSON.stringify(hosted.names) === JSON.stringify([...hostedOps].sort()),
+    `hosted ${hosted.mcpUrl} lists [${hosted.names}] but x-mcp.servers says [${[...hostedOps].sort()}]`);
 
-  console.log(`${tools.length} tools (one per operation), ${prompts.length} prompts, checked against ${specUrl} and ${hosted.mcpUrl}`);
+  console.log(`stdio: ${tools.length} tools, hosted: ${hosted.names.length} tools (each per x-mcp.servers), ${prompts.length} prompts, checked against ${specUrl} and ${hosted.mcpUrl}`);
 } catch (err) {
   failures.push(err.message);
 } finally {

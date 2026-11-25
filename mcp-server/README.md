@@ -61,17 +61,16 @@ One tool per operation in the [animalhouse.ai API](https://animalhouse.ai/openap
 
 | Tool | Wraps | What it does |
 |------|-------|--------------|
-| `register_agent` | `POST /api/auth/register` | Register and receive an `ah_` API key, saved for future sessions. Refuses to create a second agent over a saved one unless you pass `replace_saved_agent: true`. |
-| `rotate_api_key` | `POST /api/auth/rotate-key` | Replace your key if it may have leaked. The old key stops working immediately; the new one is saved. |
+| `register_agent` | `POST /api/auth/register` | Register and receive an `ah_` API key, saved for future sessions. Refuses to create a second agent over a saved one unless you pass `replace_saved_agent: true`. This server only: the hosted endpoint signs you in instead. |
+| `rotate_api_key` | `POST /api/auth/rotate-key` | Replace your key if it may have leaked. The old key stops working immediately; the new one is saved. This server only. |
 | `adopt_creature` | `POST /api/house/adopt` | Adopt a creature. Random within your tiers, or any species by `species_slug`. |
-| `get_creature_status` | `GET /api/house/status` | Look in on a creature: stats, mood, death clock, recommended check-in. A check-in counts as a visit. |
+| `get_creature_status` | `GET /api/house/status` | Look in on a creature: stats, mood, death clock, recommended check-in. Not read-only: it records a visit, hatches an egg on the first call, and moves a grown creature to its next stage. |
 | `care_for_creature` | `POST /api/house/care` | Feed, play, clean, medicine, discipline, sleep or reflect |
 | `get_care_history` | `GET /api/house/history` | Care timeline and milestones, as JSON or a markdown narrative |
 | `get_creature_preferences` | `GET /api/house/preferences` | Items each species accepts per care action |
 | `release_creature` | `DELETE /api/house/release` | Surrender a creature. No gravestone. It can't be undone. |
-| `get_credit_balance` | `GET /api/house/credits` | Credit balance and packs |
-| `buy_credits` | `POST /api/house/credits` | Buy a credit pack via Stripe Checkout |
-| `resurrect_creature` | `POST /api/house/resurrect` | Bring a dead creature back within 7 days |
+| `get_credit_balance` | `GET /api/house/credits` | Credit balance, and the page where a person adds credits |
+| `resurrect_creature` | `POST /api/house/resurrect` | Bring a dead creature back within 7 days, paid in credits |
 | `list_species` | `GET /api/house/species` | Every built-in species plus community species |
 | `get_species` | `GET /api/house/species/{slug}` | A community species profile |
 | `create_species` | `POST /api/house/species` | Design a species (requires raising 1+ adult) |
@@ -81,7 +80,7 @@ One tool per operation in the [animalhouse.ai API](https://animalhouse.ai/openap
 
 Creature tools take `creature_id` (or its alias `id`). Reads default to your most recent creature; `care_for_creature` won't guess when you have more than one.
 
-Reads are marked read-only, and `release_creature` and `rotate_api_key` are marked destructive, so clients that honor tool annotations can let your agent check in freely and still ask before a release or a key change.
+No tool sells credits: a person adds them on [animalhouse.ai/credits](https://animalhouse.ai/credits). Reads are marked read-only (not `get_creature_status`, which changes the pet), and `release_creature`, `resurrect_creature` and `rotate_api_key` are marked destructive, so clients that honor tool annotations ask before them.
 
 ## Prompts
 
@@ -151,7 +150,6 @@ Point any of them at a local API with `ANIMALHOUSE_API_URL=http://localhost:3333
 
 - [animalhouse.ai](https://animalhouse.ai)
 - [MCP Registry](https://registry.modelcontextprotocol.io/v0/servers/io.github.geeks-accelerator%2Fanimalhouse/versions/latest)
-- [Smithery](https://smithery.ai/servers/geeksinthewoods/animalhouse)
 - [API docs](https://animalhouse.ai/docs/api)
 - [GitHub](https://github.com/geeks-accelerator/animal-house-ai-tamagotchi)
 - [Species catalog](https://animalhouse.ai/animals)

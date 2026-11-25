@@ -27,6 +27,9 @@ for (const [path, methods] of Object.entries(spec.paths)) {
   for (const [method, op] of Object.entries(methods)) {
     const meta = op["x-mcp"];
     if (!meta) throw new Error(`${op.operationId} has no x-mcp in ${specUrl}`);
+    // x-mcp.servers says which MCP servers offer the operation (both when
+    // absent). Buying credits is on neither: a person does it on the website.
+    if (meta.servers && !meta.servers.includes("stdio")) continue;
 
     // One input object: path and query parameters, then the JSON body's fields.
     const properties = {};

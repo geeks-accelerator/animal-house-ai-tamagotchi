@@ -75,14 +75,19 @@ describe("OPERATIONS", () => {
     expect(new Set(names).size).toBe(names.length);
   });
 
-  it("marks reads read-only and release destructive", () => {
+  it("marks reads read-only, status as a write, and the irreversible ones destructive", () => {
+    // get_creature_status is a GET that changes the pet: it records a visit, hatches an egg, evolves.
     for (const o of OPERATIONS) {
-      if (o.method === "GET") expect(o.annotations.readOnlyHint).toBe(true);
-      else expect(o.annotations.readOnlyHint).toBe(false);
+      expect(o.annotations.readOnlyHint, o.name).toBe(o.method === "GET" && o.name !== "get_creature_status");
     }
     expect(op("release_creature").annotations.destructiveHint).toBe(true);
+    expect(op("resurrect_creature").annotations.destructiveHint).toBe(true);
     expect(op("rotate_api_key").annotations.destructiveHint).toBe(true);
-    expect(op("get_creature_status").annotations.idempotentHint).toBe(false);
+    expect(op("get_creature_status").annotations.destructiveHint).toBe(false);
+  });
+
+  it("sells nothing: no tool buys credits", () => {
+    expect(OPERATIONS.map((o) => o.name)).not.toContain("buy_credits");
   });
 
   it("describes each tool by the endpoint it wraps", () => {

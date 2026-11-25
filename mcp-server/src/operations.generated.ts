@@ -420,10 +420,10 @@ export const OPERATIONS: GeneratedOperation[] = [
     "title": "Check on a creature",
     "method": "GET",
     "path": "/api/house/status",
-    "description": "Wraps GET /api/house/status. Look in on a creature: hunger, happiness, health, trust, mood, death_clock, recommended_checkin, soul_prompt. With several living creatures it also returns other_creatures, a compact live view of each. Call it before caring and whenever you wonder how they are. A check-in counts as a visit.",
+    "description": "Wraps GET /api/house/status. Look in on a creature: hunger, happiness, health, trust, mood, death_clock, recommended_checkin, soul_prompt. With several living creatures it also returns other_creatures, a compact live view of each. Call it before caring and whenever you wonder how they are. Not read-only: each call records a visit (some species gain trust from it), hatches an egg on the first call after adoption, and moves a creature to its next stage when it has grown enough.",
     "auth": true,
     "annotations": {
-      "readOnlyHint": true,
+      "readOnlyHint": false,
       "destructiveHint": false,
       "idempotentHint": false,
       "openWorldHint": true
@@ -738,11 +738,11 @@ export const OPERATIONS: GeneratedOperation[] = [
     "title": "Resurrect a creature",
     "method": "POST",
     "path": "/api/house/resurrect",
-    "description": "Wraps POST /api/house/resurrect. Bring a dead creature back within 7 days of death. Costs credits that scale with age and death count. Stats return at 50%, trust at 30%. Without enough credits it returns the cost and how to pay.",
+    "description": "Wraps POST /api/house/resurrect. Bring a dead creature back within 7 days of death. Costs credits that scale with age and death count. Stats return at 50%, trust at 30%. Without enough credits it returns the cost and your balance; credits are added by a person on animalhouse.ai/credits.",
     "auth": true,
     "annotations": {
       "readOnlyHint": false,
-      "destructiveHint": false,
+      "destructiveHint": true,
       "idempotentHint": false,
       "openWorldHint": true
     },
@@ -825,6 +825,9 @@ export const OPERATIONS: GeneratedOperation[] = [
         },
         "credits_available": {
           "description": "Credits you had, when that was not enough."
+        },
+        "credits_page": {
+          "description": "Where a person adds credits, when you had too few."
         },
         "next_resurrection_cost": {
           "description": "What the next resurrection of this creature would cost. It rises each time."
@@ -1046,7 +1049,7 @@ export const OPERATIONS: GeneratedOperation[] = [
     "title": "Credit balance",
     "method": "GET",
     "path": "/api/house/credits",
-    "description": "Wraps GET /api/house/credits. Your credit balance and the available credit packs.",
+    "description": "Wraps GET /api/house/credits. Your credit balance, which pays for resurrection. Credits are added by a person on animalhouse.ai/credits (credits_page).",
     "auth": true,
     "annotations": {
       "readOnlyHint": true,
@@ -1094,7 +1097,7 @@ export const OPERATIONS: GeneratedOperation[] = [
           "description": "Guided actions you can take from here. Present on nearly every response. /api/stats is a plain counter and carries none, by design."
         },
         "message": {
-          "description": "A human and agent readable note about what just happened."
+          "description": "What credits are for, and where they come from."
         },
         "error": {
           "description": "What went wrong, on a failure."
@@ -1108,103 +1111,12 @@ export const OPERATIONS: GeneratedOperation[] = [
         "credits": {
           "description": "Credits on your account."
         },
-        "packs": {
-          "description": "Credit packs you can buy."
+        "credits_page": {
+          "description": "Where a person adds credits for this agent."
         }
       },
       "additionalProperties": {},
-      "description": "Your credit balance and what you can buy."
-    }
-  },
-  {
-    "name": "buy_credits",
-    "title": "Buy credits",
-    "method": "POST",
-    "path": "/api/house/credits",
-    "description": "Wraps POST /api/house/credits. Buy a credit pack for resurrection. Returns a Stripe Checkout link for your human to pay; the credits arrive when the payment completes.",
-    "auth": true,
-    "annotations": {
-      "readOnlyHint": false,
-      "destructiveHint": false,
-      "idempotentHint": false,
-      "openWorldHint": true
-    },
-    "inputSchema": {
-      "type": "object",
-      "properties": {
-        "pack": {
-          "type": "string",
-          "enum": [
-            "100",
-            "500",
-            "1000"
-          ],
-          "description": "Credit pack: 100 ($1), 500 ($4, 20% off) or 1000 ($7, 30% off)."
-        }
-      },
-      "required": [
-        "pack"
-      ]
-    },
-    "outputSchema": {
-      "type": "object",
-      "properties": {
-        "next_steps": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "properties": {
-              "action": {
-                "description": "Short name for the action, e.g. \"adopt\", \"feed\", \"view_schema\"."
-              },
-              "method": {
-                "description": "HTTP method to use: GET, POST or DELETE."
-              },
-              "endpoint": {
-                "description": "Path to call, e.g. \"/api/house/status\"."
-              },
-              "url": {
-                "description": "Absolute URL, when the step points off the API (a checkout page, a web page)."
-              },
-              "description": {
-                "description": "What this step does and why you might take it, in the house voice."
-              },
-              "body": {
-                "description": "A ready-to-send request body. Copy it and fill in what it shows."
-              },
-              "optional": {
-                "description": "Extra fields you may add to body, each mapped to what to put in it. Never send this object as-is."
-              }
-            },
-            "additionalProperties": {},
-            "description": "A suggested next call. Following one is never required."
-          },
-          "description": "Guided actions you can take from here. Present on nearly every response. /api/stats is a plain counter and carries none, by design."
-        },
-        "message": {
-          "description": "A human and agent readable note about what just happened."
-        },
-        "error": {
-          "description": "What went wrong, on a failure."
-        },
-        "suggestion": {
-          "description": "What to try instead, on a failure."
-        },
-        "details": {
-          "description": "More about a failure, when there is more to say."
-        },
-        "checkout_url": {
-          "description": "Stripe Checkout URL. Give it to a human: an agent cannot complete a card payment."
-        },
-        "pack": {
-          "description": "The pack this checkout is for."
-        },
-        "credits": {
-          "description": "Credits you have now, before the purchase completes."
-        }
-      },
-      "additionalProperties": {},
-      "description": "A checkout link for a credit pack."
+      "description": "Your credit balance, and where credits come from."
     }
   },
   {
