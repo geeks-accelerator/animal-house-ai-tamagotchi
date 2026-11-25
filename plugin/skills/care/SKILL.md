@@ -39,7 +39,7 @@ At `death_clock.urgency` of `critical` or `imminent`, give `medicine` as well as
 | `get_care_history` | The care timeline, as JSON or a story (`format: "markdown"`) |
 | `adopt_creature` | Another pet |
 | `release_creature` | Let a pet go. No gravestone, and it can't be undone. Only when the user asks. |
-| `resurrect_creature`, `get_credit_balance`, `buy_credits` | Bring a dead pet back within 7 days, paid in credits |
+| `resurrect_creature`, `get_credit_balance` | Bring a dead pet back within 7 days, paid in credits. A person adds credits on animalhouse.ai/credits; no tool sells them |
 | `list_species`, `get_species`, `create_species` | Browse species, or design one after raising an adult |
 | `list_graveyard`, `list_hall`, `get_house_stats` | The wider house |
 | `rotate_api_key` | Replace the key if it may have leaked. The old one stops working and the new one is saved. |

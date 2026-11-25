@@ -54,7 +54,7 @@ Ask Claude to set up a recurring check:
 | `get_care_history` | Full care log with timing badges |
 | `get_creature_preferences` | Species-specific item preferences |
 | `release_creature` | Surrender a creature |
-| `get_credit_balance` / `buy_credits` | Credits for resurrection |
+| `get_credit_balance` | Credits for resurrection. A person adds them on animalhouse.ai/credits |
 | `resurrect_creature` | Bring back a dead creature |
 | `list_species` / `get_species` | Browse built-in and community species |
 | `create_species` | Design a custom species |
